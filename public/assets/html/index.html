@@ -9,17 +9,23 @@
 <body>
     <header>
         <h1>Registro de lo Aprendido en Clases</h1>
-        <div class="Logo Bootcamp">Talento Tech</div>
+        <div class="LogoBootcamp">Talento Tech</div>
     </header>
     <main>
-        <nav>
-            <button href="./git.html" class="ancoresNav" id="git-btn">Git</button>
-            <button href="./html.html" class="ancoresNav" id="html-btn">HTML</button>
-            <button href="./css.html" class="ancoresNav" id="css-btn">CSS</button>
-            <button href="./javascript.html" class="ancoresNav" id="js-btn">JavaScript</button>
-            <button href="./github.html" class="ancoresNav" id="github-btn">GitHub</button>
-            <button href="./gitlab.html" class="ancoresNav" id="gitlab-btn">GitLab</button> 
-        </nav>
+        <section class="mainContent">
+            <nav>
+                <button href="./git.html" class="ancoresNav" id="git-btn">Git</button>
+                <button href="./html.html" class="ancoresNav" id="html-btn">HTML</button>
+                <button href="./css.html" class="ancoresNav" id="css-btn">CSS</button>
+                <button href="./javascript.html" class="ancoresNav" id="js-btn">JavaScript</button>
+                <button href="./github.html" class="ancoresNav" id="github-btn">GitHub</button>
+                <button href="./gitlab.html" class="ancoresNav" id="gitlab-btn">GitLab</button> 
+            </nav>
+            <div id="content-display">
+                <p id="text-display">Selecciona una tecnología para acceder a la información</p>
+                <img src="#" class="tech-image" id="tech-image" alt="Imagen de tecnología">
+            </div>
+        </section>
         <div class="descriptionContainer">
             <h2 class="sub">Acerca de esta pagina</h2>
             <p class="p-description">Esta pagina esta hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.</p>
@@ -37,5 +43,7 @@
             <a href="#"><i class="rs gitlab"></i>GitLab</a>
         </div>
     </footer>
+
+    <script src="/BlogTech/public/assets/js/index.js"></script>
 </body>
 </html>

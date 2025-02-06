@@ -3,10 +3,70 @@
     text-align: center;
 }
 body{
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/*Header*/
+header{
+    background: #333;
+    padding: 20px;
+    text-align: center;
+}
+.LogoBootcamp{
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: bold;
+}
+.mainContent{
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/*Body*/
+
+/*Section*/
+/*Botones*/
+.ancoresNav{
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #808080;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+}
+
+/*Botones con el hover*/
+#css-btn:hover {background: #0000FF;}
+#git-btn:hover {background: #FFA500;}
+#github-btn:hover,
+#gitlab-btn:hover {background: #008080;}
+#html-btn:hover {background: #FFA500;}
+#js-btn:hover {background: #ffd700;}
+
+/*Contenido Dinámico*/
+#content-display{
+    margin:30px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/*Imagen de Tecnología*/
+.tech-image{
+    width: 200px;
+    margin: 20px;
+    display: none;
+}
+
+/*-->Fin Contenido Dinámico<--*/
+/*-->Fin Section<--*/
+
 a{
     text-decoration: none;
     color: #1e90ff;
@@ -61,4 +121,29 @@ nav{
     position: relative;
     top: 10px;
     margin: 5px;
+}
+
+/*Footer*/
+footer{
+    background: #333;
+    color: whitesmoke;
+    padding: 30px;
+    margin-top: auto;
+}
+
+.rr.ss{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.rr.ss a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.rr.ss i{
+    margin-right: 8px;
 }
