@@ -1,0 +1,48 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+th, td {
+    padding: 12px;
+<<<<<<< HEAD:public/assets/style/table.css
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+=======
+    background-color: #ffffff1e;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.ttable {
+    font-size: 24px;
+}
+.thtext{
+    color: darksalmon;
+}
+>>>>>>> ivan:public/style/table.css
+td:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+th {
+<<<<<<< HEAD:public/assets/style/table.css
+    background-color: #f8f8f8;
+=======
+    background-color: #ffffff1e;
+>>>>>>> ivan:public/style/table.css
+    color: black;
+}
+
+tr:nth-child(even) {
+<<<<<<< HEAD:public/assets/style/table.css
+    background-color: #f9f9f9;
+}
+=======
+    background-color: #f9f9f92c;
+}
+>>>>>>> ivan:public/style/table.css
