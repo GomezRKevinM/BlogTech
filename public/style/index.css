@@ -76,10 +76,22 @@ a:hover {
     left: 0;
     border-radius: 4px;
 }
-.img-sub{
+.img-sub{ /* clase para las imagenes de los subtitulos  */
     height: 30px;
     width: auto;
     position: relative;
     top: 10px;
     margin: 5px;
+}
+footer{
+    position: relative;
+    top: 13dvh;
+}
+.Pautores{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nameAuthors{
+    color: #459bf1;
 }
