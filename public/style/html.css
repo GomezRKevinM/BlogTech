@@ -2,4 +2,66 @@
     width: 50vw;
     border-radius: 15px;
     box-shadow: 0 0 12px #030838;
+} 
+.tag-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.btn-redounded{
+    border-radius:15px;
+    padding: 6px 12px;
+}
+.btn-bg-blue{
+    background-color: #5dc4ec;
+}
+button{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+button:hover{
+    box-shadow: 0 0 15px #08cfd2;
+    color: #05455f;
+}
+
+/* estilado de la modal */
+#fillScreen{
+    width: 100vw;
+    height: 100%;
+    background-color: #17171745;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.modal{
+    z-index: 11;
+    position: fixed;
+    top: 8vh;
+    left: 20vw;
+    width: 60vw;
+    height: 80%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245;
+    display: none;
+}
+.modal-exit{
+    color: #030838;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 23.2vw;
+    top: 3px;
+    background: transparent;
+}
+.modal-content,.modal-title{
+    color: #000;
 }
