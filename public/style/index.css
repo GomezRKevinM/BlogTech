@@ -98,3 +98,15 @@ a:hover {
     top: 10px;
     margin: 5px;
 }
+footer{
+    position:fixed;
+    top: 87%;
+}
+.pFooter{
+    display: flex;
+    gap: 45px;
+}
+.nameAuthors{
+    color: #fff;
+    text-shadow: 1px 1px 5px #459bf1;
+}
