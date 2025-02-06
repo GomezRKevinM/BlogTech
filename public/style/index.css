@@ -21,6 +21,9 @@ a.a-select{
 a:hover {
     color: #a3d1ff;
 }
+.wlink {
+    color: #921892;
+}
 .navbar{
     padding: auto;
     margin-top: 32px;
@@ -64,7 +67,7 @@ a:hover {
     border-radius: 4px;
 }
 .p-description.violet{
-    color: rgb(78, 12, 78);
+    color: #4e0c4e;
 }
 .p-description.violet::before{
     content: " ";
