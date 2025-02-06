@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+th, td {
+    padding: 12px;
+    background-color: #ffffff1e;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.ttable {
+    font-size: 24px;
+}
+.thtext{
+    color: darksalmon;
+}
+td:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+th {
+    background-color: #ffffff1e;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f92c;
+}

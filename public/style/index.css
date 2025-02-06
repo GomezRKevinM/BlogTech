@@ -6,23 +6,46 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #131313;
+    color: white;
 }
 a{
     text-decoration: none;
-    color: #1e90ff;
+    color: #459bf1;
     margin: 15px;
 }
 a.a-select{
     font-weight: 900;
     color: #125293;
 }
-nav{
+a:hover {
+    color: #a3d1ff;
+}
+.wlink {
+    color: #921892;
+}
+.navbar{
     padding: auto;
-    margin-top: 25px;
+    margin-top: 32px;
+    font-size: 18px;
+}
+.h1 {
+    margin-top: 100px;
 }
 .descriptionContainer{
     width: 60vw;
-    margin-top: 150px;
+    margin-top: 90px;
+}
+.descriptionContainerGit{
+    width: 60vw;
+    margin-top: 25px;
+}
+.descriptionContainerGitLab{
+    width: 60vw;
+    margin-top: 45px;
+}
+.sub {
+    margin-bottom: 34px;
 }
 .p-description{
     text-align: justify;
@@ -31,6 +54,19 @@ nav{
     border-radius: 4px;
     color: green;
     position: relative;
+    margin: 20px;
+    font-size: 20px;
+}
+.imgdescription {
+    height: 20px;
+    width: 20px;
+}
+.text {
+    font-size: 24px;
+}
+.gtext{
+    font-size: 20px;
+    margin-top: 64px;
 }
 .p-description::before{
     content: " ";
@@ -43,7 +79,7 @@ nav{
     border-radius: 4px;
 }
 .p-description.violet{
-    color: rgb(78, 12, 78);
+    color: #4e0c4e;
 }
 .p-description.violet::before{
     content: " ";
