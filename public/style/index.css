@@ -11,20 +11,30 @@ body{
 }
 a{
     text-decoration: none;
-    color: #1e90ff;
+    color: #459bf1;
     margin: 15px;
 }
 a.a-select{
     font-weight: 900;
     color: #125293;
 }
-nav{
+a:hover {
+    color: #a3d1ff;
+}
+.navbar{
     padding: auto;
-    margin-top: 25px;
+    margin-top: 32px;
+    font-size: 18px;
+}
+.h1 {
+    margin-top: 100px;
 }
 .descriptionContainer{
     width: 60vw;
-    margin-top: 150px;
+    margin-top: 90px;
+}
+.sub {
+    margin-bottom: 34px;
 }
 .p-description{
     text-align: justify;
@@ -33,6 +43,15 @@ nav{
     border-radius: 4px;
     color: green;
     position: relative;
+    margin: 20px;
+    font-size: 20px;
+}
+.imgdescription {
+    height: 20px;
+    width: 20px;
+}
+.text {
+    font-size: 24px;
 }
 .p-description::before{
     content: " ";
