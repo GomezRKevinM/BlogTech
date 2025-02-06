@@ -62,3 +62,25 @@ nav{
     top: 10px;
     margin: 5px;
 }
+.selector{
+    background-color: #125293;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+.selector:hover{
+    scale: 1.25;
+    border: 2px solid #fff;
+    box-shadow: 0 0 25px #1e90ff;
+}
+.iconSelector{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#titulo{
+    color: #000;
+}

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/table.css">
     <title>BootCamp Talento Tech</title>
 </head>
 <body>
     <header>
-        <h1>Registro de lo Aprendido en Clases</h1>
+        <h1 id="titulo">Registro de lo Aprendido en Clases</h1>
     </header>
     <main>
         <nav>
@@ -17,10 +18,80 @@
             <a href="./html.html" class="ancoresNav">HTML</a>
         </nav>
         <div class="descriptionContainer">
-            <h2><img src="./assets/SVG/git.svg" class="img-sub" alt="">Git</h2>
-            <h3>Comandos:</h3>
-            <p class="p-description">Esta pagina esta hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.</p>
-          
+            <div class="iconSelector">
+                <h2 class="selector"><img src="./assets/SVG/git.svg" class="img-sub" alt="">Git</h2>
+                <h2 class="selector"><img src="./assets/SVG/gitlab.svg" class="img-sub" alt="logo gitlab">GitLab</h2>
+            </div>
+
+            <div class="git-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>git init</td>
+                            <td>Inicializa un nuevo repositorio Git.</td>
+                        </tr>
+                        <tr>
+                            <td>git clone [url]</td>
+                            <td>Clona un repositorio existente desde una URL.</td>
+                        </tr>
+                        <tr>
+                            <td>git status</td>
+                            <td>Muestra el estado actual del repositorio (archivos modificados, sin seguimiento, etc.).</td>
+                        </tr>
+                        <tr>
+                            <td>git add [archivo]</td>
+                            <td>Añade un archivo al área de preparación (staging area).</td>
+                        </tr>
+                        <tr>
+                            <td>git commit -m "[mensaje]"</td>
+                            <td>Confirma los cambios en el área de preparación con un mensaje descriptivo.</td>
+                        </tr>
+                        <tr>
+                            <td>git push</td>
+                            <td>Envía los commits locales al repositorio remoto.</td>
+                        </tr>
+                        <tr>
+                            <td>git pull</td>
+                            <td>Obtiene y fusiona los cambios desde el repositorio remoto a tu copia local.</td>
+                        </tr>
+                        <tr>
+                            <td>git branch</td>
+                            <td>Lista todas las ramas en el repositorio.</td>
+                        </tr>
+                        <tr>
+                            <td>git checkout [rama]</td>
+                            <td>Cambia a la rama especificada.</td>
+                        </tr>
+                        <tr>
+                            <td>git merge [rama]</td>
+                            <td>Fusiona la rama especificada en la rama actual.</td>
+                        </tr>
+                        <tr>
+                            <td>git log</td>
+                            <td>Muestra el historial de commits.</td>
+                        </tr>
+                        <tr>
+                            <td>git diff</td>
+                            <td>Muestra las diferencias entre archivos y commits.</td>
+                        </tr>
+                        <tr>
+                            <td>git reset [archivo]</td>
+                            <td>Revierte los cambios del área de preparación.</td>
+                        </tr>
+                        <tr>
+                            <td>git rm [archivo]</td>
+                            <td>Elimina un archivo del repositorio.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </main>
 </body>
