@@ -1,98 +1,105 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
     font-family: monospace;
     text-align: center;
+=======
+* {
+  font-family: monospace;
+  text-align: center;
+>>>>>>> c06c724 (no push)
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #131313;
-    color: white;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  color: white;
 }
-a{
-    text-decoration: none;
-    color: #459bf1;
-    margin: 15px;
+a {
+  text-decoration: none;
+  color: #459bf1;
+  margin: 15px;
 }
-a.a-select{
-    font-weight: 900;
-    color: #125293;
+a.a-select {
+  font-weight: 900;
+  color: #125293;
 }
 a:hover {
-    color: #a3d1ff;
+  color: #a3d1ff;
 }
 .wlink {
-    color: #921892;
+  color: #921892;
 }
-.navbar{
-    padding: auto;
-    margin-top: 32px;
-    font-size: 18px;
+.navbar {
+  padding: auto;
+  margin-top: 32px;
+  font-size: 18px;
 }
 .h1 {
-    margin-top: 100px;
+  margin-top: 100px;
 }
-.descriptionContainer{
-    width: 60vw;
-    margin-top: 90px;
+.descriptionContainer {
+  width: 60vw;
+  margin-top: 90px;
 }
-.descriptionContainerGit{
-    width: 60vw;
-    margin-top: 25px;
+.descriptionContainerGit {
+  width: 60vw;
+  margin-top: 25px;
 }
-.descriptionContainerGitLab{
-    width: 60vw;
-    margin-top: 45px;
+.descriptionContainerGitLab {
+  width: 60vw;
+  margin-top: 45px;
 }
 .sub {
-    margin-bottom: 34px;
+  margin-bottom: 34px;
 }
-.p-description{
-    text-align: justify;
-    background: #ccccccaa;
-    padding: 10px 12px;
-    border-radius: 4px;
-    color: green;
-    position: relative;
-    margin: 20px;
-    font-size: 20px;
+.p-description {
+  text-align: justify;
+  background: #ccccccaa;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: green;
+  position: relative;
+  margin: 20px;
+  font-size: 20px;
 }
 .imgdescription {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 .text {
-    font-size: 24px;
+  font-size: 24px;
 }
-.gtext{
-    font-size: 20px;
-    margin-top: 64px;
+.gtext {
+  font-size: 20px;
+  margin-top: 64px;
 }
-.p-description::before{
-    content: " ";
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background-color: green;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+.p-description::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: green;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
 }
-.p-description.violet{
-    color: #4e0c4e;
+.p-description.violet {
+  color: #4e0c4e;
 }
-.p-description.violet::before{
-    content: " ";
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background-color: violet;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+.p-description.violet::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: violet;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
 }
+<<<<<<< HEAD
 .img-sub{
     height: 30px;
     width: auto;
@@ -111,4 +118,12 @@ footer{
 .nameAuthors{
     color: #fff;
     text-shadow: 1px 1px 5px #459bf1;
+=======
+.img-sub {
+  height: 30px;
+  width: auto;
+  position: relative;
+  top: 10px;
+  margin: 5px;
+>>>>>>> c06c724 (no push)
 }
