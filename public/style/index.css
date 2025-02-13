@@ -123,6 +123,22 @@ footer{
 .gtext{
     padding: 10px 4px;
 }
+/*  =======================================
+            diseños especiales
+    ======================================= */
+.code{
+    background-color: #03030375;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+.oculto{
+    display: none;
+}
+.visible-flex{
+    display: flex;
+}
 
 /*  =======================================
         Media Query width viewport <= 750px
@@ -169,7 +185,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:550px){
     .p-description{
         width: 80%;
     }

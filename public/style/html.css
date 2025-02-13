@@ -28,3 +28,13 @@ button:hover{
     color: #05455f;
 }
 
+@media only screen and (max-width:550px){
+    #html-sub{
+        width: 100%;
+    }
+    #html-sub>img{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
