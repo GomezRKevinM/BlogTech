@@ -3,6 +3,7 @@
     padding: 0;
     font-family: monospace;
     text-align: center;
+    user-select: none;
 }
 body{
     display: flex;
@@ -34,9 +35,13 @@ a:hover {
 .h1 {
     margin-top: 100px;
 }
+.descriptionContainer > h2{
+    margin-bottom: 15px;
+}
 .descriptionContainer{
     width: 60vw;
-    margin-top: 90px;
+    height: fit-content;
+    margin-top: 60px;
 }
 .descriptionContainerGit{
     width: 60vw;
@@ -65,6 +70,9 @@ a:hover {
 }
 .text {
     font-size: 24px;
+}
+.selector{
+    margin-bottom:25px ;
 }
 .gtext{
     font-size: 20px;
@@ -111,4 +119,68 @@ footer{
 .nameAuthors{
     color: #fff;
     text-shadow: 1px 1px 5px #459bf1;
+}
+.gtext{
+    padding: 10px 4px;
+}
+
+/*  =======================================
+        Media Query width viewport <= 750px
+    ======================================= */
+@media only screen and (min-width:751px) and (max-width:1024px) {
+    .img-gitlab-container{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin: 5px;
+    }
+    .img-gitlab{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:750px) and (min-width:551px) {
+    footer{
+        position:initial;
+        padding: 15px 7px;
+    }
+    .p-description{
+        width: 90%;
+    }
+    .descriptionContainer{
+        width: 100%;
+    }
+
+    /*  ====================
+            git lab
+        ==================== */
+    
+    .img-gitlab{
+        width: 90%;
+    }
+    .descriptionContainerGitLab{
+        width: 100%;
+    }
+    .img-gitlab-container{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .p-description{
+        width: 80%;
+    }
+        /*  ====================
+            git lab
+        ==================== */
+    .descriptionContainerGitLab{
+        width: 100%;
+    }
+    
+    .img-gitlab{
+        width: 80%;
+    }
 }

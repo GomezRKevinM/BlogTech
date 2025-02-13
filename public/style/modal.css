@@ -1,0 +1,67 @@
+#fillScreen{
+    width: 100vw;
+    height: 100%;
+    background-color: #17171745;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.modal{
+    z-index: 11;
+    position: fixed;
+    top: 8vh;
+    left: 17vw;
+    width: 65vw;
+    height: 80%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245;
+    padding: 5px 10px;
+    display: none;
+    contain: content;
+    scroll-behavior: smooth;
+}
+.modal-exit{
+    color: #030838;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    padding: 5px 7px;
+    border-radius: 50%;
+
+}
+.modal-content{
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+.modal-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    border-bottom: 3px solid #c3c3c3;
+    width: 100%;
+}
+/*  =========================
+        tag container
+    =========================  */
+.tag-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tag-info{
+    padding: 10px 7px;
+    border-radius: 5px;
+
+}
+.tag-info > p{
+    display: none;
+}

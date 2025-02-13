@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/html.css">
+    <link rel="stylesheet" href="../style/modal.css">
     <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
     <title>Blogtech | HTML</title>
 </head>
@@ -19,29 +20,291 @@
         </nav>
     </header>
     <main>
-        <div class="descriptionContainer">
+        <div id="html-sub" class="descriptionContainer">
             <h2><img src="../assets/SVG/html5.svg" class="img-sub" alt="logo html">Estructura Basica</h2>
             <img src="../assets/image/htmlcode.png" class="img-cap" alt="Foto de Estructura basica HTML">
         </div>
         <div class="tag-container">
-            <button id="btn-tag-estructura" class="btn-redounded btn-bg-blue" onclick="showModal('example')">Estructura</button>
-            <button class="btn-redounded btn-bg-blue">Texto</button>
-            <button class="btn-redounded btn-bg-blue">Listas</button>
-            <button class="btn-redounded btn-bg-blue">Imagenes y multimedia</button>
-            <button class="btn-redounded btn-bg-blue">Formularios</button>
-            <button class="btn-redounded btn-bg-blue">Tabla</button>
+            <button id="btn-tag-estructura" class="btn-redounded btn-bg-blue" onclick="showModal('Estructura')">Estructura</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Texto')">Texto</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Listas')">Listas</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('img-multimedia')">Imagenes y multimedia</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Formularios')">Formularios</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Tabla')">Tabla</button>
         </div>
 
 
-        <div class="modal" id="example">
-            <h2 class="modal-title">Modal de prueba <button onclick="closeModal('example')" class="modal-exit">X</button></h2>
+        <div class="modal" id="Estructura">
+            <h2 class="modal-title">Estructura <button onclick="closeModal('Estructura')" class="modal-exit">X</button></h2>
             <div class="modal-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis temporibus nisi dolorem natus, voluptates deleniti ratione fugiat necessitatibus cumque mollitia ducimus inventore maiores, molestias unde! Eveniet necessitatibus quo aut.</p>
+                <h2>Etiquetas de Estructura HTML</h2>
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HTML</h2>
+                        <p>Define el documento HTML</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HEAD</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BODY</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>TITLE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>META</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>LINK</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>STYLE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SCRIPT</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>DIV</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SPAN</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HEADER</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>FOOTER</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SECTION</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>ARTICLE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>ASIDE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>NAV</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+                </div>
             </div>
         </div>
 
-          <div id="fillScreen"></div>
+        <div class="modal" id="Texto">
+            <h2 class="modal-title">Texto <button onclick="closeModal('Texto')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>< P ></h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>H1 - H6</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>A</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>STRONG</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>EM</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BR</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HR</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BLOCKQUOTE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>CODE</h2>
+                        <p>Contiene metadatos y enlaces a archivos externos</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Listas">
+            <h2 class="modal-title">Listas <button onclick="closeModal('Listas')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>UL</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>OL</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>LI</h2>
+                        <p></p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="img-multimedia">
+            <h2 class="modal-title">Imagenes y multimedia <button onclick="closeModal('img-multimedia')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>IMG</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>VIDEO</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>AUDIO</h2>
+                        <p></p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Formularios">
+            <h2 class="modal-title">Formularios <button onclick="closeModal('Formularios')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>FORM</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>INPUT</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>LABEL</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>BUTTON</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>SELECT</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>OPTION</h2>
+                        <p></p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Tabla">
+            <h2 class="modal-title">Tabla <button onclick="closeModal('Tabla')" class="modal-exit">X</button></h2>
+            <div class="moda-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TABLE</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>THEAD</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TBODY</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TH</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TR</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TD</h2>
+                        <p></p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fillScreen"></div>
     </main>
     <script src="../script/modal.js"></script>
+    <script src="../script/tag-color.js"></script>
 </body>
 </html>
