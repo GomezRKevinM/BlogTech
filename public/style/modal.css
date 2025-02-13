@@ -18,7 +18,7 @@
     height: 80%;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245;
+    box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245,inset -1px -1px 8px #12121245;
     padding: 5px 10px;
     display: none;
     contain: content;
