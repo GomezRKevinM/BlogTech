@@ -140,9 +140,37 @@ footer{
     display: flex;
 }
 /*  =======================================
-       Animaciones del documento
+       Botones especiales
     ======================================= */
-
+    .head-pre{
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+.btn-copy{
+    background-color: #333;
+    padding: 5px 5px;
+    border-radius: 3px;
+    width: 32px;
+    contain: fit-content;
+    transition: all .5s ease-in;
+    interpolate-size: allow-keywords;
+}
+.btn-copy::before{
+    display: none;
+    content: "Copiar código al portapapeles";
+    margin-right: 5px;
+}
+.btn-copy:hover{
+    cursor: pointer;
+    box-shadow: none;
+    color: #a3d1ff;
+    width: auto;
+}
+.btn-copy:hover.btn-copy::before{
+    display: inline;
+} 
 
 /*  =======================================
         Media Query width viewport <= 750px

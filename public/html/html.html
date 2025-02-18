@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style/html.css">
     <link rel="stylesheet" href="../style/modal.css">
     <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Blogtech | HTML</title>
 </head>
 <body>
@@ -49,8 +50,8 @@
                             <p><span class="code">html</span> Define la apertura de el documento HTML</p>
                             <p><span class="code">/html</span> Es la etiqueta que da cierre al documento HTML</p>
                             <pre>
-                                <h3>Ejemplo</h3>
-                                <code>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
                                     <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
                                     <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                                       <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
@@ -374,5 +375,6 @@
     </main>
     <script src="../script/modal.js"></script>
     <script src="../script/tag-color.js"></script>
+    <script src="../script/copy.js"></script>
 </body>
 </html>
