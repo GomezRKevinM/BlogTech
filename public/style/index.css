@@ -139,6 +139,10 @@ footer{
 .visible-flex{
     display: flex;
 }
+/*  =======================================
+       Animaciones del documento
+    ======================================= */
+
 
 /*  =======================================
         Media Query width viewport <= 750px
