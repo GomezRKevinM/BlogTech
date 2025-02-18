@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
     font-family: monospace;
     text-align: center;
-=======
-* {
-  font-family: monospace;
-  text-align: center;
->>>>>>> c06c724 (no push)
 }
 body {
   display: flex;
@@ -74,7 +68,14 @@ a:hover {
 }
 .gtext {
   font-size: 20px;
-  margin-top: 64px;
+  margin-top: 20px;
+  margin-bottom: 64px;
+}
+.selector{
+  margin: 20px;
+}
+.marginBottom{
+  margin-bottom: 32px;
 }
 .p-description::before {
   content: " ";
@@ -99,7 +100,6 @@ a:hover {
   left: 0;
   border-radius: 4px;
 }
-<<<<<<< HEAD
 .img-sub{
     height: 30px;
     width: auto;
@@ -107,9 +107,12 @@ a:hover {
     top: 10px;
     margin: 5px;
 }
-footer{
-    position:fixed;
-    top: 87%;
+
+.footer{
+    display: grid;
+    margin-top: 85%;
+    align-items: center;
+    justify-items: center;
 }
 .pFooter{
     display: flex;
@@ -118,12 +121,4 @@ footer{
 .nameAuthors{
     color: #fff;
     text-shadow: 1px 1px 5px #459bf1;
-=======
-.img-sub {
-  height: 30px;
-  width: auto;
-  position: relative;
-  top: 10px;
-  margin: 5px;
->>>>>>> c06c724 (no push)
 }
