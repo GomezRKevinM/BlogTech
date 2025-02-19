@@ -139,6 +139,41 @@ footer{
 .visible-flex{
     display: flex;
 }
+.working-section{
+    font-size: 1.2rem;
+    text-shadow: #a3d1ff 0 0 5px;
+}
+.bi-sub{
+    font-size: 5rem;
+    color: #333;
+    transition: all 200ms linear;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.animation-rotate{
+    display: inline-block;
+    animation: rotate 4s linear infinite;
+}
+.animation-rotate[data-index="2"]{
+    color: #fff;
+    position: relative;
+    top: 2rem;
+    right: 1rem;
+    transform: rotate(38deg);
+  animation: rotate 4s linear infinite reverse;
+
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        text-shadow: #459bf1 0 0 5px;
+      }
+      100% {
+        transform: rotate(360deg);
+        text-shadow: #fff 0 0 5px;
+        }
+      
+}
 /*  =======================================
        Botones especiales
     ======================================= */
