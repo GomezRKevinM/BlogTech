@@ -5,24 +5,445 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/html.css">
+    <link rel="stylesheet" href="../style/modal.css">
     <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
-    <title>BootCamp Talento Tech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Blogtech | HTML</title>
 </head>
 <body>
     <header>
-        <h1 class="h1">Registro de lo Aprendido en Clases</h1>
+        <h1 class="h1">BlogTech</h1>
         <nav class="navbar">
             <a href="../index.html" class="ancoresNav">Inicio</a>
             <a href="./git.html" class="ancoresNav ">Git</a>
             <a href="./gitlab.html" class="ancoresNav ">GitLab</a>
             <a href="#" class="ancoresNav a-select">HTML</a>
+            <a href="./js.html" class="ancoresNav">JS</a>
         </nav>
     </header>
     <main>
-        <div class="descriptionContainer">
+        <div id="html-sub" class="descriptionContainer">
             <h2><img src="../assets/SVG/html5.svg" class="img-sub" alt="logo html">Estructura Basica</h2>
             <img src="../assets/image/htmlcode.png" class="img-cap" alt="Foto de Estructura basica HTML">
         </div>
+        <div class="tag-container">
+            <button id="btn-tag-estructura" class="btn-redounded btn-bg-blue" onclick="showModal('Estructura')">Estructura</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Texto')">Texto</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Listas')">Listas</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('img-multimedia')">Imagenes y multimedia</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Formularios')">Formularios</button>
+            <button class="btn-redounded btn-bg-blue" onclick="showModal('Tabla')">Tabla</button>
+        </div>
+
+
+        <div class="modal" id="Estructura">
+            <h2 class="modal-title">Estructura <span class="tag-info-title"></span> <button onclick="closeModal('Estructura')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <h2>Etiquetas de Estructura HTML</h2>
+                <div class="tag-container">
+
+                    <div class="content-tag-info oculto"></div>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HTML</h2>
+                        <div class="tag-info-content">
+                            <p><span class="code">html</span> Define la apertura de el documento HTML</p>
+                            <p><span class="code">/html</span> Es la etiqueta que da cierre al documento HTML</p>
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment">&lt;!-- contenido del head --&gt;</span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment">&lt;!-- contenido del body --&gt;</span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HEAD</h2>
+                        <div class="tag-info-content">
+                            <p><span class="code">head</span> Define la apertura del área del HTML donde almacenaremos metadatas y recurso a utilizar (Enlaces a estilos CSS, ETC)</p>
+                            <p><span class="code">/head</span> Es la etiqueta que da cierre del segmento de metadatos y recursos </p>
+                            <p><span style="font-weight: bold;">Importante: </span>Esta etiqueta se utiliza antes del body, y es clave no confundirla con la etiqueta <span class="code">header</span></p>
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+
+
+                                      <span class="token comment">&lt;!-- Esta información se genera automaticamente al crear el html:5 --&gt;</span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment">&lt;!-- contenido del body --&gt;</span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BODY</h2>
+                        <div class="tag-info-content">
+                            <p><span class="code">body</span> Define la apertura del cuerpo del documento HTML, siendo la zona donde se cargaran las etiquetas que formaran nuestra pagina.</p>
+                            <p><span class="code">/body</span> Es la etiqueta que da cierre al segmento del cuerpo de nuestro documento</p>
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment">&lt;!-- contenido del head --&gt;</span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment">&lt;!-- Contenido del body --&gt;</span>
+                                        <span class="token comment">&lt;!-- Es la sección donde se definen todas las etiquetas a utilizar en nuestro sitio. --&gt;</span>
+                                        <span class="token comment">&lt;!-- Otra forma de entenderlo, es como el contenedor principal del documento (contiene todo).  --&gt;</span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>TITLE</h2>
+                        <div class="tag-info-content">
+                            <p><span class="code">title</span> Define la apertura de la etiqueta encargada de definir el titulo de la pestaña de la pagina. </p>
+                            <p><span class="code">/title</span> Es la etiqueta que da cierre a este apartado del nombre de la pestaña </p>
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                      <span class="token comment">&lt;!-- Lo ideal es que tenga una referencia a la ubicación dentro del sitio web --&gt;</span>
+                                      <span class="token comment">&lt;!-- Por ejemplo: Esta pagina donde estas, su title es BlogTech|HTML --&gt;</span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>META</h2>
+                        <div class="tag-info-content">
+                            <p><span class="code">meta</span> En HTML se usa esta etiqueta para definir metadatos sobre la página web </p>
+                            <p>Esta etiqueta hace parte de las vacias, por lo cual no lleva una etiqueta de cierre.</p>
+                            <p>Tip: Su localización es dentro del head, pues esta no brinda información visible, sino datos ocultos para el adecuado funcionamiento en navegadores y motores de busqueda.</p>
+                        
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                      <span class="token comment2">&lt;!-- Esto asegura que los caracteres especiales (como tildes y ñ) se muestren correctamente. --&gt;</span><br>
+
+                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                      <span class="token comment2">&lt;!-- Permite que la web se adapte correctamente a dispositivos móviles (Responsive Site). --&gt;</span>
+                                    </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>LINK</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>STYLE</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SCRIPT</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>DIV</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SPAN</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HEADER</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>FOOTER</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>SECTION</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>ARTICLE</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>ASIDE</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>NAV</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Texto">
+            <h2 class="modal-title">Texto <button onclick="closeModal('Texto')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>P</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>H1 - H6</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>A</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>STRONG</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>EM</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BR</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>HR</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>BLOCKQUOTE</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                        <h2>CODE</h2>
+                        <div class="tag-info-content">
+                            <p>Contiene metadatos y enlaces a archivos externos code</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Listas">
+            <h2 class="modal-title">Listas <button onclick="closeModal('Listas')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>UL</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>OL</h2>
+                        <p></p>
+                    </section>
+
+                    <section class="tag-info" data-color="purple" data-colortext="white">
+                        <h2>LI</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="img-multimedia">
+            <h2 class="modal-title">Imagenes y multimedia <button onclick="closeModal('img-multimedia')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>IMG</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>VIDEO</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="yellow" data-colortext="white">
+                        <h2>AUDIO</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Formularios">
+            <h2 class="modal-title">Formularios <button onclick="closeModal('Formularios')" class="modal-exit">X</button></h2>
+            <div class="modal-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>FORM</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>INPUT</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>LABEL</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>BUTTON</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>SELECT</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>OPTION</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="Tabla">
+            <h2 class="modal-title">Tabla <button onclick="closeModal('Tabla')" class="modal-exit">X</button></h2>
+            <div class="moda-content">
+                <div class="tag-container">
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TABLE</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>THEAD</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TBODY</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TH</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TR</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="green" data-colortext="white">
+                        <h2>TD</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fillScreen"></div>
     </main>
+    <script src="../script/modal.js"></script>
+    <script src="../script/tag-color.js"></script>
+    <script src="../script/copy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

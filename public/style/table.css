@@ -45,4 +45,16 @@ tr:nth-child(even) {
 =======
     background-color: #f9f9f92c;
 }
+<<<<<<< HEAD
 >>>>>>> ivan:public/style/table.css
+=======
+
+@media only screen and (max-width:750px) {
+    .git-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+>>>>>>> main

@@ -2,4 +2,39 @@
     width: 50vw;
     border-radius: 15px;
     box-shadow: 0 0 12px #030838;
+} 
+.tag-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.btn-redounded{
+    border-radius:15px;
+    padding: 6px 12px;
+}
+.btn-bg-blue{
+    background-color: #5dc4ec;
+}
+button{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+button:hover{
+    box-shadow: 0 0 15px #08cfd2;
+    color: #05455f;
+}
+
+@media only screen and (max-width:550px){
+    #html-sub{
+        width: 100%;
+    }
+    #html-sub>img{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
