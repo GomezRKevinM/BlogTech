@@ -24,6 +24,9 @@
     contain: content;
     scroll-behavior: smooth;
     border: 5px solid transparent;
+    transition: all 200ms ease-in-out;
+    interpolate-size: allow-keywords;
+    animation: pop .5s ease-in-out;
 }
 .modal-exit{
     color: #459bf1;
@@ -152,4 +155,13 @@ code > .comment{
 }
 .tag-head,.tag-body{
     text-indent: 2em;
+}
+
+@keyframes pop {
+    0%{
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
 }
