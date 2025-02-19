@@ -1,106 +1,134 @@
+
+/*Header*/
+
 *{
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    text-align: center;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  text-align: center;
+  user-select: none;
+  font-family: monospace;
+  text-align: center;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #131313;
-    color: white;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  color: white;
 }
-a{
-    text-decoration: none;
-    color: #459bf1;
-    margin: 15px;
+
+a {
+  text-decoration: none;
+  color: #459bf1;
+  margin: 15px;
 }
-a.a-select{
-    font-weight: 900;
-    color: #125293;
+
+a.a-select {
+  font-weight: 900;
+  color: #125293;
 }
+
 a:hover {
-    color: #a3d1ff;
+  color: #a3d1ff;
 }
+
 .wlink {
-    color: #921892;
+  color: #921892;
 }
-.navbar{
-    padding: auto;
-    margin-top: 32px;
-    font-size: 18px;
+
+.navbar {
+  padding: auto;
+  margin-top: 32px;
+  font-size: 18px;
 }
 .h1 {
-    margin-top: 100px;
+  margin-top: 100px;
 }
-.descriptionContainer > h2{
-    margin-bottom: 15px;
-}
+
+
+/*MAIN*/
+
+
 .descriptionContainer{
-    width: 60vw;
-    height: fit-content;
-    margin-top: 60px;
+  width: 60vw;
+  height: fit-content;
+  margin-top: 60px;
 }
-.descriptionContainerGit{
-    width: 60vw;
-    margin-top: 25px;
+
+.descriptionContainerGit {
+  width: 60vw;
+  margin-top: 25px;
 }
-.descriptionContainerGitLab{
-    width: 60vw;
-    margin-top: 45px;
+
+.descriptionContainerGitLab {
+  width: 60vw;
+  margin-top: 45px;
 }
+
 .sub {
-    margin-bottom: 34px;
+  margin-bottom: 34px;
 }
-.p-description{
-    text-align: justify;
-    background: #ccccccaa;
-    padding: 10px 12px;
-    border-radius: 4px;
-    color: green;
-    position: relative;
-    margin: 20px;
-    font-size: 20px;
+
+.p-description {
+  text-align: justify;
+  background: #ccccccaa;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: green;
+  position: relative;
+  margin: 20px;
+  font-size: 20px;
 }
+
 .imgdescription {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
+
 .text {
-    font-size: 24px;
+  font-size: 24px;
 }
+
 .selector{
     margin-bottom:25px ;
 }
+
 .gtext{
-    font-size: 20px;
-    margin-top: 64px;
+  font-size: 20px;
+  margin-top: 64px;
+  padding: 10px 4px;
+  font-size: 20px;
+  margin-top: 64px;
 }
-.p-description::before{
-    content: " ";
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background-color: green;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+
+.p-description::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: green;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
 }
-.p-description.violet{
-    color: #4e0c4e;
+
+.p-description.violet {
+  color: #4e0c4e;
 }
-.p-description.violet::before{
-    content: " ";
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background-color: violet;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+
+.p-description.violet::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: violet;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
 }
+
 .img-sub{
     height: 30px;
     width: auto;
@@ -108,21 +136,25 @@ a:hover {
     top: 10px;
     margin: 5px;
 }
+
+/*Footer*/
+
 footer{
     position:fixed;
     top: 87%;
 }
+
 .pFooter{
     display: flex;
     gap: 45px;
 }
+
 .nameAuthors{
     color: #fff;
     text-shadow: 1px 1px 5px #459bf1;
 }
-.gtext{
-    padding: 10px 4px;
-}
+
+
 /*  =======================================
             diseños especiales
     ======================================= */
@@ -133,9 +165,11 @@ footer{
     border-radius: 4px;
     font-weight: 900;
 }
+
 .oculto{
     display: none;
 }
+
 .visible-flex{
     display: flex;
 }
@@ -143,6 +177,7 @@ footer{
     font-size: 1.2rem;
     text-shadow: #a3d1ff 0 0 5px;
 }
+
 .bi-sub{
     font-size: 5rem;
     color: #333;
@@ -150,39 +185,43 @@ footer{
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
+
 .animation-rotate{
     display: inline-block;
     animation: rotate 4s linear infinite;
 }
+
 .animation-rotate[data-index="2"]{
-    color: #fff;
-    position: relative;
-    top: 2rem;
-    right: 1rem;
-    transform: rotate(38deg);
+  color: #fff;
+  position: relative;
+  top: 2rem;
+  right: 1rem;
+  transform: rotate(38deg);
   animation: rotate 4s linear infinite reverse;
 
 }
+
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
-        text-shadow: #459bf1 0 0 5px;
-      }
-      100% {
-        transform: rotate(360deg);
-        text-shadow: #fff 0 0 5px;
-        }
-      
+      transform: rotate(0deg);
+      text-shadow: #459bf1 0 0 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    text-shadow: #fff 0 0 5px;
+  }
+    
 }
 /*  =======================================
        Botones especiales
     ======================================= */
-    .head-pre{
-        width: 98%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.head-pre{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .btn-copy{
     background-color: #333;
     padding: 5px 5px;
@@ -192,17 +231,20 @@ footer{
     transition: all .5s ease-in;
     interpolate-size: allow-keywords;
 }
+
 .btn-copy::before{
     display: none;
     content: "Copiar código al portapapeles";
     margin-right: 5px;
 }
+
 .btn-copy:hover{
     cursor: pointer;
     box-shadow: none;
     color: #a3d1ff;
     width: auto;
 }
+
 .btn-copy:hover.btn-copy::before{
     display: inline;
 } 
@@ -210,6 +252,7 @@ footer{
 /*  =======================================
         Media Query width viewport <= 750px
     ======================================= */
+
 @media only screen and (min-width:751px) and (max-width:1024px) {
     .img-gitlab-container{
         display: flex;
@@ -230,20 +273,14 @@ footer{
     .p-description{
         width: 90%;
     }
-    .descriptionContainer{
-        width: 100%;
-    }
-
+  
     /*  ====================
             git lab
         ==================== */
-    
     .img-gitlab{
         width: 90%;
     }
-    .descriptionContainerGitLab{
-        width: 100%;
-    }
+
     .img-gitlab-container{
         display: flex;
         align-items: end;
@@ -259,11 +296,16 @@ footer{
         /*  ====================
             git lab
         ==================== */
-    .descriptionContainerGitLab{
-        width: 100%;
-    }
     
     .img-gitlab{
         width: 80%;
+    }
+
+    .img-sub {
+      height: 30px;
+      width: auto;
+      position: relative;
+      top: 10px;
+      margin: 5px;
     }
 }
