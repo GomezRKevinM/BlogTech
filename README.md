@@ -12,10 +12,10 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 > [!NOTE]
 > Proximamente incluiremos un apartado para github y sus herramientas.
 
-- Git
-- Gitlab
-- HTML
-- JS 
+- ![Static Badge](https://img.shields.io/badge/-Git-black?logo=git)
+- ![Static Badge](https://img.shields.io/badge/-gitlab-black?logo=gitlab)
+- ![Static Badge](https://img.shields.io/badge/-Html-black.svg?logo=html)
+- ![Static Badge](https://img.shields.io/badge/-javascript-black?logo=javascript)
 
 > [!IMPORTANT]
 > jS Se encuentra en desarrollo
@@ -38,7 +38,7 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 
 
 ## Participantes
-- Kevin Gómez
+- ![Static badge](https://img.shields.io/badge/Kevin%20Gómez-000?style=for-the-badge&logo=github&logoColor=white)
 - Ivan Quintero
 - Ana Ahumada
 - Jair Hamburger
