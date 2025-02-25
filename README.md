@@ -34,7 +34,7 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 
 | Area | Tema | Descripción | link |
 |------|------|-------------|------|
-| HTML | Estructura|Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de **HTML**|<a src="https://gomezrkevinm.github.io/BlogTech/public/html/html.html">ver</a>|
+| HTML | Estructura|Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de **HTML**|[clic](https://gomezrkevinm.github.io/BlogTech/public/html/html.html)|
 
 
 ## Participantes
