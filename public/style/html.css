@@ -6,7 +6,7 @@
 .img-cap{
     width: 50vw;
     border-radius: 5px;
-    box-shadow: 0 0 12px #030838;
+    box-shadow: 0 0 12px #0301009c;
 } 
 .tag-container{
     display: flex;
@@ -48,7 +48,6 @@ button:hover{
     .img-cap{
         width: 90vw;
         border-radius: 5px;
-        box-shadow: 0 0 12px #030838;
     } 
     .descriptionContainer{
       width: 100%;
