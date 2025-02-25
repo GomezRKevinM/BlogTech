@@ -163,16 +163,50 @@
                     </section>
 
                     <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>LINK</h2>
+                        <h2>A</h2>
                         <div class="tag-info-content">
-                            <p>Contiene metadatos y enlaces a archivos externos</p>
-                        </div>
-                    </section>
+                                <p><span class="code">a</span> es la etiqueta que indica el inicio del enlace de navegación a una Url especifica/p>
+                                <p><span class="code">/a</span> es la etiqueta que indica el final del enlace </p>
+                            
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token attr-name">href</span></span>
+                                        <span class="token comment2">&lt;!-- es el atributo que especifica la URL a la que se enlaza --&gt;</span> 
+                                        <span class="token tag tag-html"><span class="token attr-value">"https://ejemplo.com"</span></span>
+                                        <span class="token comment2">&lt;!-- Es la URL a la que se enlaza --&gt;</span><br>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"https://ejemplo.com"</span><span class="token punctuation">&gt;</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment2">&lt;!-- Los enlaces en HTML también se conocen como hipervínculos. --&gt;</span>    
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
 
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>LINK</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">link</span> se usa principalmente para enlazar archivos externos, como hojas de estilo CSS o íconos</p>
+                                <p>Esta etiqueta hace parte de las vacias, por lo cual no lleva una etiqueta de cierre.</p>                          
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><span class="token attr-name"> rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"icon"</span><span class="token attr-name"> type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"image/png"</span><span class="token attr-name"> href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"favicon.png"</span><span class="token punctuation">&gt;</span><span class="token punctuation"></span></span></span>
+                                        <span class="token comment2">&lt;!-- Agregar un ícono a la pestaña del navegador (favicon). --&gt;</span> 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><span class="token attr-name"> rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"stylesheet"</span><span class="token attr-name"> href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"styles.css"</span><span class="token punctuation">&gt;</span><span class="token punctuation"></span></span></span>
+                                        <span class="token comment2">&lt;!-- Nos permite enlazar una hoja de estilos CSS.--&gt;</span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><span class="token attr-name"> rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"preconnect"</span><span class="token attr-name"> href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"https://fonts.googleapis.com"</span><span class="token punctuation">&gt;</span><span class="token punctuation"></span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><span class="token attr-name"> rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"stylesheet"</span><span class="token attr-name"> href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></span><span class="token punctuation">&gt;</span><span class="token punctuation"></span></span></span>
+                                        <span class="token comment2">&lt;!-- Se utilizan para Google Fonts. --&gt;</span>
+
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
+                 
                     <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
                         <h2>STYLE</h2>
                         <div class="tag-info-content">
-                            <p>Contiene metadatos y enlaces a archivos externos</p>
+                            
                         </div>
                     </section>
 
@@ -447,3 +481,4 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
+
