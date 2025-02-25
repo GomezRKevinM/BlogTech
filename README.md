@@ -1,4 +1,6 @@
 # BlogTech
+
+<a src="https://gomezrkevinm.github.io/BlogTech/public/">Pagina web</a>
 <h3>El blog de Talento Tech⌨️</h3>
 
 ## ¿Que es?
@@ -17,6 +19,23 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 
 > [!IMPORTANT]
 > jS Se encuentra en desarrollo
+
+---
+## Frameworks o dependencias empleadas:
+
+### Boostrap
+ * Se emplearon los iconos pertenecientes a esta libreria.
+
+### SweetAlert2
+ * Se empleo esta libreria para la creación de alertas y notificaciones.
+---
+
+# Tabla de Contenido
+
+| Area | Tema | Descripción | link |
+|------|------|-------------|------|
+| HTML | Estructura|Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de **HTML**|<a src="https://gomezrkevinm.github.io/BlogTech/public/html/html.html">ver</a>|
+
 
 ## Participantes
 - Kevin Gómez
