@@ -38,10 +38,10 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 
 
 ## Participantes
-- ![Static badge](https://img.shields.io/badge/Kevin%20Gómez-000?style=for-the-badge&logo=github&logoColor=white)
-- Ivan Quintero
-- Ana Ahumada
-- Jair Hamburger
-- Luis Ozuna
-- Jailer Vasco
-- Yerlis Manjarrez
+- ![Static badge](https://img.shields.io/badge/Kevin_Gómez-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Ivan_Quientero-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Ana_Ahumada-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Jair_Hamburger-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Luis_Ozuna-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Jailer_Vasco-000?style=for-the-badge&logo=github&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/Yerlis_Manjarrez-000?style=for-the-badge&logo=github&logoColor=white)
