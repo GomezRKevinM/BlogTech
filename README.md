@@ -1,6 +1,6 @@
 # BlogTech
+[pagina web](https://gomezrkevinm.github.io/BlogTech/public/)
 
-<a src="https://gomezrkevinm.github.io/BlogTech/public/">Pagina web</a>
 <h3>El blog de Talento Tech⌨️</h3>
 
 ## ¿Que es?
@@ -37,8 +37,8 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 | HTML | Estructura|Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de **HTML**|[clic](https://gomezrkevinm.github.io/BlogTech/public/html/html.html)|
 
 
-## Participantes
-- ![Static badge](https://img.shields.io/badge/Kevin_Gómez-000?style=for-the-badge&logo=github&logoColor=white)
+## Participantes ![GitHub contributors](https://img.shields.io/github/contributors-anon/gomezrkevinm/BlogTech)
+- ![Static badge](https://img.shields.io/badge/Kevin_Gómez-000?style=for-the-badge&logo=github&logoColor=white) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/gomezrkevinm/BlogTech)
 - ![Static Badge](https://img.shields.io/badge/Ivan_Quientero-000?style=for-the-badge&logo=github&logoColor=white)
 - ![Static Badge](https://img.shields.io/badge/Ana_Ahumada-000?style=for-the-badge&logo=github&logoColor=white)
 - ![Static Badge](https://img.shields.io/badge/Jair_Hamburger-000?style=for-the-badge&logo=github&logoColor=white)
