@@ -17,10 +17,12 @@
 .btn-redounded{
     border-radius:15px;
     padding: 6px 12px;
+    cursor: pointer;
 }
 .btn-bg-blue{
     background-color: #5dc4ec;
 }
+
 button{
     border: none;
     outline: none;
@@ -42,7 +44,7 @@ button:hover{
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
     .img-cap{
         width: 90vw;
         border-radius: 5px;
