@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="icon" href="/assets/image/pngegg.png" type="image/png">
+    <link rel="stylesheet" href="./style/comentarios.css">
     <title>Blogtech | Inicio </title> 
 </head>
 <body>
@@ -18,13 +19,52 @@
         </nav>
     </header>
     <main>
+
         <div class="descriptionContainer">
             <h2 class="sub">Acerca de esta pagina</h2>
             <p class="p-description">Esta pagina está hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.<br>Esperamos puedas aprender mucho con este contenido!! &#129299&#128218</p>
             <p class="p-description violet">Si deseas colaborar en la construcción de este sitio ponte en contacto con nosotros<a class="wlink" href="https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:">Añadir Whatsapp</a><ion-icon name="logo-whatsapp"></ion-icon></p>
         </div>
     </main>
+    <h2>COMENTARIOS</h2>
+    <div id="contenedor-coment" class="container-coment"></div>
+    <div id="data-container"></div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        fetch('http://localhost:3000/api/users')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('data-container');
+                data.forEach(item => {
+                    const div = document.createElement('div');
+                    div.textContent = JSON.stringify(item);
+                    container.appendChild(div);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+
+        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/coments')
+            .then(response => response.json())
+            .then(data => {
+                const contenedor = document.getElementById('contenedor-coment');
+                data.forEach(item =>{
+                    const div = document.createElement('div');
+                    const h3 = document.createElement('h3');
+                    const p = document.createElement('p');
+
+                    div.classList.add("comentario");
+                    h3.classList.add("user-name");
+                    p.classList.add("user-comentario");
+
+                    h3.textContent = item.usuario;
+                    p.textContent= item.comentario;
+
+                    div.appendChild(h3);
+                    div.appendChild(p);
+                    contenedor.appendChild(div);
+                })
+            })
+    </script>
 </body>
 </html>

@@ -32,10 +32,25 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 
 # Tabla de Contenido
 
-| Area | Tema | Descripción | link |
-|------|------|-------------|------|
-| HTML | Estructura|Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de **HTML**|[clic](https://gomezrkevinm.github.io/BlogTech/public/html/html.html)|
-
+<table>
+  <tr>
+    <th>Area</th>
+    <th>Tema</th>
+    <th>Descripción</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <td rowspan="2">HTML</td>
+    <td>Estructura</td>
+    <td>Contiene información sobre todas aquellas etiquetas que hacen parte de la estructura basica de <strong>HTML</strong></td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/html.html">clic</a></td>
+  </tr>
+  <tr>
+    <td>Texto</td>
+    <td>Contiene información sobre todas aquellas etiquetas que nos permiten almacenar textos</td>
+    <td></td>
+  </tr>
+</table>
 
 ## Participantes ![GitHub contributors](https://img.shields.io/github/contributors-anon/gomezrkevinm/BlogTech)
 - ![Static badge](https://img.shields.io/badge/Kevin_Gómez-000?style=for-the-badge&logo=github&logoColor=white) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/gomezrkevinm/BlogTech)
