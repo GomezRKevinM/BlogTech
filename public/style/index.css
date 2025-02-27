@@ -1,13 +1,11 @@
 
-/*Header*/
-*{
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: monospace;
-  text-align: center;
   user-select: none;
-  font-family: monospace;
-  text-align: center;
 }
 
 body {
@@ -18,34 +16,51 @@ body {
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: #459bf1;
-  margin: 15px;
+/* Header */
+header {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-a.a-select {
-  font-weight: 900;
-  color: #125293;
-}
-
-a:hover {
-  color: #a3d1ff;
-}
-
-.wlink {
-  color: #921892;
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .navbar {
-  padding: auto;
-  margin-top: 32px;
-  font-size: 18px;
-}
-.h1 {
-  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 }
 
+.ancoresNav {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.ancoresNav:hover {
+  background-color: #999999;
+  color: #131313;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
 /*MAIN*/
 
@@ -68,6 +83,7 @@ a:hover {
 
 .sub {
   margin-bottom: 34px;
+  text-align: center;
 }
 
 .p-description {
@@ -308,3 +324,41 @@ footer{
       margin: 5px;
     }
 }
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto fuera de la pantalla sin afectar el tamaño de la página */
+    width: 60%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    
+    transition: right 0.4s ease-in-out; /* Animación */
+  }
+
+  .navbar.active {
+    right: 0; /* Se desliza desde la derecha */
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 11;
+  }
+}
+
