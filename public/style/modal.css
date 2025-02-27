@@ -157,6 +157,11 @@ code > .comment2{
     color: #336733;
 }
 
+.token.comment3{
+    color: #336733;
+    padding-left: 120px;
+}
+
 .token.doctype{
     color: #d2d2d250;
 }
@@ -169,11 +174,55 @@ code > .comment2{
 .attr-value{
     color: green;
 }
+
+.attr-value2{
+    color: green;
+    padding-left: 120px;
+}
 .attr-equals{
     color: #d5d5d570;
 }
 .tag-head,.tag-body{
     text-indent: 2em;
+}
+
+.tag-head2{
+    text-indent: 2em;
+    padding-left: 35px;
+}
+
+.tag-head3{
+    text-indent: 2em;
+    padding-left: 100px;
+}
+
+.tag-head4{
+    text-indent: 2em;
+    padding-left: 35px;
+}
+
+.onclick-button{
+    color: orange;
+}
+
+.function-name{
+    color: rgb(73, 141, 243);
+    font-weight: bold;
+}
+
+.function-tag{
+    color: rgb(209, 73, 243);
+    padding-left: 60px;
+}
+
+.function-comp{
+    color: rgb(0, 195, 255);
+    padding-left: 80px;
+}
+
+
+.tag-p{
+    padding-left: 100px;
 }
 
 @keyframes pop {
