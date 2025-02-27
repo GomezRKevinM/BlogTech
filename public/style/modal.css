@@ -145,6 +145,10 @@ code > .comment{
 code > .comment2{
     margin-left: 0px;
 }
+
+code > .comment{
+    margin-left: 10px;
+}
 .token.tag{
     color: #ff5656;
 }
@@ -160,6 +164,11 @@ code > .comment2{
 .token.comment3{
     color: #336733;
     padding-left: 120px;
+}
+
+.token.comment4{
+    color: #336733;
+    padding-left: 40px;
 }
 
 .token.doctype{
