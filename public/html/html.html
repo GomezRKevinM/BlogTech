@@ -248,8 +248,9 @@
                             <div class="tag-info-content">
                                 <p>La etiqueta <span class="code">script</span> se usa para incluir y ejecutar código JavaScript en una página web. Puede ubicarse dentro del <span class="code">head</span> o al final del <span class="code">body</span>, dependiendo de su uso.</p>
                                 <p>Se recomienda colocar los scripts al final del body para mejorar el rendimiento de carga de la página.</p>
+
                                 <pre>
-                                    <h3 class="head-pre">Ejemplo 1 <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <h3 class="head-pre">Ejemplo 1: Script en Head <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                                         <code id="html-code">
                                             <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -257,57 +258,36 @@
                                               <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                                               <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
                                               <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                              
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-    
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-    
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>button </span><span class="token punctuation"><span class="onclick-button">onclick</span><span class="token punctuation attr-equals">=</span><span class="token attr-value">"</span><span class="function-name">saludar</span><span class="onclick-button">()</span><span class="token attr-value">"</span>&gt;Haz clic<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span></span>
-    
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-                                              
-                                              <span class="token comment3">&lt;!-- Aqui se colocarán todas las funciones de JavaScript --&gt;</span>
-    
-    <!--                                           <br><span class="function-tag">function <span class="function-name">saludar<span class="onclick-button">() {</span></span></span>
-                                              <span class="function-comp">alert(<span class="token attr-value">"¡Hola desde JavaScript!"</span>);</span>
-                                              <span class="token comment3">&lt;!-- Al dar clic en el boton "Saludar", se ejecutará la función --&gt;</span> -->
-    
-                                              <br><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-    
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-                                        </code>
-                                </pre>
-    
-                                <pre>
-                                    <h3 class="head-pre">Ejemplo 2 <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                        <code id="html-code">
-                                            <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                              
                                               <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>script <span class="onclick-button">src <span class="token punctuation attr-equals">=<span class="token attr-value">"index.js"</span></span></span></span><span class="token punctuation">&gt;<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span></span>
-    
                                               <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
                                               <br><span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-    
                                               <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
                                         </code>
                                 </pre>
+
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo 2: Script en Body <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>                                           
+                                              <span class="token comment3">&lt;!-- Aqui se colocarán todas las funciones de JavaScript --&gt;</span>
+                                              <br><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                        </code>
+                                </pre>
+
                             </div>
                         </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>SCRIPT</h2>
-                        <div class="tag-info-content">
-                            <p>Contiene metadatos y enlaces a archivos externos</p>
-                        </div>
-                    </section>
 
                     <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
                         <h2>DIV</h2>
