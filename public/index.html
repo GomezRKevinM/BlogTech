@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/modal.css">
     <link rel="icon" href="/assets/image/pngegg.png" type="image/png">
     <link rel="stylesheet" href="./style/comentarios.css">
     <title>Blogtech | Inicio </title> 
@@ -22,16 +23,33 @@
         </button>
     </header>
     <main>
-
         <div class="descriptionContainer">
             <h2 class="sub">Acerca de esta pagina</h2>
             <p class="p-description">Esta pagina está hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.<br>Esperamos puedas aprender mucho con este contenido!! &#129299&#128218</p>
             <p class="p-description violet">Si deseas colaborar en la construcción de este sitio ponte en contacto con nosotros<a class="wlink" href="https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:">Añadir Whatsapp</a><ion-icon name="logo-whatsapp"></ion-icon></p>
         </div>
     </main>
-    <h2 class="comentarios">COMENTARIOS</h2>
+    <div class="title-btn">
+        <h2 class="comentarios">COMENTARIOS</h2>
+        <button class="btn-add" onclick="showModal('login')"><ion-icon name="add" class="icon"></ion-icon> Agregar Comentario</button>
+    </div>
     <div id="contenedor-coment" class="container-coment"></div>
     <div id="data-container"></div>
+
+    <div class="modal" id="login">
+        <h2 class="modal-title">
+            Registrar
+            <span class="tag-info-title"></span> 
+                <a href="#" onclick="closeModal('login')" class="anclamargin">
+                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
+                </a>
+        </h2>
+        <div class="modal-content">
+            
+        </div>
+    </div>
+
+    <script src="./script/modal.js"></script>
     <script src="./script/togglemenu.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -70,5 +88,6 @@
                 })
             })
     </script>
+    <div id="fillScreen"></div>
 </body>
 </html>

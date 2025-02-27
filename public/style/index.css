@@ -171,6 +171,25 @@ footer{
 
 
 /*  =======================================
+            diseños Botones generales
+    ======================================= */
+  .btn-add{
+    background-color: #5ed06f;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.5rem;
+    gap: 5px;
+  }
+  .btn-add:hover{
+    cursor: pointer;
+    box-shadow: #ffffff50 0 0 15px;
+  }
+/*  =======================================
             diseños especiales
     ======================================= */
 .code{
@@ -180,7 +199,12 @@ footer{
     border-radius: 4px;
     font-weight: 900;
 }
-
+.title-btn{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5px 25px;
+}
 .oculto{
     display: none;
 }
@@ -200,6 +224,12 @@ footer{
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
+
+.icon{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 
 .animation-rotate{
     display: inline-block;
