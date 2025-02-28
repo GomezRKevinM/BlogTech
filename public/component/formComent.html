@@ -72,16 +72,21 @@
         <input type="submit" value="Enviar Comentario">
     </form>
     <script>
+        let sessionActive = false;
+        
         document.getElementById('formulario-coment').addEventListener('submit', function(event) {
         event.preventDefault();
     
         const coment = document.getElementById('comentario').value;
         console.log(coment)
-        
-    
-    
-    
-    
+            if(sessionActive){
+                const datos = {
+                    id:0,
+                    usuario: nombre,
+                    comentario: coment,
+                    usuario_id: 3,
+                };
+            }
         const datos = {
             id:0,
             usuario: user,
@@ -90,7 +95,7 @@
             rol:"user"
         };
     
-        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/user', {
+        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/coment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

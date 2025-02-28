@@ -57,6 +57,7 @@
         cursor: pointer;
     }
 </style>
+<link rel="stylesheet" href="sweetalert2.min.css">
 <div >
     <h2>Iniciar Sesión</h2>
     <form id="formulario-login" method="post">
@@ -64,43 +65,44 @@
         <input type="password" placeholder="contraseña" id="password">
         <input type="submit" value="Registrar" class="btn-add">
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        document.getElementById('formulario-login').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const user = document.getElementById('usuario').value;
-        console.log(user)
-        const pass = document.getElementById('password').value;
-        console.log(pass)
-    
-    
-    
-    
-        const datos = {
-            usuario: user,
-            password: pass,
-        };
-    
-        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(datos)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Respuesta de la API:', data);
-            if (data.exito) {
-                alert('Registro exitoso');
-            } else {
-                alert('Error en el registro');
-            }
-        })
-        .catch(error => {
-            console.error('Error en el envío de datos:', error);
-        });
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const usuario = document.getElementById('usuario').value;
+    const password = document.getElementById('password').value;
+
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ usuario, password })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la autenticación');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Inicio de sesión exitoso:', data);
+        formulario.reset();
+                Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Inicio Exitoso",
+                text: "Iniciando Sessión",
+                showConfirmButton: false,
+                timer: 1500
+                });
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
+});
+
     </script>
 </div>
 
