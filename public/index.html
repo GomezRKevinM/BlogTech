@@ -71,6 +71,9 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
+        let sessionActive;
+        let user;
+        let nombre;
         fetch('http://localhost:3000/api/users')
             .then(response => response.json())
             .then(data => {
@@ -82,9 +85,12 @@
                 });
             })
             .catch(error => console.error('Error:', error));
-            
+
         fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/login')
-            .then()
+            .then(data =>{
+                sessionActive = true;
+
+            })
 
         fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/coments')
             .then(response => response.json())

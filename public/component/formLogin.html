@@ -67,7 +67,8 @@
     </form>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-    
+    let user;
+
     const formulario = document.getElementById('formulario-login');
     formulario.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -75,7 +76,7 @@
     const usuario = document.getElementById('usuario').value;
     const password = document.getElementById('password').value;
 
-    fetch('/login', {
+    fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -89,7 +90,11 @@
         return response.json();
     })
     .then(data => {
-        console.log('Inicio de sesión exitoso:', data);
+
+        console.log("Inicio de sesión exitoso");
+        user=data.usuario;
+        console.log(`usuario: ${user.usuario} nombre: ${user.nombre} id: ${user.id}`)
+        
         formulario.reset();
                 Swal.fire({
                 position: "top-end",
@@ -104,7 +109,6 @@
         console.error('Error:', error);
     });
 });
-
     </script>
 </div>
 
