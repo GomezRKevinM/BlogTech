@@ -32,7 +32,7 @@
     </main>
     <div class="title-btn">
         <h2 class="comentarios">COMENTARIOS</h2>
-        <button class="btn-add" onclick="showModal('login')"><ion-icon name="add" class="icon"></ion-icon> Agregar Comentario</button>
+        <button class="btn-add" onclick="showModal('coment')"><ion-icon name="add" class="icon"></ion-icon> Agregar Comentario</button>
     </div>
     <div id="contenedor-coment" class="container-coment"></div>
     <div id="data-container"></div>
@@ -47,7 +47,21 @@
         </h2>
         <div class="modal-content">
             <div class="container-object">
-                <object data="./component/fromLogin.html" type="text/html" class="embedded-object"></object>
+                <object data="./component/formRegister.html" type="text/html" class="embedded-object"></object>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="coment">
+        <h2 class="modal-title">
+            Agregar Comentario 
+            <span class="tag-info-title"></span> 
+            <a href="#" onclick="closeModal('coment')" class="anclamargin">
+                <img class="modal-close"src="./assets/cerrar.png" alt="closeModal">
+            </a>
+        </h2>
+        <div class="modal-content">
+            <div class="container-object">
+                <object data="./component/formComent.html" type="text/html" class="embedded-object"></object>
             </div>
         </div>
     </div>
