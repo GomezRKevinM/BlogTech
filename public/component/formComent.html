@@ -27,9 +27,10 @@
 </style>
 <div >
     <h2>Nuevo Comentario</h2>
+    <form id="formulario-coment"></form>
     <textarea name="text" id="comentario" placeholder="Mensaje..."></textarea>
     <script>
-        document.getElementById('formulario-registro').addEventListener('submit', function(event) {
+        document.getElementById('formulario-coment').addEventListener('submit', function(event) {
         event.preventDefault();
     
         const user = document.getElementById('usuario').value;
