@@ -28,6 +28,7 @@
             <p class="p-description">Esta pagina está hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.<br>Esperamos puedas aprender mucho con este contenido!! &#129299&#128218</p>
             <p class="p-description violet">Si deseas colaborar en la construcción de este sitio ponte en contacto con nosotros<a class="wlink" href="https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:">Añadir Whatsapp</a><ion-icon name="logo-whatsapp"></ion-icon></p>
         </div>
+        <div id="fillScreen"></div>
     </main>
     <div class="title-btn">
         <h2 class="comentarios">COMENTARIOS</h2>
@@ -38,14 +39,16 @@
 
     <div class="modal" id="login">
         <h2 class="modal-title">
-            Registrar
+            Registro de usuario 
             <span class="tag-info-title"></span> 
-                <a href="#" onclick="closeModal('login')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a>
+            <a href="#" onclick="closeModal('login')" class="anclamargin">
+                <img class="modal-close"src="./assets/cerrar.png" alt="closeModal">
+            </a>
         </h2>
         <div class="modal-content">
-            
+            <div class="container-object">
+                <object data="./component/fromLogin.html" type="text/html" class="embedded-object"></object>
+            </div>
         </div>
     </div>
 
@@ -88,6 +91,5 @@
                 })
             })
     </script>
-    <div id="fillScreen"></div>
 </body>
 </html>

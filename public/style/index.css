@@ -64,7 +64,6 @@ header {
 
 /*MAIN*/
 
-
 .descriptionContainer{
   width: 60vw;
   height: fit-content;
@@ -208,11 +207,22 @@ footer{
 .oculto{
     display: none;
 }
-
+.embedded-object{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container-object{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .visible-flex{
     display: flex;
 }
 .working-section{
+  text-align: center;
     font-size: 1.2rem;
     text-shadow: #a3d1ff 0 0 5px;
 }
