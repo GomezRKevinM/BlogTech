@@ -57,25 +57,19 @@
         cursor: pointer;
     }
 </style>
-<link rel="stylesheet" href="sweetalert2.min.css">
 <div >
-    <h2>Resgistrar Usuario</h2>
-    <form id="formulario-registro" method="post">
-        <input type="text" placeholder="nombre" id="nombre">
+    <h2>Iniciar Sesión</h2>
+    <form id="formulario-login" method="post">
         <input type="text" placeholder="nombre de usuario" id="usuario">
         <input type="password" placeholder="contraseña" id="password">
         <input type="submit" value="Registrar" class="btn-add">
     </form>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        const formulario = document.getElementById('formulario-registro');
-       formulario.addEventListener('submit', function(event) {
+        document.getElementById('formulario-login').addEventListener('submit', function(event) {
         event.preventDefault();
     
         const user = document.getElementById('usuario').value;
         console.log(user)
-        const name = document.getElementById('nombre').value;
-        console.log(name)
         const pass = document.getElementById('password').value;
         console.log(pass)
     
@@ -83,14 +77,11 @@
     
     
         const datos = {
-            id:0,
             usuario: user,
             password: pass,
-            nombre: name,
-            rol:"user"
         };
     
-        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/user', {
+        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -101,24 +92,9 @@
         .then(data => {
             console.log('Respuesta de la API:', data);
             if (data.exito) {
-                formulario.reset();
-                Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Registro Exitoso",
-                text: "El usuario ha sido guardado exitosamente",
-                showConfirmButton: false,
-                timer: 1500
-                });
+                alert('Registro exitoso');
             } else {
-                Swal.fire({
-                position: "top-end",
-                icon: "error",
-                title: "Your work has been saved",
-                text: "Error en el registro",
-                showConfirmButton: false,
-                timer: 1500
-                });
+                alert('Error en el registro');
             }
         })
         .catch(error => {
