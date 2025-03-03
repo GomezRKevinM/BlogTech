@@ -86,13 +86,8 @@
             })
             .catch(error => console.error('Error:', error));
 
-        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/login')
-            .then(data =>{
-                sessionActive = true;
 
-            })
-
-        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/coments')
+        fetch('https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/api/coments')
             .then(response => response.json())
             .then(data => {
                 const contenedor = document.getElementById('contenedor-coment');

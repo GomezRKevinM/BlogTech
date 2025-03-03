@@ -9,6 +9,16 @@
     gap: 20px;
     padding-bottom: 20px;
 }
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: #88888850;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #e2ef34;
+    border-radius: 4px;
+    transition: all 300ms ease-in-out;
+}
+
 
 /*  =======================
         Navegador Lateral
@@ -125,6 +135,7 @@
     box-shadow: #e2ef34 0 0 5px;
     -webkit-text-stroke: 1px #ffffff;
     margin: 20px ;
+    text-align: center;
 }
 .p-text{
     width: 90%;
