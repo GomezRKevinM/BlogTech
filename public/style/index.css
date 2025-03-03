@@ -14,6 +14,7 @@ body {
   align-items: center;
   background-color: #131313;
   color: white;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -49,6 +50,10 @@ header {
 }
 
 .ancoresNav:hover {
+  background-color: #999999;
+  color: #131313;
+}
+.a-select{
   background-color: #999999;
   color: #131313;
 }
