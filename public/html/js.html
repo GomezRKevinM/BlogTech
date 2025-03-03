@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/js.css">
+    <link rel="stylesheet" href="../style/modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Blogtech | Javascript</title>
 </head>
@@ -62,26 +63,82 @@
             <section class="main-section visible">
                 <h2 class="title-section">¿Qué es Javascript?</h2>
                 <p class="p-text">
-                    <strong>JavaScript(JS)</strong>  es un lenguaje de programación ligero, interpretado, o compilado <strong>justo-a-tiempo (just-in-time)</strong> con funciones de primera clase. Si bien es más conocido como un lenguaje de <strong>scripting (secuencias de comandos)</strong> para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional). Lee más en acerca de JavaScript.
+                    <strong>JavaScript(JS)</strong>  es un lenguaje de programación ligero, interpretado, o compilado <strong>justo-a-tiempo (just-in-time)</strong> con funciones de primera clase. Si bien es más conocido como un lenguaje de <strong>scripting (secuencias de comandos)</strong> para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional).
                 </p>
             </section>
             <section class="main-section visible" id="Variables">
                 <h2 class="title-section">Variables</h2>
                 <p class="p-text">
                     Una variable es una referencia guarda en la ram, esta referencia es capaz de almacenar información para luego solicitarla e implementarla en algun tipo de algoritmo, función, etc.
+                    En otras palabras una variable puede contener información almacenada y darnos esta información cuando la necesitemos
+                    <pre lang="js">
+                        <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                        <code id="html-code">
+                             <span class="toke">const mi_nombre = "carlos";</span>
+                             <span class="toke tag">console.log(mi_nombre); <span class="token comment">//carlos</span></span>
+                        </code>
+                    </pre>
                 </p>
-                <p class="p-text">
-                    <h3 class="sub-text">Tipos de variables</h3>
+
+                    <h3 class="list-tittle">Tipos de variables</h3>
+                    <ul>
+                        <li>const
+                            <p><strong>const</strong> es un tipo de variable <strong class="yellow">constante</strong>. Es decir que su valor es inmutable, no puede ser cambiado. <strong>ejemplos de variables constantes: la gravedad,id,PI,etc.</strong></p>
+                        </li>
+                        
+                        <li>let
+                            <p><strong>let</strong> es un tipo de variable general, esta variable puede almacenar diferentes valores y tiene permitido cambiar su valor en un futuro (es decir, puedes cambiar su valor tantas veces como quieras o lo necesites)</p><strong>Ejemplos de variables let: la edad, estatura, velocidad,etc.</strong>
+                        </li>
+                        <li>var
+                            <p><strong>var</strong> al igual que <strong class="yellow">let</strong> es una variable general, funciona exactamente igual a let pero var es la precursora de <strong class="yellow">let</strong> (es decir, es más vieja). pero, var suele presentar problemas en tiempos de ejecución al ser una variable casi obsoleta.
+                            <strong>Todo el mundo del desarrollo web apunta e incita a usar let y dejar var en el pasado (sin embargo puedes usarla aún si quieres <strong class="yellow">pero recuerda que es recomendable usar let</strong>)</strong></p>
+                        </li>
+                    </ul>
+                    <h3 class="list-tittle">Tipos de datos</h3>
                     <ul>
                         <li>Cadena de texto (String)</li>
                         <li>Number (int, float, double)</li>
                         <li>Booleanos (true,false,comparaciones)</li>
                         <li>Vacias o indefinidas (null, undefine, NaN)</li>
                     </ul>
-                </p>
-                <p class="p-text">
-                
-                </p>
+                    <p class="p-text">
+                        Las variables deben ser declaradas para posteriormente recibir una asignación(Asignarle un valor), ¿como podemos 
+                        hacer esto? <br>
+                        Primero comencemos por comprender que es una <strong>Declaración</strong> y una <strong>Asignación</strong> <br>
+                        <strong class="yellow">Declaración: </strong>La Declaración es el termino que recibe una variable al ser declarada(es decir, creada). <br>
+                        <strong class="yellow">Asiganción: </strong>La Asignación es el termino que recibe la acción de asignarle (darle o guardar) un valor a la variable. <br>
+                        <strong>IMPORTANTE:</strong>Con la anterior información, se puede deducir que no se puede asignar un valor a una variable sin haberla declarado antes, puesto que si no ha sido declarada simplemente no existe y por ende no puede almacenar un valor.
+                    </p>
+                    <h3 class="list-tittle">Como declarar una variable</h3>
+                    <p class="p-text">
+                        Para declarar una variable, debemos escribr primero que tipo de variable es <strong>(</strong><strong class="yellow">const, let o var</strong><strong>)</strong> y luego darle un nombre.
+                    </p>
+                        <pre>
+                            <h3>Ejemplo</h3>
+                            <code>
+                                <span>const id; <span class="token comment">// id se encuentra declarada</span></span>
+                            </code>
+                        </pre>
+                    <h3 class="list-tittle">Como asignar un valor a una variable</h3>
+                    <p class="p-text">
+                        Para asignar un valor a una variable empleamos el signo de igualdad <strong>"="</strong>, esto lo podemos hacer ya sea cuando declaramos la variable o posteriormente al llamar a la variable. <br>
+                    </p>
+
+                    <pre>
+                        <h3><strong >Asignar en la misma declaración</strong></h3>
+                        <code>
+                            <span class="token">const cedula <span class="yellow"> = </span>1001974052;</span><span class="token comment">// aqui declaramos (creamos la variable) y al mismo tiempo le asignamos un valor.</span>
+                        </code>
+                    </pre>
+                    
+                    <pre>
+                        <h3><strong>Asignar valor llamando a la variable</strong></h3>
+                        <code>
+                            <span class="token">const edad;</span><span class="token comment">// declaramos la variable strong edad</span><br>
+                            <span class="token">const answer <strong class="yellow">=</strong> prompt("<strong class="yellow">¿Cual es tu edad?</strong>");</span> <span class="token comment">// pedimos información al usuario usando un prompt (mas adelante veremos qué es).</span> <br>
+                            <span class="token">edad <strong class="yellow">=</strong> answer;</span><span class="token comment">// le asignamos el valor que nos ingreso el usuario.</span>
+                        </code>
+                    </pre>
             </section>
             <section class="main-section">
                 <h2 class="title-section">Condicionales</h2>
@@ -98,5 +155,6 @@
     </main>
     <script src="../script/copy.js"></script>
     <script src="../script/nav-lat.js"></script>
+    <script src="../script/modal.js"></script>
 </body>
 </html>

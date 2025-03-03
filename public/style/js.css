@@ -124,6 +124,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     height: fit-content;
     display: none;
+    margin-bottom: 2rem;
 }
 .title-section{
     width: 100%;
@@ -147,4 +148,34 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.4rem;
     word-spacing: 2px;
     line-height: 2rem;
+}
+.list-tittle{
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    text-shadow: var(--color-yellow) 1px 1px 15px;
+    color: var(--color-yellow);
+    background-color: var(--shadow-white-transparent);
+    padding: 4px;
+    border-radius: 5px;
+    margin: 9px;
+}
+ul{
+    width: 100%;
+    text-align: left;
+    list-style:circle;
+    padding: 7px 12px;
+}
+li{
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+strong{
+    text-shadow: #fff 1px 1px 15px;
+}
+.yellow{
+    color: var(--color-yellow);
+}
+strong.yellow{
+    text-shadow: var(--color-yellow) 1px 1px 15px;
 }
