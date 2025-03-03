@@ -37,7 +37,7 @@
     <div id="contenedor-coment" class="container-coment"></div>
     <div id="data-container"></div>
 
-    <div class="modal" id="login">
+    <!-- <div class="modal" id="login">
         <h2 class="modal-title">
             Registro de usuario 
             <span class="tag-info-title"></span> 
@@ -50,7 +50,7 @@
                 <object data="./component/formRegister.html" type="text/html" class="embedded-object"></object>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="modal" id="coment">
         <h2 class="modal-title">
             Agregar Comentario 
@@ -74,18 +74,6 @@
         let sessionActive;
         let user;
         let nombre;
-        fetch('http://localhost:3000/api/users')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('data-container');
-                data.forEach(item => {
-                    const div = document.createElement('div');
-                    div.textContent = JSON.stringify(item);
-                    container.appendChild(div);
-                });
-            })
-            .catch(error => console.error('Error:', error));
-
 
         fetch('https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/api/coments')
             .then(response => response.json())

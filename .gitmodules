@@ -1,0 +1,3 @@
+[submodule "BlogTech"]
+    path = BlogTech
+    url = https://github.com/GomezRKevinM/BlogTech.git
