@@ -15,10 +15,12 @@ function closeModal(id){
         const title = modal.querySelector('.tag-info-title');
         const contenido = modal.querySelector('.content-tag-info');
 
-        modal.querySelector('.modal-title').style.backgroundColor="#363636";
-        modal_title.style.backgroundColor="#363636";
-        title.innerText="";
-        contenido.innerHTML="";
+        if(modal_title && title && contenido){
+            modal.querySelector('.modal-title').style.backgroundColor="#363636";
+            modal_title.style.backgroundColor="#363636";
+            title.innerText="";
+            contenido.innerHTML="";
+        }
     })
     backdrop.style.display="none";
     modal.style.display="none";

@@ -1,6 +1,8 @@
 const mysql = require('mysql')
-const usuarios = "SELECT * FROM usuarios"
 let query;
+let id;
+let usuario;
+let nombre;
 
 let conexion = mysql.createConnection({
     host:"bmbyloffayp6set7ymmr-mysql.services.clever-cloud.com",
@@ -20,28 +22,43 @@ conexion.connect((err)=>{
 })
 
 function selecionarDatos(tabla,tipo,columna,id){
-    switch (tipo){
-        case "Normal":
-            query="SELECT * FROM "+tabla;
-            break;
-        case "Columna":
-            query="SELET '"+columna+"' FROM"+tabla;
-            break;
-        case "Unico":
-            query="SELECT * FROM "+tabla+" WHERE "+columna+"="+id;
-            break;
-    }
-    conexion.query(query,(error,lista)=>{
-        if(error){
-            throw error
-        }else{
-            console.log(lista)
-            return lista
+    return new Promise((resolve,reject)=>{
+        switch (tipo){
+            case "Normal":
+                query="SELECT * FROM "+tabla;
+                break;
+            case "Columna":
+                query="SELET '"+columna+"' FROM"+tabla;
+                break;
+            case "Unico":
+                query="SELECT * FROM "+tabla+" WHERE "+columna+"="+id;
+                break;
         }
-    }) 
+        conexion.query(query,(error,lista)=>{
+            if(error){
+                reject(error)
+            }else{
+                console.log(lista)
+                resolve(lista)
+            }
+        }) 
+    })
 }
 
-selecionarDatos("usuarios","Normal","*",0);
-selecionarDatos("comentarios","Normal","*",0);
+selecionarDatos("usuarios","Unico","id",1)
+    .then(datos =>{
+        id = datos[0].id;
+        usuario = datos[0].usuario;
+        nombre = datos[0].nombre;
+
+        console.log('ID:', id);
+        console.log('Usuario:', usuario);
+        console.log('Nombre:', nombre);
+    })
+    .catch(error =>{
+        console.error('Error al seleccionar datos',error)
+    })
+
+
 
 conexion.end()

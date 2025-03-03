@@ -1,0 +1,130 @@
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    html{
+        overflow: hidden;
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    input{
+        font-size: 1.5rem;
+        border: 2px solid #d4d4d4;
+        padding: 4px 7px;
+        border-radius: 5px;
+        transition: all 200ms ease-in-out;
+        color: #888;
+    }
+    input:focus{
+        border: 2px solid #42a0c5;
+        box-shadow: #42a0c5 0 0 5px;
+        outline: none;
+    }
+    input::placeholder{
+        color: #42a0c5;
+        font-weight: 500;
+    }
+    form{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: #555 0 0 3px;
+        gap: 10px;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+    h2{
+        color: #42a0c5;
+    }
+    input[type="submit"]{
+        background-color: rgb(102, 197, 79);
+        border-radius: 5px;
+        border: none;
+        font-weight: 700;
+        color: #fff;
+        padding: 5px 10px;
+        transition: all 200ms ease-in-out;
+    }
+    input[type="submit"]:hover{
+        cursor: pointer;
+    }
+</style>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<div >
+    <h2>Resgistrar Usuario</h2>
+    <form id="formulario-registro" method="post">
+        <input type="text" placeholder="nombre" id="nombre">
+        <input type="text" placeholder="nombre de usuario" id="usuario">
+        <input type="password" placeholder="contraseña" id="password">
+        <input type="submit" value="Registrar" class="btn-add">
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const formulario = document.getElementById('formulario-registro');
+       formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const user = document.getElementById('usuario').value;
+        console.log(user)
+        const name = document.getElementById('nombre').value;
+        console.log(name)
+        const pass = document.getElementById('password').value;
+        console.log(pass)
+    
+    
+    
+    
+        const datos = {
+            id:0,
+            usuario: user,
+            password: pass,
+            nombre: name,
+            rol:"user"
+        };
+    
+        fetch('https://app-8edf8cb5-03b9-4aaa-b441-2dc3b88977d1.cleverapps.io/api/user', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(datos)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Respuesta de la API:', data);
+            if (data.exito) {
+                formulario.reset();
+                Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Registro Exitoso",
+                text: "El usuario ha sido guardado exitosamente",
+                showConfirmButton: false,
+                timer: 1500
+                });
+            } else {
+                Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Your work has been saved",
+                text: "Error en el registro",
+                showConfirmButton: false,
+                timer: 1500
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error en el envío de datos:', error);
+        });
+    });
+    </script>
+</div>
+
