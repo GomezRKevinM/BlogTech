@@ -15,4 +15,3 @@ nav_items.forEach((item)=>{
         location.href="#"+item.innerText;
     })
 })
-let edad = 28;

@@ -201,16 +201,15 @@
                             <h3>Ejemplo de <strong>switch</strong></h3>
                             <code>
                                 <span><span class="js-primary">let</span> <span class="js-let">langSelect</span> = <span class="js-text">"es"</span>;</span>
-                                <span><span class="js-const">const</span></span>
                                 <span> </span>
-                                <span> <span class="js-primary">switch</span> (langSelect)<span class="js-primary">{</span></span>
-                                <span>  case "es":</span>
-                                <span>      console.log("el usuario selecciono español")</span>
+                                <span> <span class="js-primary">switch</span><span class="js-const">(</span><span class="js-let">langSelect</span><span class="js-const">)</span><span class="js-primary">{</span></span>
+                                <span>  <span class="js-secondary">case</span> <span class="js-text">"es"</span>:</span>
+                                <span>      <span class="js-const">console</span>.<span class="js-secondary">log</span><span class="js-primary">(</span><span class="js-text">"el usuario selecciono español"</span><span class="js-primary">)</span></span>
                                 <span>  <span class="js-br">break</span>;</span>
-                                <span>  case "en":</span>
-                                <span>      console.log("the user is select english")</span>
+                                <span>  <span class="js-secondary">case</span> <span class="js-text">"en"</span>:</span>
+                                <span>      <span class="js-const">console</span>.<span class="js-secondary">log</span><span class="js-primary">(</span><span class="js-text">"the user is select english"</span><span class="js-primary">)</span></span>
                                 <span>  <span class="js-br">break</span>;</span>
-                                <span class="js-primary">  default:</span>
+                                <span class="js-secondary">  default:</span>
                                 <span class="token comment">// el default funciona como un else, es decir se ejecutará sí no se cumple ningun caso.</span>
                                 <span>  <span class="js-br">break</span>;</span>
                                 <span class="js-primary">}</span>
