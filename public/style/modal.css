@@ -60,6 +60,15 @@
     overflow: auto;
     padding: 20px;
 }
+.modal-content::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+}
+.modal-content::-webkit-scrollbar-thumb{
+    background-color: #888888;
+    border-radius: 2px;
+}
+
 .modal-title{
     display: flex;
     align-items: center;
