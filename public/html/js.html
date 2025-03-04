@@ -74,8 +74,8 @@
                     <pre lang="js">
                         <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="html-code">
-                             <span class="toke">const mi_nombre = "carlos";</span>
-                             <span class="toke tag">console.log(mi_nombre); <span class="token comment">//carlos</span></span>
+                             <span class="token">const mi_nombre = "carlos";</span>
+                             <span class="token">console.log(mi_nombre); <span class="token comment">//carlos</span></span>
                         </code>
                     </pre>
                 </p>
@@ -140,9 +140,41 @@
                         </code>
                     </pre>
             </section>
-            <section class="main-section">
+            <section class="main-section visible">
                 <h2 class="title-section">Condicionales</h2>
-                <p class="p-text"></p>
+                <p class="p-text">
+                    Los condicionales es la forma de otorgar condiciones a nuestro código, dandole opciones de ejecución segun una o multiples condiciones.
+                </p>
+                <h3 class="list-tittle">Condicionales</h3>
+                <ul>
+                    <li><strong>if</strong>
+                        <p><strong class="yellow">IF</strong>(sí), es el encargado de recibir la condición inicial, al igual que en nuestro español <strong>sí</strong> hace referencia a un resultado depentiende. <strong>Ejemplo:</strong>yo comprare ropa <strong>sí</strong> me pagan.</p>
+                    </li>
+                    <li><strong>else if</strong>
+                        <p><strong class="yellow">ELSE IF</strong> comparte las mismas propiedades que <strong class="yellow">IF</strong>, la unica diferencia es que if es la condición principal(la primera en ser leida y analizada por el sistema) mientras que <strong>else if</strong> solo participa si la condición de <strong>if</strong> no es cumplida. (como una condición adicional en caso de que no se cumpla la primera).<br><strong class="yellow">Puedes crear tantas else if como necesites</strong>.</p>
+                    </li>
+                    <li><strong>else</strong>
+                        <p><strong class="yellow">ELSE</strong> es la negación de todas las condiciones anteriores, es decir, en else se almacena el código que sera ejecuta en cualquier caso que no se cumpla la o las condiciones anteriores (if y else if)</p>
+                    </li>
+                </ul>
+                <h3 class="list-tittle">Estructuras</h3>
+                <div class="dis-flex justify-center gp-15">
+                    <pre lang="js">
+                        <h3>Estructura de un if</h3>
+                        <code>
+                            <span>if <strong>(condición)</strong><span class="yellow">{</span></span>
+                                <span class="token comment">// código aquí</span>
+                                <span class="yellow">}</span>
+                        </code>
+                    </pre>
+                    <pre lang="js">
+                        <h3>Estructura de un else if</h3>
+                        <code>
+                            <span>else if <strong>(condición)</strong><strong>{</strong></span>
+                        </code>
+                    </pre>
+                </div>
+
             </section>
 
             <section class="working-section">
