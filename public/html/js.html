@@ -145,7 +145,7 @@
                 <p class="p-text">
                     Los condicionales es la forma de otorgar condiciones a nuestro código, dandole opciones de ejecución segun una o multiples condiciones.
                 </p>
-                <h3 class="list-tittle">Condicionales</h3>
+                <h3 class="list-tittle">Condicionales Basicos</h3>
                 <ul>
                     <li><strong>if</strong>
                         <p><strong class="yellow">IF</strong>(sí), es el encargado de recibir la condición inicial, al igual que en nuestro español <strong>sí</strong> hace referencia a un resultado depentiende. <strong>Ejemplo:</strong>yo comprare ropa <strong>sí</strong> me pagan.</p>
@@ -154,7 +154,8 @@
                         <p><strong class="yellow">ELSE IF</strong> comparte las mismas propiedades que <strong class="yellow">IF</strong>, la unica diferencia es que if es la condición principal(la primera en ser leida y analizada por el sistema) mientras que <strong>else if</strong> solo participa si la condición de <strong>if</strong> no es cumplida. (como una condición adicional en caso de que no se cumpla la primera).<br><strong class="yellow">Puedes crear tantas else if como necesites</strong>.</p>
                     </li>
                     <li><strong>else</strong>
-                        <p><strong class="yellow">ELSE</strong> es la negación de todas las condiciones anteriores, es decir, en else se almacena el código que sera ejecuta en cualquier caso que no se cumpla la o las condiciones anteriores (if y else if)</p>
+                        <p><strong class="yellow">ELSE</strong> es la negación de todas las condiciones anteriores, es decir, en else se almacena el código que sera ejecuta en cualquier caso que no se cumpla la o las condiciones anteriores (if y else if)
+                        <br><strong class="yellow">Else no necesita una condición</strong> ya que su condición es que no se cumpla ningun <strong>if</strong> o <strong>else if</strong>.</p>
                     </li>
                 </ul>
                 <h3 class="list-tittle">Estructuras</h3>
@@ -184,7 +185,52 @@
                         </code>
                     </pre>
                 </div>
-
+            
+                <h3 class="list-tittle">Condicionales avanzandos</h3>
+                <p class="p-text">
+                    Los condicionales avanzados son <strong class="yellow">switch case</strong> y <strong class="yellow">El operador ternario</strong>, teniendo usos practicos y especificos para ocasiones especiales.
+                </p>
+                <ul>
+                    <li><strong>Switch:</strong>
+                        <p>Switch case se utiliza para emplear condiciones espcificas llamadas <strong class="yellow">case</strong> (caso) en relación a una variable.<br>
+                        El switch utiliza los casos para evaluar valores o resultados puntuales de una variable. <br>
+                        <strong class="yellow">IMPORTANTE:</strong>
+                        <strong>switch</strong> es util para aquellos casos donde queremos definir comportamientos o procesos a resultados especificos, y tambien para cuando tienes más de 3 condiciones, de esta manera el código se verá más organizado en <strong>case</strong> que en <strong>else if</strong>.
+                        </p>
+                        <pre>
+                            <h3>Ejemplo de <strong>switch</strong></h3>
+                            <code>
+                                <span><span class="js-primary">let</span> <span class="js-let">langSelect</span> = <span class="js-text">"es"</span>;</span>
+                                <span><span class="js-const">const</span></span>
+                                <span> </span>
+                                <span> <span class="js-primary">switch</span> (langSelect)<span class="js-primary">{</span></span>
+                                <span>  case "es":</span>
+                                <span>      console.log("el usuario selecciono español")</span>
+                                <span>  <span class="js-br">break</span>;</span>
+                                <span>  case "en":</span>
+                                <span>      console.log("the user is select english")</span>
+                                <span>  <span class="js-br">break</span>;</span>
+                                <span class="js-primary">  default:</span>
+                                <span class="token comment">// el default funciona como un else, es decir se ejecutará sí no se cumple ningun caso.</span>
+                                <span>  <span class="js-br">break</span>;</span>
+                                <span class="js-primary">}</span>
+                            </code>
+                        </pre>
+                    </li>
+                    <li><strong>Operador ternario:</strong>
+                        <p>El operador ternario nos permite hacer una condición de una sola linea: es decir, condición, resultado si la condición es verdadera (sí se cumple) y resultado si la condición es falsa (no se cumple) <br>
+                        <strong class="yellow">IMPORTANTE:</strong> El operador ternario es util solo y cuando tengas 1 condición y quieras establecer 2 comportamientos distintos para esa condición ( 1 comportamiento sí se cumple y otro sí no se cumple).
+                        </p>
+                        <pre>
+                            <h3>Ejemplo de <strong>Operador ternario</strong></h3>
+                            <code>
+                                <span>let edad = 14;</span>
+                                <span>let esMayor = edad >= 18 ? "Es mayor de edad" : "No es mayor de edad";</span>
+                                <span>console.log(edad) <span class="token comment">// No es mayor de edad</span></span>
+                            </code>
+                        </pre>
+                    </li>
+                </ul>
             </section>
 
             <section class="working-section">
