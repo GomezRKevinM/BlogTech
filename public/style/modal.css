@@ -230,6 +230,13 @@ code > .comment{
     padding-left: 80px;
 }
 
+.h1-size { font-size: 32px; }  /* Encabezado más grande */
+.h2-size { font-size: 24px; }
+.h3-size { font-size: 20px; }
+.h4-size { font-size: 16px; }  /* Igual al tamaño estándar del texto */
+.h5-size { font-size: 14px; }
+.h6-size { font-size: 12px; }  /* Encabezado más pequeño */
+
 
 .tag-p{
     padding-left: 100px;
