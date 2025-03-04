@@ -14,6 +14,7 @@ body {
   align-items: center;
   background-color: #131313;
   color: white;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -52,6 +53,10 @@ header {
   background-color: #999999;
   color: #131313;
 }
+.a-select{
+  background-color: #999999;
+  color: #131313;
+}
 
 .menu-toggle {
   display: none;
@@ -60,6 +65,15 @@ header {
   border: none;
   color: white;
   cursor: pointer;
+}
+.dis-flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.gp-15{
+  gap: 15px;
 }
 
 /*MAIN*/

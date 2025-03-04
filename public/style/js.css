@@ -9,6 +9,16 @@
     gap: 20px;
     padding-bottom: 20px;
 }
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: #88888850;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #e2ef34;
+    border-radius: 4px;
+    transition: all 300ms ease-in-out;
+}
+
 
 /*  =======================
         Navegador Lateral
@@ -17,11 +27,11 @@
     width: 20%;
     background-color: rgba(1, 1, 1, 0.5);
     padding: 15px 10px;
-    height: 60vh;
+
+    height: fit-content;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: var(--shadow-white-transparent) 0 0 5px;
-    
 }
 .main-section.visible{
     display:flex;
@@ -46,7 +56,9 @@
 }
 .title-group{
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4px;
     background-color: var(--color-yellow);
 }
 .sub-items{
@@ -88,6 +100,7 @@
 }
 .nav-item:hover{
     background-color: var(--shadow-white-transparent);
+    cursor: pointer;
 }
 .content{
     width: 80%;
@@ -111,6 +124,7 @@
     align-items: center;
     height: fit-content;
     display: none;
+    margin-bottom: 2rem;
 }
 .title-section{
     width: 100%;
@@ -125,6 +139,7 @@
     box-shadow: #e2ef34 0 0 5px;
     -webkit-text-stroke: 1px #ffffff;
     margin: 20px ;
+    text-align: center;
 }
 .p-text{
     width: 90%;
@@ -133,4 +148,34 @@
     font-size: 1.4rem;
     word-spacing: 2px;
     line-height: 2rem;
+}
+.list-tittle{
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    text-shadow: var(--color-yellow) 1px 1px 15px;
+    color: var(--color-yellow);
+    background-color: var(--shadow-white-transparent);
+    padding: 4px;
+    border-radius: 5px;
+    margin: 9px;
+}
+ul{
+    width: 100%;
+    text-align: left;
+    list-style:circle;
+    padding: 7px 12px;
+}
+li{
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+strong{
+    text-shadow: #fff 1px 1px 15px;
+}
+.yellow{
+    color: var(--color-yellow);
+}
+strong.yellow{
+    text-shadow: var(--color-yellow) 1px 1px 15px;
 }

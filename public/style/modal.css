@@ -118,6 +118,7 @@ pre{
     background-color: #333;
     border-radius: 5px;
     contain: content;
+    margin: 20px;
 }
 pre > h3{
     color: white;
