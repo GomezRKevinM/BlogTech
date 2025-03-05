@@ -246,6 +246,12 @@ code > .comment{
 .h5-size { font-size: 14px; }
 .h6-size { font-size: 12px; }  /* Encabezado más pequeño */
 
+.head-pre{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .tag-p{
     padding-left: 100px;
