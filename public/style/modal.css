@@ -277,6 +277,8 @@ code > .comment{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    left: 0;
 }
 
 .tag-p{
