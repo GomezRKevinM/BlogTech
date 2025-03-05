@@ -133,7 +133,7 @@ pre{
 
 pre::-webkit-scrollbar{
     width: 8px;
-    height: 8px;
+    height: 9px;
 }
 
 /* Fondo de la barra de desplazamiento */
