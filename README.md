@@ -12,10 +12,10 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 > [!NOTE]
 > Proximamente incluiremos un apartado para github y sus herramientas.
 
-- ![Static Badge](https://img.shields.io/badge/-Git-black?logo=git)
-- ![Static Badge](https://img.shields.io/badge/-gitlab-black?logo=gitlab)
-- ![Static Badge](https://img.shields.io/badge/-Html-black.svg?logo=html)
-- ![Static Badge](https://img.shields.io/badge/-javascript-black?logo=javascript)
+- ![Static Badge](https://img.shields.io/badge/Git-comandos_basicos-black?logo=git)
+- ![Static Badge](https://img.shields.io/badge/Gitlab-solo_conexion_ssh-black?logo=gitlab)
+- ![Static Badge](https://img.shields.io/badge/Html-estructuras_y_etiquetas-black.svg?logo=html)
+- ![Static Badge](https://img.shields.io/badge/Javascript-conceptos_basicos-black?logo=javascript)
 
 > [!IMPORTANT]
 > jS Se encuentra en desarrollo
