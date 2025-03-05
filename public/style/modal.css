@@ -275,6 +275,7 @@ code > .comment{
 .head-pre{
     width: 98%;
     display: flex;
+    contain: content;
     align-items: center;
     justify-content: space-between;
     position: sticky;
