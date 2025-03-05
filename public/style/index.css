@@ -296,9 +296,10 @@ footer{
     padding: 5px 5px;
     border-radius: 3px;
     width: 32px;
-    contain: fit-content;
     transition: all .5s ease-in;
     interpolate-size: allow-keywords;
+    border: none;
+    color: #fff;
 }
 
 .btn-copy::before{
