@@ -33,7 +33,7 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 # Tabla de Contenido
 
 <table>
-  <thead style="background-color:#444; color:#fff;">
+  <thead>
     <th style="text-align:center">Area</th>
     <th style="text-align:center">Tema</th>
     <th style="text-align:center">Descripción</th>
