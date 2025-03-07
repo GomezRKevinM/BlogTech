@@ -34,6 +34,7 @@
             <button class="btn-redounded btn-bg-blue" onclick="showModal('img-multimedia')">Imagenes y multimedia</button>
             <button class="btn-redounded btn-bg-blue" onclick="showModal('Formularios')">Formularios</button>
             <button class="btn-redounded btn-bg-blue" onclick="showModal('Tabla')">Tabla</button>
+            <button class="btn-redounded info"><i class="bi bi-info-circle-fill"></i></button>
         </div>
 
 
@@ -877,6 +878,17 @@
     <script src="../script/tag-color.js"></script>
     <script src="../script/copy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const infoBtn = document.querySelector('.info');
+        const htmlInfo='<ul><li>alt + w = cerrar contenido</li><li>esc = cerrar modal</li><li>presionar afuera de la modal = Cerrar modal</ul>';
+        infoBtn.addEventListener('click',()=>{
+            Swal.fire({
+            title: "Comandos y acciones",
+            html: htmlInfo,
+            icon: "info"
+            });
+        })
+    </script>
 </body>
 </html>
 
