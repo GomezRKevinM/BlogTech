@@ -10,6 +10,9 @@ function showModal(id){
         if (event.key === 'Escape') {
             closeModal(modalOpen);
         }
+        if (event.altKey && event.key === 'w') {
+            clearContent(modalOpen);
+        }
     });
 
 }
@@ -31,6 +34,15 @@ function closeModal(id){
     })
     backdrop.style.display="none";
     modal.style.display="none";
+}
+
+function clearContent(id) {
+    const modal = document.getElementById(id);
+    const content = modal.querySelector('.content-tag-info'); // Corregido: .content-tag-info
+    while (content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
+    content.classList.remove('visible');
 }
 
 backdrop.addEventListener('click',()=>{
