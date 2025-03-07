@@ -1,6 +1,20 @@
 # BlogTech
 [pagina web](https://gomezrkevinm.github.io/BlogTech/public/)
 
+## Navegación
+
+- [¿Qué es?](#qué-es)
+- [Áreas abarcadas en el proyecto](#áreas-abarcadas-en-el-proyecto)
+- [Frameworks o dependencias empleadas](#frameworks-o-dependencias-empleadas)
+- [Tabla de Contenido](#tabla-de-contenido)
+- [Participantes](#participantes)
+- [Descripción de Archivos](#descripción-de-archivos)
+  - [JavaScript](#javascript)
+  - [HTML](#html)
+- [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
+- [API Endpoints](#api-endpoints)
+- [Contacto](#contacto)
+
 <h3>El blog de Talento Tech⌨️</h3>
 
 ## ¿Que es?
