@@ -1,5 +1,20 @@
 # BlogTech
+![logo de talento tech](./public/assets/image/talentoTechLogo.jpg)
 [pagina web](https://gomezrkevinm.github.io/BlogTech/public/)
+
+## Navegación
+
+- [¿Qué es?](#que-es)
+- [Áreas abarcadas en el proyecto](#areas-abarcadas-en-el-proyecto)
+- [Frameworks o dependencias empleadas](#frameworks-o-dependencias-empleadas)
+- [Tabla de Contenido](#tabla-de-contenido)
+- [Participantes](#participantes-)
+- [Descripción de Archivos](#descripción-de-archivos)
+  - [JavaScript](#javascript)
+  - [HTML](#html)
+- [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
+- [API Endpoints](#api-endpoints)
+- [Contacto](#contacto)
 
 <h3>El blog de Talento Tech⌨️</h3>
 
@@ -72,9 +87,24 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
     <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/html.html">ver</a></td>
   </tr>
     <tr>
-    <td style="font-weight:900">JS</td>
+    <td rowspan="4" style="font-weight:900">JS</td>
     <td>¿Qué es?</td>
     <td>Hacemos una breve explicación sobre que es <strong>javascript</strong></td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Variables</td>
+    <td>Explicamos cómo declarar y usar variables en JavaScript</td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Condicionales</td>
+    <td>Explicamos cómo usar estructuras condicionales en JavaScript</td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Funciones</td>
+    <td>Explicamos cómo declarar y usar funciones en JavaScript</td>
     <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
   </tr>
   </tbody>
@@ -88,3 +118,57 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 - ![Static Badge](https://img.shields.io/badge/Jair_Hamburger-000?style=for-the-badge&logo=github&logoColor=white)
 - ![Static Badge](https://img.shields.io/badge/Jailer_Vasco-000?style=for-the-badge&logo=github&logoColor=white) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ImJay18/BlogTech)
 - ![Static Badge](https://img.shields.io/badge/Yerlis_Manjarrez-000?style=for-the-badge&logo=github&logoColor=white) 
+
+---
+## Descripción de Archivos
+
+### JavaScript
+
+#### `backend/index.js`
+Este archivo configura el servidor Express y la conexión a la base de datos MySQL. Define las rutas API para obtener datos y manejar las solicitudes del frontend.
+
+#### `backend/conexion.js`
+Este archivo contiene la configuración de la conexión a la base de datos MySQL y la función `selecionarDatos` para realizar consultas a la base de datos.
+
+### HTML
+
+#### `public/index.html`
+Este archivo es la página principal del proyecto. Contiene la estructura básica del sitio web y un script para hacer solicitudes a la API y mostrar los datos obtenidos.
+
+#### `public/component/formRegister.html`
+Este archivo contiene el formulario de registro de usuarios. Incluye estilos CSS y un script para manejar el envío del formulario, enviar los datos a la API y limpiar los campos después de un registro exitoso.
+
+---
+
+## Cómo ejecutar el proyecto
+
+1. **Instalar dependencias**:
+    ```sh
+    cd backend
+    npm install
+    ```
+
+2. **Iniciar el servidor**:
+    ```sh
+    node index.js
+    ```
+
+3. **Abrir `index.html` en un navegador** para ver la página principal y probar las funcionalidades.
+
+---
+
+## API Endpoints
+
+### `GET /api/data`
+Obtiene todos los usuarios de la base de datos.
+
+### `POST /api/user`
+Registra un nuevo usuario en la base de datos. Los datos del usuario deben ser enviados en el cuerpo de la solicitud en formato JSON.
+
+---
+
+## Contacto
+
+Si deseas colaborar en la construcción de este sitio, ponte en contacto con nosotros a través de [WhatsApp](https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:).
+
+---

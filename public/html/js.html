@@ -67,7 +67,7 @@
                     <strong>JavaScript(JS)</strong>  es un lenguaje de programación ligero, interpretado, o compilado <strong>justo-a-tiempo (just-in-time)</strong> con funciones de primera clase. Si bien es más conocido como un lenguaje de <strong>scripting (secuencias de comandos)</strong> para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional).
                 </p>
             </section>
-            <section class="main-section visible" id="Variables">
+            <section class="main-section visible" id="js-Variables">
                 <h2 class="title-section">Variables</h2>
                 <p class="p-text">
                     Una variable es una referencia guarda en la ram, esta referencia es capaz de almacenar información para luego solicitarla e implementarla en algun tipo de algoritmo, función, etc.
@@ -75,8 +75,8 @@
                     <pre lang="js">
                         <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('js-var')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-var">
-                             <span class="token">const mi_nombre = "carlos";</span>
-                             <span class="token">console.log(mi_nombre); <span class="token comment">//carlos</span></span>
+                             <span class="token"><span class="js-primary">const</span> <span class="js-const">mi_nombre</span> = <span class="js-text">"carlos"</span>;</span>
+                             <span class="token"><span class="js-const">console</span><span class="js-secondary">.log</span>(<span class="js-const">mi_nombre</span>); <span class="token comment">//carlos</span></span>
                         </code>
                     </pre>
                 </p>
@@ -117,7 +117,7 @@
                         <pre>
                             <h3 class="head-pre">Ejemplo<span><button class="btn-copy" onclick="copyCode('js-declared')"><i class="bi bi-copy"></i></button></span></h3>
                             <code id="js-declared">
-                                <span>const id; <span class="token comment">// id se encuentra declarada</span></span>
+                                <span><span class="js-primary">const</span> <span class="js-const">id</span>; <span class="token comment">// id se encuentra declarada</span></span>
                             </code>
                         </pre>
                     <h3 class="list-tittle">Como asignar un valor a una variable</h3>
@@ -128,20 +128,20 @@
                     <pre>
                         <h3 class="head-pre"><strong >Asignar en la misma declaración</strong><span><button class="btn-copy" onclick="copyCode('js-asign')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-asing">
-                            <span class="token">const cedula <span class="yellow"> = </span>1001974052;</span><span class="token comment">// aqui declaramos (creamos la variable) y al mismo tiempo le asignamos un valor.</span>
+                            <span class="token"><span class="js-primary">const</span> <span class="js-const">cedula</span> <span class="yellow"> = </span><span class="js-number">1001974052</span>;</span><span class="token comment">// aqui declaramos (creamos la variable) y al mismo tiempo le asignamos un valor.</span>
                         </code>
                     </pre>
                     
                     <pre>
                         <h3 class="head-pre"><strong>Asignar valor llamando a la variable</strong><span><button class="btn-copy" onclick="copyCode('js-asing-call')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-asign-call">
-                            <span class="token">const edad;</span><span class="token comment">// declaramos la variable strong edad</span><br>
-                            <span class="token">const answer <strong class="yellow">=</strong> prompt("<strong class="yellow">¿Cual es tu edad?</strong>");</span> <span class="token comment">// pedimos información al usuario usando un prompt (mas adelante veremos qué es).</span> <br>
-                            <span class="token">edad <strong class="yellow">=</strong> answer;</span><span class="token comment">// le asignamos el valor que nos ingreso el usuario.</span>
+                            <span class="token"><span class="js-primary">const</span> <span class="js-const">edad</span>;</span><span class="token comment">// declaramos la variable strong edad</span><br>
+                            <span class="token"><span class="js-primary">const</span> <span class="js-const">answer</span> <strong class="yellow">=</strong> <span class="js-secondary">prompt</span>(<span class="js-text">"¿Cual es tu edad?"</span>);</span> <span class="token comment">// pedimos información al usuario usando un prompt (mas adelante veremos qué es).</span> <br>
+                            <span class="token"><span class="js-const">edad</span> <strong class="yellow">=</strong> <span class="js-const">answer</span>;</span><span class="token comment">// le asignamos el valor que nos ingreso el usuario.</span>
                         </code>
                     </pre>
             </section>
-            <section class="main-section visible">
+            <section id="js-Condicionales" class="main-section visible">
                 <h2 class="title-section">Condicionales</h2>
                 <p class="p-text">
                     Los condicionales es la forma de otorgar condiciones a nuestro código, dandole opciones de ejecución segun una o multiples condiciones.
@@ -164,25 +164,25 @@
                     <pre lang="js">
                         <h3 class="head-pre">Estructura de un if<span><button class="btn-copy" onclick="copyCode('js-if')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-if">
-                            <span>if <strong>(condición)</strong><span class="yellow">{</span></span>
+                            <span><span class="js-primary">if</span> <strong>(condición)</strong><span class="js-primary">{</span></span>
                                 <span class="token comment">// código aquí</span>
-                                <span class="yellow">}</span>
+                                <span class="js-primary">}</span>
                         </code>
                     </pre>
                     <pre lang="js">
                         <h3 class="head-pre">Estructura de un else if<span><button class="btn-copy" onclick="copyCode('js-elif')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-elif">
-                            <span>else if <strong>(condición)</strong><strong>{</strong></span>
+                            <span><span class="js-primary">else if</span> <strong>(condición)</strong><strong class="js-primary">{</strong></span>
                                 <span class="token comment"> // código aquí</span>
-                            <span><strong>}</strong></span>
+                            <span class="js-primary"><strong>}</strong></span>
                         </code>
                     </pre>
                     <pre lang="js">
                         <h3 class="head-pre">Estrucutra de un else<span><button class="btn-copy" onclick="copyCode('js-else')"><i class="bi bi-copy"></i></button></span></h3>
                         <code id="js-else">
-                            <span>else{</span>
+                            <span><span class="js-primary">else</span><span class="js-primary">{</span></span>
                             <span class="token comment">// código aquí</span>
-                            <span>}</span>
+                            <span class="js-primary">}</span>
                         </code>
                     </pre>
                 </div>
@@ -224,9 +224,9 @@
                         <pre>
                             <h3 class="head-pre">Ejemplo de <strong>Operador ternario</strong><span><button class="btn-copy" onclick="copyCode('js-3th')"><i class="bi bi-copy"></i></button></span></h3>
                             <code id="js-3th">
-                                <span>let edad = 14;</span>
-                                <span>let esMayor = edad >= 18 ? "Es mayor de edad" : "No es mayor de edad";</span>
-                                <span>console.log(edad) <span class="token comment">// No es mayor de edad</span></span>
+                                <span><span class="js-primary">let</span> <span class="js-let">edad</span> = <span class="js-number">14</span>;</span>
+                                <span><span class="js-primary">let</span> <span class="js-let">esMayor</span> = <span class="js-let">edad</span> >= <span class="js-number">18</span> ? <span class="js-text">"Es mayor de edad"</span> : <span class="js-text">"No es mayor de edad"</span>;</span>
+                                <span><span class="js-const">console</span><span class="js-secondary">log</span>(<span class="js-let">esMayor</span>) <span class="token comment">// No es mayor de edad</span></span>
                             </code>
                         </pre>
                     </li>
