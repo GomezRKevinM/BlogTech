@@ -251,3 +251,62 @@ strong.yellow{
         bottom: 4rem;
     }
 }
+
+@media only screen and (min-width:771px) and (max-width:1249px){
+    body,html{
+        width: 100%;
+    }
+    pre{
+        width: 90%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        width: 70vw;
+    }
+    .dis-flex.justify-center.gp-15{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #nav-lat{
+        width: 100%;
+    }
+    section{
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    body,html{
+        width: 100%;
+    }
+    pre{
+        width: 90%;
+    }
+    main{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    #nav-lat{
+        width: 100%;
+    }
+    .dis-flex.justify-center.gp-15{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    section{
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
