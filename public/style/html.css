@@ -27,6 +27,28 @@
 .btn-bg-blue{
     background-color: #5dc4ec;
 }
+.bi-info-circle-fill{
+    color: #444;
+    position: relative;
+}
+.btn-redounded:hover > .bi-info-circle-fill{
+    color: #05455f;
+    opacity: 1;
+}
+.bi-info-circle-fill::after {
+    position: absolute;
+    content: "Comandos";
+    left: 3rem;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 2px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 300ms ease-in-out; /* Transición para la opacidad */
+}
+.bi-info-circle-fill:hover.bi-info-circle-fill::after {
+    animation: floatOpacity 1s ease-in-out;
+    opacity: 1;
+}
 
 button{
     border: none;
@@ -56,5 +78,15 @@ button:hover{
     } 
     .descriptionContainer{
       width: 100%;
+    }
+}
+@keyframes floatOpacity {
+    0%{
+        top: 1.5rem;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
     }
 }
