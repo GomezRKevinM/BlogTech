@@ -154,7 +154,7 @@
                 // Si la sección ya está expandida, la contraemos
                 if (section.classList.contains('expanded')) {
                     document.addEventListener('keydown', function(event){
-                        if(event.altKey && event.key==='w'){
+                        if(event.altKey && event.key==='w' ||event.key === 'Escape'){
                             section.classList.remove('expanded');
                             body.classList.remove('section-expanded');
                             backdrop.style.display="none";
