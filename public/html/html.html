@@ -772,61 +772,86 @@
                 </div>
             </div>
 
-            <div class="modal" id="Formularios">
-                <h2 class="modal-title">
-                    Formularios
-                    <span class="tag-info-title"></span>
-                    <a href="#" onclick="closeModal('Formularios')" class="anclamargin">
-                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
-                    </a>
-                </h2>
-                <div class="modal-content">
-                    <h2>Principales etiquetas de Formularios en HTML</h2>
-                    <div class="tag-container">
-                        <div class="content-tag-info"></div>
-                        <div class="nav-tag">
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>FORM</h2>
-                                <div class="tag-info-content">
-                                    <p>la equiteta<span class="code">form</span> En HTML se usa para crear formularios que recopilan información del usuario y pueden enviarla a un servidor para su procesamiento.
-                                    <p>Sin embargo, el procesamiento de los datos que envía el formulario lo hace un lenguaje de backend como PHP, Node.js, Python, etc.</p>   
-                                    <pre>
-                                        <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                        <code id="html-code">
-                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>procesar.php<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POST<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                            <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
-                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span>
-                                        </code>
-                                    </pre>
-                                </div>
-                            </section>
-
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>INPUT</h2>
-                                <div class="tag-info-content"></div>
-                            </section>
-
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>LABEL</h2>
-                                <div class="tag-info-content"></div>
-                            </section>
-
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>BUTTON</h2>
-                                <div class="tag-info-content"></div>
-                            </section>
-
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>SELECT</h2>
-                                <div class="tag-info-content"></div>
-                            </section>
-
-                            <section class="tag-info" data-color="blue" data-colortext="white">
-                                <h2>OPTION</h2>
-                                <div class="tag-info-content"></div>
-                            </section>
+        <div class="modal" id="Formularios">
+            <h2 class="modal-title">
+                Formularios
+                <span class="tag-info-title"></span>
+                <a href="#" onclick="closeModal('Formularios')" class="anclamargin">
+                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
+                </a>
+            </h2>
+            <div class="modal-content">
+                <h2>Principales etiquetas de Formularios en HTML</h2>
+                <div class="tag-container">
+                    <div class="content-tag-info"></div>
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>FORM</h2>
+                        <div class="tag-info-content">
+                            <p>la equiteta<span class="code">form</span> En HTML se usa para crear formularios que recopilan información del usuario y pueden enviarla a un servidor para su procesamiento.</p>
+                            <p>Sin embargo, el procesamiento de los datos que envía el formulario lo hace un lenguaje de backend como PHP, Node.js, Python, etc.</p>   
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>procesar.php<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POST<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                      <span class="token comment4">&lt;!-- action="procesar.php" → Define a dónde se enviarán los datos.&gt;</span>
+                                      <span class="token comment4">&lt;!-- method="post" → Usa POST para enviar datos de forma segura. &gt;</span>
+                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span></span>
+                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"email"</span><span class="token punctuation">&gt;Correo:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"email"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"email"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"email"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span></span>
+                                      <span class="token comment4">&lt;!--  type="email" valida automáticamente correos electrónicos.--&gt;</span>
+                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"submit"</span><span class="token punctuation">&gt;Enviar</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                      <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                </code>
+                            </pre>
                         </div>
-                    </div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>INPUT</h2>
+                        <div class="tag-info-content">
+                            <p>la equiteta<span class="code">input</span> en HTML se usa dentro de un <span class="code">form</span> para capturar datos del usuario.</p>   
+                            <p>Dependiendo del atributo <span class="code">input</span>, puede ser un campo de texto, un botón, una casilla de verificación, etc.</p>
+                            <pre>
+                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <code id="html-code">
+                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span></span> 
+                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span></span>
+                                      <span class="token comment4">&lt;!-- type="text" crea un campo de texto. --&gt;</span>
+                                      <span class="token comment4">&lt;!-- name="nombre" permite enviar el dato al servidor. --&gt;</span>
+                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"submit"</span><span class="token punctuation">&gt;Enviar</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                      <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                      <span class="token comment4">&lt;!-- type="email" solo permite correos válidos. --&gt;</span>
+                                      <span class="token comment4">&lt;!-- type="number" solo acepta números. --&gt;</span>
+                                      <span class="token comment4">&lt;!-- type="password" oculta el texto ingresado. --&gt;</span>
+                                      <span class="token comment4">&lt;!-- type="checkbox" permite seleccionar opciones. --&gt;</span>
+                                      <span class="token comment4">&lt;!-- type="radio" permite elegir solo una opción de varias. --&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>LABEL</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>BUTTON</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>SELECT</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
+                    <section class="tag-info" data-color="blue" data-colortext="white">
+                        <h2>OPTION</h2>
+                        <div class="tag-info-content"></div>
+                    </section>
+
                 </div>
             </div>
 
