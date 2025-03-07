@@ -37,137 +37,135 @@
             <button class="btn-redounded info"><i class="bi bi-info-circle-fill"></i></button>
         </div>
 
-
         <div class="modal" id="Estructura">
             <h2 class="modal-title">
                 Estructura 
                 <span class="tag-info-title"></span> 
                 <a href="#" onclick="closeModal('Estructura')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
+                    <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
                 </a>
             </h2>
             <div class="modal-content">
                 <h2>Etiquetas de Estructura HTML</h2>
                 <div class="tag-container">
-
                     <div class="content-tag-info oculto"></div>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>HTML</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">html</span> Define la apertura de el documento HTML</p>
-                            <p><span class="code">/html</span> Es la etiqueta que da cierre al documento HTML</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment">&lt;!-- contenido del head --&gt;</span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment">&lt;!-- contenido del body --&gt;</span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>HEAD</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">head</span> Define la apertura del área del HTML donde almacenaremos metadatas y recurso a utilizar (Enlaces a estilos CSS, ETC)</p>
-                            <p><span class="code">/head</span> Es la etiqueta que da cierre del segmento de metadatos y recursos </p>
-                            <p><span style="font-weight: bold;">Importante: </span>Esta etiqueta se utiliza antes del body, y es clave no confundirla con la etiqueta <span class="code">header</span></p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-
-
-                                      <span class="token comment">&lt;!-- Esta información se genera automaticamente al crear el html:5 --&gt;</span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment">&lt;!-- contenido del body --&gt;</span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>BODY</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">body</span> Define la apertura del cuerpo del documento HTML, siendo la zona donde se cargaran las etiquetas que formaran nuestra pagina.</p>
-                            <p><span class="code">/body</span> Es la etiqueta que da cierre al segmento del cuerpo de nuestro documento</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment">&lt;!-- contenido del head --&gt;</span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment">&lt;!-- Contenido del body --&gt;</span>
-                                        <span class="token comment">&lt;!-- Es la sección donde se definen todas las etiquetas a utilizar en nuestro sitio. --&gt;</span>
-                                        <span class="token comment">&lt;!-- Otra forma de entenderlo, es como el contenedor principal del documento (contiene todo).  --&gt;</span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>TITLE</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">title</span> Define la apertura de la etiqueta encargada de definir el titulo de la pestaña de la pagina. </p>
-                            <p><span class="code">/title</span> Es la etiqueta que da cierre a este apartado del nombre de la pestaña </p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                      <span class="token comment">&lt;!-- Lo ideal es que tenga una referencia a la ubicación dentro del sitio web --&gt;</span>
-                                      <span class="token comment">&lt;!-- Por ejemplo: Esta pagina donde estas, su title es BlogTech|HTML --&gt;</span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>META</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">meta</span> En HTML se usa esta etiqueta para definir metadatos sobre la página web </p>
-                            <p>Esta etiqueta hace parte de las vacias, por lo cual no lleva una etiqueta de cierre.</p>
-                            <p>Tip: Su localización es dentro del head, pues esta no brinda información visible, sino datos ocultos para el adecuado funcionamiento en navegadores y motores de busqueda.</p>
-                        
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                      <span class="token comment2">&lt;!-- Esto asegura que los caracteres especiales (como tildes y ñ) se muestren correctamente. --&gt;</span><br>
-
-                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                      <span class="token comment2">&lt;!-- Permite que la web se adapte correctamente a dispositivos móviles (Responsive Site). --&gt;</span>
+                    <div class="nav-tag">
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>HTML</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">html</span> Define la apertura de el documento HTML</p>
+                                <p><span class="code">/html</span> Es la etiqueta que da cierre al documento HTML</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment">&lt;!-- contenido del head --&gt;</span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment">&lt;!-- contenido del body --&gt;</span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
                                     </code>
-                            </pre>
-                        </div>
-                    </section>
+                                </pre>
+                            </div>
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>HEAD</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">head</span> Define la apertura del área del HTML donde almacenaremos metadatas y recurso a utilizar (Enlaces a estilos CSS, ETC)</p>
+                                <p><span class="code">/head</span> Es la etiqueta que da cierre del segmento de metadatos y recursos </p>
+                                <p><span style="font-weight: bold;">Importante: </span>Esta etiqueta se utiliza antes del body, y es clave no confundirla con la etiqueta <span class="code">header</span></p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+
+
+                                        <span class="token comment">&lt;!-- Esta información se genera automaticamente al crear el html:5 --&gt;</span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment">&lt;!-- contenido del body --&gt;</span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>BODY</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">body</span> Define la apertura del cuerpo del documento HTML, siendo la zona donde se cargaran las etiquetas que formaran nuestra pagina.</p>
+                                <p><span class="code">/body</span> Es la etiqueta que da cierre al segmento del cuerpo de nuestro documento</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment">&lt;!-- contenido del head --&gt;</span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment">&lt;!-- Contenido del body --&gt;</span>
+                                            <span class="token comment">&lt;!-- Es la sección donde se definen todas las etiquetas a utilizar en nuestro sitio. --&gt;</span>
+                                            <span class="token comment">&lt;!-- Otra forma de entenderlo, es como el contenedor principal del documento (contiene todo).  --&gt;</span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>TITLE</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">title</span> Define la apertura de la etiqueta encargada de definir el titulo de la pestaña de la pagina. </p>
+                                <p><span class="code">/title</span> Es la etiqueta que da cierre a este apartado del nombre de la pestaña </p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                        <span class="token comment">&lt;!-- Lo ideal es que tenga una referencia a la ubicación dentro del sitio web --&gt;</span>
+                                        <span class="token comment">&lt;!-- Por ejemplo: Esta pagina donde estas, su title es BlogTech|HTML --&gt;</span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>META</h2>
+                            <div class="tag-info-content">
+                                <p><span class="code">meta</span> En HTML se usa esta etiqueta para definir metadatos sobre la página web </p>
+                                <p>Esta etiqueta hace parte de las vacias, por lo cual no lleva una etiqueta de cierre.</p>
+                                <p>Tip: Su localización es dentro del head, pues esta no brinda información visible, sino datos ocultos para el adecuado funcionamiento en navegadores y motores de busqueda.</p>
+                            
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment2">&lt;!-- Esto asegura que los caracteres especiales (como tildes y ñ) se muestren correctamente. --&gt;</span><br>
+
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                        <span class="token comment2">&lt;!-- Permite que la web se adapte correctamente a dispositivos móviles (Responsive Site). --&gt;</span>
+                                        </code>
+                                </pre>
+                            </div>
+                        </section>
 
                         <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
                             <h2>LINK</h2>
@@ -189,7 +187,7 @@
                                 </pre>
                             </div>
                         </section>
-                 
+                    
                         <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
                             <h2>STYLE</h2>
                             <div class="tag-info-content">
@@ -200,30 +198,30 @@
                                         <code id="html-code">
                                             <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                              
-                                              <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
-                                              <p><span class="token tag tag-head3">h1</span>{</p>
-                                              <p><span class="token attr-value2">color</span>: 🟥red;</p>  <!-- Color verde -->
-                                              <span class="token comment3">&lt;!-- Aquí aplicamos una propiedad de color, donde los h1 se volveran de color rojo en todo el documento --&gt;</span>
-                                              <p><span class="token tag tag-head3">  </span>}</p>
-                                              <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Titulo de pestaña del documento </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                            
+                                            <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+                                            <p><span class="token tag tag-head3">h1</span>{</p>
+                                            <p><span class="token attr-value2">color</span>: 🟥red;</p>  <!-- Color verde -->
+                                            <span class="token comment3">&lt;!-- Aquí aplicamos una propiedad de color, donde los h1 se volveran de color rojo en todo el documento --&gt;</span>
+                                            <p><span class="token tag tag-head3">  </span>}</p>
+                                            <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
     
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
     
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
     
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
                                         </code>
                                     </pre>
                             </div>
                         </section>
-    
+        
                         <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
                             <h2>SCRIPT</h2>
                             <div class="tag-info-content">
@@ -235,14 +233,14 @@
                                         <code id="html-code">
                                             <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>script <span class="onclick-button">src <span class="token punctuation attr-equals">=<span class="token attr-value">"index.js"</span></span></span></span><span class="token punctuation">&gt;<span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <br><span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>script <span class="onclick-button">src <span class="token punctuation attr-equals">=<span class="token attr-value">"index.js"</span></span></span></span><span class="token punctuation">&gt;<span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <br><span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
                                         </code>
                                 </pre>
@@ -252,622 +250,627 @@
                                         <code id="html-code">
                                             <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                              <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
-                                              <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>                                           
-                                              <span class="token comment3">&lt;!-- Aqui se colocarán todas las funciones de JavaScript --&gt;</span>
-                                              <br><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-                                              <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                            <!-- Next --><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;<span> Ejemplo de script con JS </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>                                    </span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><p class="tag-p">Hola Mundo Tech</p><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>                                           
+                                            <span class="token comment3">&lt;!-- Aqui se colocarán todas las funciones de JavaScript --&gt;</span>
+                                            <br><span class="token tag tag-head4"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-body"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
                                             <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
                                         </code>
                                 </pre>
                             </div>
                         </section>
 
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>DIV</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">div</span> se usa como un contenedor genérico en HTML. Su finalidad es la de agrupar elementos y aplicar estilos o scripts.</p>
-                            <p>Se emplea comúnmente para estructurar el diseño de una página y trabajar con CSS y JavaScript.</p>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>DIV</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">div</span> se usa como un contenedor genérico en HTML. Su finalidad es la de agrupar elementos y aplicar estilos o scripts.</p>
+                                <p>Se emplea comúnmente para estructurar el diseño de una página y trabajar con CSS y JavaScript.</p>
 
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Hola Mundo Tech<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Era gol de yepes<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Viva Colombia, viva falcaooooooooo<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Agrupa un título y uno o varios párrafos dentro de un contenedor.--&gt;</span>
+                                        </code>
+                                </pre>
+
+                            </div>
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>SPAN</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">span</span> se utiliza para aplicar estilos o manipular partes específicas de un texto sin alterar la estructura del documento.</p>
+                                <p>Es útil para resaltar palabras o aplicar efectos con CSS y JavaScript.</p>
+
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Hola Mundo <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>span <span class="onclick-button">style<span class="token punctuation attr-equals">=<span class="token attr-value">"color:🟦blue"</span></span></span></span><span class="token punctuation">&gt;Tech<span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token comment4">&lt;!-- El color azul será aplicado unicamente a la palabra "Tech", la cual esta dentro del span --&gt;</span>
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                        </code>
+                                </pre>
+                                
+                        </section>
+
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>HEADER</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">header</span> en HTML se usa para definir la cabecera de una página o una sección dentro de ella. Generalmente, contiene el logo, el título, la barra de navegación o información introductoria.</p>
+                                
+                                    <pre>  
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                                     <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Hola Mundo Tech<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Era gol de yepes<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Viva Colombia, viva falcaooooooooo<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Agrupa un título y uno o varios párrafos dentro de un contenedor.--&gt;</span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;<span>Mi sitio WEB </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span>Bienvenido a mi página </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span>
+                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+                                        <br><span class="token comment">&lt;!-- Aquí contiene el título y una pequeña descripción--&gt;</span>
                                     </code>
-                            </pre>
+                                    </pre>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo 2: con estilos CSS<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+                                            <p><span class="token tag tag-head2">header</span>{</p></span>
+                                                <p><span class="token attr-value2">background-color</span>: #333;</p>
+                                                <p><span class="token attr-value2">color</span>: white;</p>
+                                                <p><span class="token attr-value2">padding</span>: <span class="onclick-button">20px<span class="token punctuation attr-equals">;</span></p>
+                                                <p><span class="token attr-value2">text-align</span>: center;</p>
+                                                <p><span class="token tag tag-head2">  </span>}</p>
+                                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+                                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+                                                <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;<span>Mi sitio WEB </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span>
+                                                <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+                                                <br><span class="token comment">&lt;!-- Esto le da un fondo oscuro y texto blanco al header.--&gt;</span>
+                                        </code>   
+                                    </pre>                               
+                            </div>
+                        </section>
 
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>SPAN</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">span</span> se utiliza para aplicar estilos o manipular partes específicas de un texto sin alterar la estructura del documento.</p>
-                            <p>Es útil para resaltar palabras o aplicar efectos con CSS y JavaScript.</p>
-
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Hola Mundo <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>span <span class="onclick-button">style<span class="token punctuation attr-equals">=<span class="token attr-value">"color:🟦blue"</span></span></span></span><span class="token punctuation">&gt;Tech<span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token comment4">&lt;!-- El color azul será aplicado unicamente a la palabra "Tech", la cual esta dentro del span --&gt;</span>
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                                    </code>
-                            </pre>
-                            
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>HEADER</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">header</span> en HTML se usa para definir la cabecera de una página o una sección dentro de ella. Generalmente, contiene el logo, el título, la barra de navegación o información introductoria.</p>
-                             
-                                <pre>  
-                                <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
-                                    <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;<span>Mi sitio WEB </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span>Bienvenido a mi página </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span>
-                                    <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
-                                    <br><span class="token comment">&lt;!-- Aquí contiene el título y una pequeña descripción--&gt;</span>
-                                </code>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>FOOTER</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">footer</span> se usa para definir el pie de página de una página web o de una sección. Normalmente contiene información de contacto, derechos de autor, enlaces a redes sociales o menús secundarios.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+                                            <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;© 2025 Mi Sitio Web. Todos los derechos reservados.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Muestra un mensaje de derechos de autor. --&gt;</span>
+                                        </code>
                                 </pre>
                                 <pre>
-                                    <h3 class="head-pre">Ejemplo 2: con estilos CSS<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                          <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
-                                          <p><span class="token tag tag-head2">header</span>{</p></span>
-                                            <p><span class="token attr-value2">background-color</span>: #333;</p>
-                                            <p><span class="token attr-value2">color</span>: white;</p>
-                                            <p><span class="token attr-value2">padding</span>: <span class="onclick-button">20px<span class="token punctuation attr-equals">;</span></p>
-                                            <p><span class="token attr-value2">text-align</span>: center;</p>
-                                            <p><span class="token tag tag-head2">  </span>}</p>
-                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
-                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
-                                            <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;<span>Mi sitio WEB </span><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span>
-                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
-                                            <br><span class="token comment">&lt;!-- Esto le da un fondo oscuro y texto blanco al header.--&gt;</span>
-                                     </code>   
-                                </pre>                               
-                        </div>
-                    </section>
+                                    <h3 class="head-pre">Ejemplo 2: con enlaces y redes sociales <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;© 2025 Mi Sitio Web.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"https://ejemplo.com"</span><span class="token punctuation">&gt;</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Agrega enlaces a redes sociales y se abren en una nueva pestaña. --&gt;</span>
+                                        </code>
+                                </pre>
+                            </div>
+                        </section>
 
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>FOOTER</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">footer</span> se usa para definir el pie de página de una página web o de una sección. Normalmente contiene información de contacto, derechos de autor, enlaces a redes sociales o menús secundarios.</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
-                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;© 2025 Mi Sitio Web. Todos los derechos reservados.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Muestra un mensaje de derechos de autor. --&gt;</span>
-                                    </code>
-                            </pre>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo 2: con enlaces y redes sociales <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;© 2025 Mi Sitio Web.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"https://ejemplo.com"</span><span class="token punctuation">&gt;</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Agrega enlaces a redes sociales y se abren en una nueva pestaña. --&gt;</span>
-                                    </code>
-                            </pre>
-                        </div>
-                    </section>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>SECTION</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">section</span> en HTML se usa para dividir el contenido en secciones temáticas dentro de una página web. Es útil para organizar mejor la información y mejorar la accesibilidad.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>servicios<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                            <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Sobre nosotros<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Somos una empresa dedicada al desarrollo de nuevas tecnologias.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Agrupa un título y un párrafo dentro de una sección. Este la primera seccion --&gt;</span>
 
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>SECTION</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">section</span> en HTML se usa para dividir el contenido en secciones temáticas dentro de una página web. Es útil para organizar mejor la información y mejorar la accesibilidad.</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>servicios<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                        <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Sobre nosotros<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Somos una empresa dedicada al desarrollo de nuevas tecnologias.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Agrupa un título y un párrafo dentro de una sección. Este la primera seccion --&gt;</span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>contacto<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                            <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Sobre nosotros<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Somos una empresa dedicada al desarrollo de nuevas tecnologias.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Agrupa un título y un párrafo dentro de una sección. Esta es la segunda sección --&gt;</span>
+                                        </code>
+                                </pre>       
+                            </div>
+                        </section>
 
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>contacto<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                                        <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Sobre nosotros<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Somos una empresa dedicada al desarrollo de nuevas tecnologias.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Agrupa un título y un párrafo dentro de una sección. Esta es la segunda sección --&gt;</span>
-                                    </code>
-                            </pre>       
-                        </div>
-                    </section>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>ARTICLE</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">article</article></span> en HTML se usa para representar contenido independiente y autocontenido, como noticias, publicaciones de blog, comentarios o productos.</p>
+                                <p><span class="code">/article</article></span> Esta es la etiqueta de cierre.</p>
+                                <pre>   
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
+                                            <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Título del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es el contenido de un artículo independiente.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Envuelve un título y un párrafo que forman un contenido independiente. <br>También se puede Se pueden crear varios article en la misma página. --&gt;</span>
+                                        </code>
+                                </pre>  
+                                <pre>   
+                                    <h3 class="head-pre">Ejemplo con imagen y autor: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
+                                            <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Como aprender HTML<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>img<span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>imagen.jpg<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>imagen de HTML<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Publicado por BlofTech en 2025.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;HTML es el lenguaje base para crear páginas web.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                            <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+                                            <span class="token comment4">&lt;!-- Incluye una imagen, un autor y una fecha de publicación. --&gt;</span>
 
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>ARTICLE</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">article</article></span> en HTML se usa para representar contenido independiente y autocontenido, como noticias, publicaciones de blog, comentarios o productos.</p>
-                            <p><span class="code">/article</article></span> Esta es la etiqueta de cierre.</p>
-                            <pre>   
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
-                                        <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Título del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es el contenido de un artículo independiente.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Envuelve un título y un párrafo que forman un contenido independiente. <br>También se puede Se pueden crear varios article en la misma página. --&gt;</span>
-                                    </code>
-                            </pre>  
-                            <pre>   
-                                <h3 class="head-pre">Ejemplo con imagen y autor: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
-                                        <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Como aprender HTML<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>img<span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>imagen.jpg<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>imagen de HTML<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Publicado por BlofTech en 2025.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;HTML es el lenguaje base para crear páginas web.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
-                                        <span class="token comment4">&lt;!-- Incluye una imagen, un autor y una fecha de publicación. --&gt;</span>
+                                        </code>
+                                </pre>  
+                            </div>
+                        </section>
 
-                                    </code>
-                            </pre>  
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>ASIDE</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">aside</article></span> en HTML se usa para definir contenido relacionado o complementario al contenido principal. Generalmente se usa para barras laterales, anuncios, enlaces adicionales o información secundaria.</p>
-                            <pre>
-                            <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                            <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
-                                <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Título del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
-                                <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es el contenido de un artículo principal.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
-                                <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">&gt;</span></span>
-                                <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Contenido relacionado con del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
-                                <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es un texto adicional que complementa el contenido<br>     del articulo principal.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span>
-                                <span class="token comment4">&lt;!-- Se usa para mostrar otras noticias relacionadas con el artículo principal. --&gt;</span>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>NAV</h2>
-                        <div class="tag-info-content">
-                            <p>La etiqueta <span class="code">nav</article></span> se usa para definir una sección de navegación que contiene enlaces a otras partes de la página o a otras páginas.</p>
-                            <pre>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>ASIDE</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">aside</article></span> en HTML se usa para definir contenido relacionado o complementario al contenido principal. Generalmente se usa para barras laterales, anuncios, enlaces adicionales o información secundaria.</p>
+                                <pre>
                                 <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                                 <code id="html-code">
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                    <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"index.html"</span><span class="token punctuation">&gt;Inicio</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;  |</span></span></span>
-                                    <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nosotros.html"</span><span class="token punctuation">&gt;Sobre nosotros</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;  |</span></span></span>
-                                    <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"contacto.html"</span><span class="token punctuation">&gt;Contactanos</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span>
-                                    <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token comment4">&lt;!-- Crea un menú de navegación simple con enlaces separados por una barra |. --&gt;</span>
-                                </code>
-                            </pre>
+                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
+                                    <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;Título del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span></span>
+                                    <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es el contenido de un artículo principal.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                    <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+                                    <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">&gt;</span></span>
+                                    <br></b><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;Contenido relacionado con del artículo<span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></span>
+                                    <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Este es un texto adicional que complementa el contenido<br>     del articulo principal.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                    <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span>
+                                    <span class="token comment4">&lt;!-- Se usa para mostrar otras noticias relacionadas con el artículo principal. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
 
-                            <pre>
-                                <h3 class="head-pre">Ejemplo con una lista para mejorar la estructura: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
-                                    <br><span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"index.html"</span><span class="token punctuation">&gt;Inicio</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
-                                    <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nosotros.html"</span><span class="token punctuation">&gt;Sobre Nosotros</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
-                                    <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"contacto.html"</span><span class="token punctuation">&gt;Contatanos</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
-                                    <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
-                                    <span class="token comment4">&lt;!-- Usa una lista ul para hacer el menú más accesible y organizado. --&gt;</span>
-                                </code>
-                            </pre>
+                        <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                            <h2>NAV</h2>
+                            <div class="tag-info-content">
+                                <p>La etiqueta <span class="code">nav</article></span> se usa para definir una sección de navegación que contiene enlaces a otras partes de la página o a otras páginas.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"index.html"</span><span class="token punctuation">&gt;Inicio</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;  |</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nosotros.html"</span><span class="token punctuation">&gt;Sobre nosotros</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;  |</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"contacto.html"</span><span class="token punctuation">&gt;Contactanos</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></span>
+                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment4">&lt;!-- Crea un menú de navegación simple con enlaces separados por una barra |. --&gt;</span>
+                                    </code>
+                                </pre>
+
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo con una lista para mejorar la estructura: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                                        <br><span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"index.html"</span><span class="token punctuation">&gt;Inicio</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nosotros.html"</span><span class="token punctuation">&gt;Sobre Nosotros</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>a<span class="onclick-button"></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"contacto.html"</span><span class="token punctuation">&gt;Contatanos</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token comment4">&lt;!-- Usa una lista ul para hacer el menú más accesible y organizado. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="Texto">
-            <h2 class="modal-title">
-                Texto 
-                <span class="tag-info-title"></span>
-                <a href="#" onclick="closeModal('Texto')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a>
-            </h2>
-            <div class="modal-content">
-                <div class="tag-container">
+            <div class="modal" id="Texto">
+                <h2 class="modal-title">
+                    Texto 
+                    <span class="tag-info-title"></span>
+                    <a href="#" onclick="closeModal('Texto')" class="anclamargin">
+                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
+                    </a>
+                </h2>
+                <div class="modal-content">
+                    <div class="tag-container">
 
-                    <div class="content-tag-info oculto"></div>
+                        <div class="content-tag-info oculto"></div>
+                        <div class="nav-tag">
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>P</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">p</span> Es la etiqueta que nos permite insertar parrafos a nuestra pagina, y se cierra con su etiqueta de cierre <span class="code">/p</span></p>
+                                </div>
+                            </section>
 
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>P</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">p</span> Es la etiqueta que nos permite insertar parrafos a nuestra pagina, y se cierra con su etiqueta de cierre <span class="code">/p</span></p>
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>H1 - H6</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">h1</span> Es la etiqueta que nos permite insertar un encabezado principal en nuestra página. Se usa para los títulos más importantes y se cierra con su etiqueta de cierre <span class="code">/h1</span></p>
+                                    <p><span class="code">h2</span> Es la etiqueta que representa un subtítulo o un encabezado secundario, con menor importancia que <span class="code">h1</span>. Se cierra con su etiqueta de cierre <span class="code">/h2</span></p>
+                                    <p><span class="code">h3</span> Es la etiqueta utilizada para encabezados de tercer nivel, generalmente para secciones dentro de un tema más amplio. Se cierra con su etiqueta de cierre <span class="code">/h3</span></p>
+                                    <p><span class="code">h4</span> Es la etiqueta usada para títulos de menor relevancia dentro de un documento, como subtítulos dentro de una sección. Se cierra con su etiqueta de cierre <span class="code">/h4</span></p>
+                                    <p><span class="code">h5</span> Es la etiqueta para encabezados menos importantes, usados en estructuras más detalladas o anidaciones profundas. Se cierra con su etiqueta de cierre <span class="code">/h5</span></p>
+                                    <p><span class="code">h6</span> Es la etiqueta para el encabezado con menor jerarquía, generalmente usada para notas, referencias o secciones muy específicas. Se cierra con su etiqueta de cierre <span class="code">/h6</span></p>
+                                    
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                            <code id="html-code">
+                                                <span class="h1-size">Este es un texto con tamaño H1</span>
+                                                <span class="h2-size">Este es un texto con tamaño H2</span>
+                                                <span class="h3-size">Este es un texto con tamaño H3</span>
+                                                <span class="h4-size">Este es un texto con tamaño H4</span>
+                                                <span class="h5-size">Este es un texto con tamaño H5</span>
+                                                <span class="h6-size">Este es un texto con tamaño H6</span>
+                                            </code>
+                                    </pre>
+
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>STRONG</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">strong</span> Es la etiqueta que nos permite resaltar texto con **énfasis fuerte** en nuestra página. Su contenido se muestra en **negrita** de manera predeterminada y se cierra con su etiqueta de cierre <span class="code">/strong</span></p>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;mensaje importante.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt; <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">                               
+                                        <p>Esto es un <strong>mensaje importante.</strong></p>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>EM</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">em</span> Es la etiqueta que nos permite enfatizar texto en nuestra página. Su contenido se muestra en cursiva y se cierra con su etiqueta de cierre <span class="code">/em</span></p>
+                                    <p>Este es un <em>mensaje enfatizado</em> en la oración.</p>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;texto importante en cursiva.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt; <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">                               
+                                        <p>Esto es un <em>texto importante en cursiva.</em></p>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>BR</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">br</span> Es la etiqueta que nos permite insertar un salto de línea en nuestra página web. No necesita etiqueta de cierre porque es una etiqueta auto-cerrada.</p>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un texto en primera linea. <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;Y este un texto en segunda linea.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">                               
+                                        <p>Este es un texto en la primera línea.<br>Y este es un texto en la segunda línea.</p>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>HR</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">hr</span> Es la etiqueta que nos permite insertar una línea horizontal en nuestra página web. Se usa para separar secciones de contenido y no necesita etiqueta de cierre porque es una etiqueta auto-cerrada.</p>
+                                
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code>                               
+                                        <p>Este es un texto en la primera línea</p>
+                                        <p>---------------------------------------------</p>
+                                        <p>Y este es un texto en la segunda línea separado por hr.</p>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>BLOCKQUOTE</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">blockquote</span> Es la etiqueta que nos permite insertar citas en bloque en nuestra página web. Se utiliza para resaltar texto citado de otra fuente y se cierra con su etiqueta de cierre <span class="code">/blockquote</span></p>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
+                                        <span>"Ser o no ser, esa es la cuestión."</span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <p> Texto normal</p>
+                                        <p> Texto con blockquote: <blockquote>"Ser o no ser, esa es la cuestión."</blockquote></p>                                   
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
+                                <h2>CODE</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">code</span> Es la etiqueta que nos permite mostrar fragmentos de código en nuestra página web con un formato especial. Se cierra con su etiqueta de cierre <span class="code">/code</span></p>
+
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Para imprimir un mensaje en JavaScript, usa: <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;console.log("Hola, mundo!");<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
+
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <p class="tag-head"> Para imprimir un mensaje en JavaScript, usa:</p>
+                                        <code style="font-size: 13px; font-family: 'Courier New', Courier, monospace;">console.log("Hola, mundo!");</code>
+                                    </pre>
+                                </div>
+                            </section>
                         </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>H1 - H6</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">h1</span> Es la etiqueta que nos permite insertar un encabezado principal en nuestra página. Se usa para los títulos más importantes y se cierra con su etiqueta de cierre <span class="code">/h1</span></p>
-                            <p><span class="code">h2</span> Es la etiqueta que representa un subtítulo o un encabezado secundario, con menor importancia que <span class="code">h1</span>. Se cierra con su etiqueta de cierre <span class="code">/h2</span></p>
-                            <p><span class="code">h3</span> Es la etiqueta utilizada para encabezados de tercer nivel, generalmente para secciones dentro de un tema más amplio. Se cierra con su etiqueta de cierre <span class="code">/h3</span></p>
-                            <p><span class="code">h4</span> Es la etiqueta usada para títulos de menor relevancia dentro de un documento, como subtítulos dentro de una sección. Se cierra con su etiqueta de cierre <span class="code">/h4</span></p>
-                            <p><span class="code">h5</span> Es la etiqueta para encabezados menos importantes, usados en estructuras más detalladas o anidaciones profundas. Se cierra con su etiqueta de cierre <span class="code">/h5</span></p>
-                            <p><span class="code">h6</span> Es la etiqueta para el encabezado con menor jerarquía, generalmente usada para notas, referencias o secciones muy específicas. Se cierra con su etiqueta de cierre <span class="code">/h6</span></p>
-                            
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                    <code id="html-code">
-                                        <span class="h1-size">Este es un texto con tamaño H1</span>
-                                        <span class="h2-size">Este es un texto con tamaño H2</span>
-                                        <span class="h3-size">Este es un texto con tamaño H3</span>
-                                        <span class="h4-size">Este es un texto con tamaño H4</span>
-                                        <span class="h5-size">Este es un texto con tamaño H5</span>
-                                        <span class="h6-size">Este es un texto con tamaño H6</span>
-                                    </code>
-                            </pre>
-
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>STRONG</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">strong</span> Es la etiqueta que nos permite resaltar texto con **énfasis fuerte** en nuestra página. Su contenido se muestra en **negrita** de manera predeterminada y se cierra con su etiqueta de cierre <span class="code">/strong</span></p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;mensaje importante.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt; <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">                               
-                                <p>Esto es un <strong>mensaje importante.</strong></p>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>EM</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">em</span> Es la etiqueta que nos permite enfatizar texto en nuestra página. Su contenido se muestra en cursiva y se cierra con su etiqueta de cierre <span class="code">/em</span></p>
-                            <p>Este es un <em>mensaje enfatizado</em> en la oración.</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;texto importante en cursiva.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt; <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span></span></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">                               
-                                <p>Esto es un <em>texto importante en cursiva.</em></p>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>BR</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">br</span> Es la etiqueta que nos permite insertar un salto de línea en nuestra página web. No necesita etiqueta de cierre porque es una etiqueta auto-cerrada.</p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt; Esto es un texto en primera linea. <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;Y este un texto en segunda linea.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">                               
-                                <p>Este es un texto en la primera línea.<br>Y este es un texto en la segunda línea.</p>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>HR</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">hr</span> Es la etiqueta que nos permite insertar una línea horizontal en nuestra página web. Se usa para separar secciones de contenido y no necesita etiqueta de cierre porque es una etiqueta auto-cerrada.</p>
-                        
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code>                               
-                                <p>Este es un texto en la primera línea</p>
-                                <p>---------------------------------------------</p>
-                                <p>Y este es un texto en la segunda línea separado por hr.</p>
-                                </code>
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>BLOCKQUOTE</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">blockquote</span> Es la etiqueta que nos permite insertar citas en bloque en nuestra página web. Se utiliza para resaltar texto citado de otra fuente y se cierra con su etiqueta de cierre <span class="code">/blockquote</span></p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
-                                <span>"Ser o no ser, esa es la cuestión."</span>
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <p> Texto normal</p>
-                                <p> Texto con blockquote: <blockquote>"Ser o no ser, esa es la cuestión."</blockquote></p>                                   
-                            </pre>
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="rgb(9,121,29)" data-colortext="white">
-                        <h2>CODE</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">code</span> Es la etiqueta que nos permite mostrar fragmentos de código en nuestra página web con un formato especial. Se cierra con su etiqueta de cierre <span class="code">/code</span></p>
-
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;Para imprimir un mensaje en JavaScript, usa: <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span>
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;console.log("Hola, mundo!");<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
-
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <p class="tag-head"> Para imprimir un mensaje en JavaScript, usa:</p>
-                                <code style="font-size: 13px; font-family: 'Courier New', Courier, monospace;">console.log("Hola, mundo!");</code>
-                            </pre>
-                        </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="Listas">
-            <h2 class="modal-title">
-                Listas 
-                <span class="tag-info-title"></span>
-                <a href="#" onclick="closeModal('Listas')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a>
-            </h2>
-            <div class="modal-content">
-                <div class="tag-container">
-                    <div class="content-tag-info"></div>
+            <div class="modal" id="Listas">
+                <h2 class="modal-title">
+                    Listas 
+                    <span class="tag-info-title"></span>
+                    <a href="#" onclick="closeModal('Listas')" class="anclamargin">
+                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
+                    </a>
+                </h2>
+                <div class="modal-content">
+                    <div class="tag-container">
+                        <div class="content-tag-info"></div>
+                        <div class="nav-tag">
+                            <section class="tag-info" data-color="purple" data-colortext="white">
+                                <h2>UL</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">ul</span> Es la etiqueta que nos permite crear listas desordenadas en nuestra página web. Cada elemento de la lista se define con la etiqueta <span class="code">li</span> y se cierra con su etiqueta de cierre <span class="code">/ul</span></p>                           
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
+                                        <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Manzana<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                        <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Mango<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
 
-                    <section class="tag-info" data-color="purple" data-colortext="white">
-                        <h2>UL</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">ul</span> Es la etiqueta que nos permite crear listas desordenadas en nuestra página web. Cada elemento de la lista se define con la etiqueta <span class="code">li</span> y se cierra con su etiqueta de cierre <span class="code">/ul</span></p>                           
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
-                                <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Manzana<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
-                                <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Mango<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></s></span>
+                                        </code>
+                                    </pre>
 
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></s></span>
-                                </code>
-                            </pre>
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code"> <!-- Se coloca en formato de texto con la etiqueta p para no alterar el formato generadl con ul -->
+                                            <p>• Manzana</p>
+                                            <p>• Mango</p>
+                                        </code>                                                                   
+                                    </pre>               
+                                </div>
+                            </section>
 
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code"> <!-- Se coloca en formato de texto con la etiqueta p para no alterar el formato generadl con ul -->
-                                    <p>• Manzana</p>
-                                    <p>• Mango</p>
-                                </code>                                                                   
-                            </pre>               
+                            <section class="tag-info" data-color="purple" data-colortext="white">
+                                <h2>OL</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">ol</span> Es la etiqueta que nos permite crear listas ordenadas en nuestra página web. Cada elemento de la lista se define con la etiqueta <span class="code">li</span> y se cierra con su etiqueta de cierre <span class="code">/ol</span></p>
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
+                                        <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Manzana<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                        <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Mango<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                        <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Sandia<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></s></span>
+                                        </code>
+                                    </pre>
+
+                                    <pre>
+                                        <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code"> <!-- Se coloca en formato de texto con la etiqueta p para no alterar el formato generadl con ul -->
+                                            <p>1. Manzana</p>
+                                            <p>2. Mango</p>
+                                            <p>3. Sandia</p>
+                                        </code>                                                                   
+                                    </pre>
+                                
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="purple" data-colortext="white">
+                                <h2>LI</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">li</span> Es la etiqueta que nos permite definir elementos dentro de una lista en nuestra página web. Se usa dentro de <span class="code">ul</span> para listas desordenadas y dentro de <span class="code">ol</span> para listas ordenadas. Se cierra con su etiqueta de cierre <span class="code">/li</span></p>
+                                </div>
+                            </section>
                         </div>
-                    </section>
-
-                    <section class="tag-info" data-color="purple" data-colortext="white">
-                        <h2>OL</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">ol</span> Es la etiqueta que nos permite crear listas ordenadas en nuestra página web. Cada elemento de la lista se define con la etiqueta <span class="code">li</span> y se cierra con su etiqueta de cierre <span class="code">/ol</span></p>
-                            <pre>
-                                <h3 class="head-pre">Ejemplo: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;Esto es un texto en primera linea. </span></span>
-                                <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Manzana<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
-                                <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Mango<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
-                                <span class="tag-head"><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;Sandia<span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span>
-                                <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;Y este un texto en segunda linea separado por un hr.<span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></span></s></span>
-                                </code>
-                            </pre>
-
-                            <pre>
-                                <h3 class="head-pre">Resultado en pantalla: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code"> <!-- Se coloca en formato de texto con la etiqueta p para no alterar el formato generadl con ul -->
-                                    <p>1. Manzana</p>
-                                    <p>2. Mango</p>
-                                    <p>3. Sandia</p>
-                                </code>                                                                   
-                            </pre>
-                        
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="purple" data-colortext="white">
-                        <h2>LI</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">li</span> Es la etiqueta que nos permite definir elementos dentro de una lista en nuestra página web. Se usa dentro de <span class="code">ul</span> para listas desordenadas y dentro de <span class="code">ol</span> para listas ordenadas. Se cierra con su etiqueta de cierre <span class="code">/li</span></p>
-                        </div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="img-multimedia">
-            <h2 class="modal-title">
-                Imagenes y multimedia 
-                <span class="tag-info-title"></span>
-                <a href="#" onclick="closeModal('img-multimedia')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a>
-            </h2>
-            <div class="modal-content">
-                <div class="tag-container">
-                    <div class="content-tag-info"></div>
-                    <section class="tag-info" data-color="yellow" data-colortext="white">
-                        <h2>IMG</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">img</span> Es la etiqueta que nos permite insertar imágenes en nuestra página web. No requiere una etiqueta de cierre, ya que es una etiqueta **autocontenida**.</p>
-                            <!-- Agregar ejemplo en consola -->
+            <div class="modal" id="img-multimedia">
+                <h2 class="modal-title">
+                    Imagenes y multimedia 
+                    <span class="tag-info-title"></span>
+                    <a href="#" onclick="closeModal('img-multimedia')" class="anclamargin">
+                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
+                    </a>
+                </h2>
+                <div class="modal-content">
+                    <div class="tag-container">
+                        <div class="content-tag-info"></div>
+                        <div class="nav-tag">
+                            <section class="tag-info" data-color="yellow" data-colortext="white">
+                                <h2>IMG</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">img</span> Es la etiqueta que nos permite insertar imágenes en nuestra página web. No requiere una etiqueta de cierre, ya que es una etiqueta **autocontenida**.</p>
+                                    <!-- Agregar ejemplo en consola -->
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="yellow" data-colortext="white">
+                                <h2>VIDEO</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">video</span> Es la etiqueta que nos permite insertar videos en nuestra página web. Se debe cerrar con su etiqueta de cierre <span class="code">/video</span> y puede contener varias fuentes de video con la etiqueta <span class="code">source</span>.</p>
+                                    <!-- Agregar ejemplo en consola -->
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="yellow" data-colortext="white">
+                                <h2>AUDIO</h2>
+                                <div class="tag-info-content">
+                                    <p><span class="code">audio</span> Es la etiqueta que nos permite insertar archivos de audio en nuestra página web. Se debe cerrar con su etiqueta de cierre <span class="code">/audio</span> y puede contener varias fuentes de audio con la etiqueta <span class="code">source</span>.</p>
+                                    <!-- Agregar ejemplo en consola -->
+                                </div>
+                            </section>
                         </div>
-                    </section>
-
-                    <section class="tag-info" data-color="yellow" data-colortext="white">
-                        <h2>VIDEO</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">video</span> Es la etiqueta que nos permite insertar videos en nuestra página web. Se debe cerrar con su etiqueta de cierre <span class="code">/video</span> y puede contener varias fuentes de video con la etiqueta <span class="code">source</span>.</p>
-                            <!-- Agregar ejemplo en consola -->
-                        </div>
-                    </section>
-
-                    <section class="tag-info" data-color="yellow" data-colortext="white">
-                        <h2>AUDIO</h2>
-                        <div class="tag-info-content">
-                            <p><span class="code">audio</span> Es la etiqueta que nos permite insertar archivos de audio en nuestra página web. Se debe cerrar con su etiqueta de cierre <span class="code">/audio</span> y puede contener varias fuentes de audio con la etiqueta <span class="code">source</span>.</p>
-                            <!-- Agregar ejemplo en consola -->
-                        </div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="Formularios">
-            <h2 class="modal-title">
-                Formularios
-                <span class="tag-info-title"></span>
-                <a href="#" onclick="closeModal('Formularios')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a>
-            </h2>
-            <div class="modal-content">
-                <h2>Principales etiquetas de Formularios en HTML</h2>
-                <div class="tag-container">
-                    <div class="content-tag-info"></div>
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>FORM</h2>
-                        <div class="tag-info-content">
-                            <p>la equiteta<span class="code">form</span> En HTML se usa para crear formularios que recopilan información del usuario y pueden enviarla a un servidor para su procesamiento.
-                            <p>Sin embargo, el procesamiento de los datos que envía el formulario lo hace un lenguaje de backend como PHP, Node.js, Python, etc.</p>   
-                            <pre>
-                                <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
-                                <code id="html-code">
-                                      <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>procesar.php<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POST<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
-                                      <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
-                                      <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span>
-                                </code>
-                            </pre>
+            <div class="modal" id="Formularios">
+                <h2 class="modal-title">
+                    Formularios
+                    <span class="tag-info-title"></span>
+                    <a href="#" onclick="closeModal('Formularios')" class="anclamargin">
+                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
+                    </a>
+                </h2>
+                <div class="modal-content">
+                    <h2>Principales etiquetas de Formularios en HTML</h2>
+                    <div class="tag-container">
+                        <div class="content-tag-info"></div>
+                        <div class="nav-tag">
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>FORM</h2>
+                                <div class="tag-info-content">
+                                    <p>la equiteta<span class="code">form</span> En HTML se usa para crear formularios que recopilan información del usuario y pueden enviarla a un servidor para su procesamiento.
+                                    <p>Sin embargo, el procesamiento de los datos que envía el formulario lo hace un lenguaje de backend como PHP, Node.js, Python, etc.</p>   
+                                    <pre>
+                                        <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                        <code id="html-code">
+                                            <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>procesar.php<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POST<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
+                                            <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                            <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </section>
+
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>INPUT</h2>
+                                <div class="tag-info-content"></div>
+                            </section>
+
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>LABEL</h2>
+                                <div class="tag-info-content"></div>
+                            </section>
+
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>BUTTON</h2>
+                                <div class="tag-info-content"></div>
+                            </section>
+
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>SELECT</h2>
+                                <div class="tag-info-content"></div>
+                            </section>
+
+                            <section class="tag-info" data-color="blue" data-colortext="white">
+                                <h2>OPTION</h2>
+                                <div class="tag-info-content"></div>
+                            </section>
                         </div>
-                    </section>
-
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>INPUT</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>LABEL</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>BUTTON</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>SELECT</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
-                    <section class="tag-info" data-color="blue" data-colortext="white">
-                        <h2>OPTION</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="Tabla">
-            <h2 class="modal-title">
-                Tabla
-                <span class="tag-info-title"></span>
-                <a href="#" onclick="closeModal('Tabla')" class="anclamargin">
-                    <img class="modal-close"src="../assets/cerrar.png" alt="closeModal">
-                </a></h2>
-            <div class="moda-content">
-                <div class="tag-container">
-                    <div class="content-tag-info"></div>
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>TABLE</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
+            <div class="modal" id="Tabla">
+                <h2 class="modal-title">
+                    Tabla
+                    <span class="tag-info-title"></span>
+                    <a href="#" onclick="closeModal('Tabla')" class="anclamargin">
+                        <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
+                    </a></h2>
+                <div class="moda-content">
+                    <div class="tag-container">
+                        <div class="content-tag-info"></div>
+                    <div class="nav-tag">
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>TABLE</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
 
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>THEAD</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>THEAD</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
 
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>TBODY</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>TBODY</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
 
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>TH</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>TH</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
 
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>TR</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>TR</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
 
-                    <section class="tag-info" data-color="green" data-colortext="white">
-                        <h2>TD</h2>
-                        <div class="tag-info-content"></div>
-                    </section>
-
+                        <section class="tag-info" data-color="green" data-colortext="white">
+                            <h2>TD</h2>
+                            <div class="tag-info-content"></div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -880,14 +883,14 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         const infoBtn = document.querySelector('.info');
-        const htmlInfo='<ul><li>alt + w = cerrar contenido</li><li>esc = cerrar modal</li><li>presionar afuera de la modal = Cerrar modal</ul>';
-        infoBtn.addEventListener('click',()=>{
+        const htmlInfo = '<ul><li>alt + w = cerrar contenido</li><li>esc = cerrar modal</li><li>presionar afuera de la modal = Cerrar modal</ul>';
+        infoBtn.addEventListener('click', () => {
             Swal.fire({
-            title: "Comandos y acciones",
-            html: htmlInfo,
-            icon: "info"
+                title: "Comandos y acciones",
+                html: htmlInfo,
+                icon: "info"
             });
-        })
+        });
     </script>
 </body>
 </html>

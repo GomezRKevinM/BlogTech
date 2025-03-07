@@ -19,6 +19,12 @@
     flex-wrap: wrap;
     margin-top: 25px;
 }
+.nav-tag{
+    display: grid;
+    grid-template-columns: repeat(8,4fr);
+    gap: 2rem;
+    place-items: center;
+}
 .btn-redounded{
     border-radius:15px;
     padding: 6px 12px;
