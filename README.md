@@ -86,9 +86,24 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
     <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/html.html">ver</a></td>
   </tr>
     <tr>
-    <td style="font-weight:900">JS</td>
+    <td rowspan="4" style="font-weight:900">JS</td>
     <td>¿Qué es?</td>
     <td>Hacemos una breve explicación sobre que es <strong>javascript</strong></td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Variables</td>
+    <td>Explicamos cómo declarar y usar variables en JavaScript</td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Condicionales</td>
+    <td>Explicamos cómo usar estructuras condicionales en JavaScript</td>
+    <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
+  </tr>
+  <tr>
+    <td>Funciones</td>
+    <td>Explicamos cómo declarar y usar funciones en JavaScript</td>
     <td><a href="https://gomezrkevinm.github.io/BlogTech/public/html/js.html">ver</a></td>
   </tr>
   </tbody>
