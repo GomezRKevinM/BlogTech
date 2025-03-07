@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-css {
+    width: 100%;
+    height: 89.8dvh;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 25px;
+    column-gap: 10px;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background: linear-gradient(45deg, #08FDD8, #FF007F, #08FDD8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s infinite;
+    background-size: 200% 200%;
+}
+
+.navbar a {
+    color: #08FDD8;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #FF007F;
+    text-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 30px #FF007F;
+}
+
+.btn-redounded {
+    background-color: #08FDD8;
+    color: #1E1E1E;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-redounded:hover {
+    background-color: #FF007F;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 30px #FF007F;
+}
+
+.main-section {
+    width: 450px;
+    height: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    background-color: #2D2D2D;
+    contain: content;
+    position: relative;
+    transition: all 300ms start;
+}
+
+.main-section::before {
+    position: absolute;
+    content: " ";
+    width: 95%;
+    height: 70%;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    left: 50%;
+    transform: translate(-50%);
+    top: 31%;
+}
+
+.main-css .main-section:last-child {
+    grid-column: 2 / span 1; /* Inicia en la segunda columna */
+}
+
+.main-section:hover {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #08FDD8, #FF007F, #08FDD8) 1;
+    animation: border-rotate 1s linear infinite;
+    cursor: pointer;
+    box-shadow: #ffffff40 0 0 10px;
+}
+
+
+.title-section {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.p-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #2D2D2D;
+    color: #08FDD8;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #2D2D2D;
+    color: #08FDD8;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 0 10px #08FDD8, 0 0 20px #08FDD8, 0 0 30px #08FDD8;
+    display: block; /* Cambiado de flex a block */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+pre code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes border-rotate {
+    0% {
+        border-image: linear-gradient(45deg, #08FDD8, #FF007F, #08FDD8) 1;
+    }
+    100% {
+        border-image: linear-gradient(405deg, #08FDD8, #FF007F, #08FDD8) 1;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    animation: gradient 3s infinite;
+    background-size: 200% 200%;
+}
+
+/* Estilos para la sección expandida */
+.main-section.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: fit-content;
+    max-height: 90%;
+    z-index: 1000;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.main-section.expanded::-webkit-scrollbar{
+    width: 4px;
+    background-color: #ffffff20;
+}
+.main-section.expanded::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #08FDD8, #FF007F, #08FDD8);
+}
+
+.fillScreen{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff15;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+.main-section.expanded::before {
+    display: none;
+}
+
+/* Estilos para el cuerpo cuando una sección está expandida */
+body.section-expanded {
+    overflow: hidden;
+}

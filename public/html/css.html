@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/index.css">
+        <link rel="stylesheet" href="../style/html.css">
+        <link rel="stylesheet" href="../style/modal.css">
+        <link rel="stylesheet" href="../style/css.css">
+        <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Blogtech | CSS</title>
+    </head>
+<body>
+    <header>
+        <h1 class="h1">BlogTech</h1>
+        <nav class="navbar">
+            <a href="../index.html" class="ancoresNav">Inicio</a>
+            <a href="./git.html" class="ancoresNav ">Git</a>
+            <a href="./gitlab.html" class="ancoresNav ">GitLab</a>
+            <a href="./html.html" class="ancoresNav">HTML</a>
+            <a href="./js.html" class="ancoresNav">JS</a>
+            <a href="./css.html" class="ancoresNav a-select">CSS</a>
+        </nav>
+    </header>
+    <main class="main-css">
+        <section id="css-intro" class="main-section">
+            <h2 class="title-section">¿Qué es CSS?</h2>
+            <p class="p-text">
+                CSS (Cascading Style Sheets) es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en HTML o XML. CSS describe cómo los elementos HTML deben ser renderizados en pantalla, en papel, en voz, o en otros medios.
+            </p>
+        </section>
+
+        <section id="css-selectors" class="main-section">
+            <h2 class="title-section">Selectores en CSS</h2>
+            <p class="p-text">
+                Los selectores en CSS se utilizan para seleccionar los elementos HTML que deseas estilizar. Hay varios tipos de selectores:
+            </p>
+            <ul>
+                <li><strong>Selector de etiqueta:</strong> Selecciona todos los elementos de un tipo específico. Ejemplo: <code>p { color: red; }</code></li>
+                <li><strong>Selector de clase:</strong> Selecciona todos los elementos con una clase específica. Ejemplo: <code>.miClase { color: blue; }</code></li>
+                <li><strong>Selector de ID:</strong> Selecciona un elemento con un ID específico. Ejemplo: <code>#miID { color: green; }</code></li>
+                <li><strong>Selector de atributo:</strong> Selecciona elementos con un atributo específico. Ejemplo: <code>[type="text"] { color: purple; }</code></li>
+                <li><strong>Selector de descendiente:</strong> Selecciona elementos que son descendientes de otro elemento. Ejemplo: <code>div p { color: orange; }</code></li>
+                <li><strong>Selector de hijo:</strong> Selecciona elementos que son hijos directos de otro elemento. Ejemplo: <code>div > p { color: pink; }</code></li>
+                <li><strong>Selector de hermano adyacente:</strong> Selecciona un elemento que es el siguiente hermano inmediato de otro elemento. Ejemplo: <code>h1 + p { color: brown; }</code></li>
+                <li><strong>Selector de hermano general:</strong> Selecciona todos los elementos hermanos de un elemento. Ejemplo: <code>h1 ~ p { color: gray; }</code></li>
+            </ul>
+        </section>
+
+        <section id="css-specificity" class="main-section">
+            <h2 class="title-section">Especificidad en CSS</h2>
+            <p class="p-text">
+                La especificidad determina qué reglas CSS se aplican a un elemento cuando hay múltiples reglas que podrían aplicarse. La especificidad se calcula en base a cuatro valores: inline styles, IDs, clases y atributos, y elementos.
+            </p>
+            <ul>
+                <li><strong>Estilos en línea:</strong> Tienen la mayor especificidad. Ejemplo: <code>&lt;h1 style="color: red;"&gt;</code></li>
+                <li><strong>IDs:</strong> Tienen una especificidad alta. Ejemplo: <code>#miID { color: green; }</code></li>
+                <li><strong>Clases y atributos:</strong> Tienen una especificidad media. Ejemplo: <code>.miClase { color: blue; }</code></li>
+                <li><strong>Elementos:</strong> Tienen la menor especificidad. Ejemplo: <code>p { color: red; }</code></li>
+            </ul>
+        </section>
+
+        <section id="css-properties" class="main-section">
+            <h2 class="title-section">Propiedades CSS</h2>
+            <p class="p-text">
+                CSS tiene una amplia variedad de propiedades que se pueden aplicar a los elementos HTML. Aquí hay algunas propiedades básicas y avanzadas:
+            </p>
+            <h3>Propiedades Básicas</h3>
+            <ul>
+                <li><strong>color:</strong> Define el color del texto. Ejemplo: <code>color: red;</code></li>
+                <li><strong>background-color:</strong> Define el color de fondo de un elemento. Ejemplo: <code>background-color: yellow;</code></li>
+                <li><strong>font-size:</strong> Define el tamaño de la fuente. Ejemplo: <code>font-size: 16px;</code></li>
+                <li><strong>margin:</strong> Define el margen exterior de un elemento. Ejemplo: <code>margin: 10px;</code></li>
+                <li><strong>padding:</strong> Define el relleno interior de un elemento. Ejemplo: <code>padding: 10px;</code></li>
+                <li><strong>border:</strong> Define el borde de un elemento. Ejemplo: <code>border: 1px solid black;</code></li>
+            </ul>
+            <h3>Propiedades Avanzadas</h3>
+            <ul>
+                <li><strong>box-shadow:</strong> Añade sombra a un elemento. Ejemplo: <code>box-shadow: 2px 2px 5px gray;</code></li>
+                <li><strong>transition:</strong> Define la transición entre dos estados de un elemento. Ejemplo: <code>transition: all 0.3s ease;</code></li>
+                <li><strong>transform:</strong> Aplica una transformación a un elemento. Ejemplo: <code>transform: rotate(45deg);</code></li>
+                <li><strong>flex:</strong> Define cómo un elemento flexible crecerá o se encogerá. Ejemplo: <code>flex: 1;</code></li>
+                <li><strong>grid:</strong> Define un contenedor de cuadrícula. Ejemplo: <code>display: grid;</code></li>
+            </ul>
+        </section>
+
+        <section id="css-media-queries" class="main-section">
+            <h2 class="title-section">Media Queries</h2>
+            <p class="p-text">
+                Las media queries se utilizan para aplicar estilos CSS específicos en función de las características del dispositivo, como el ancho de la pantalla. Esto es esencial para el diseño responsive.
+            </p>
+            <pre>
+                <code>
+                    @media (max-width: 600px) {
+                        body {
+                            background-color: lightblue;
+                        }
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section id="css-keyframes" class="main-section">
+            <h2 class="title-section">Keyframes para Animaciones</h2>
+            <p class="p-text">
+                Los keyframes se utilizan para definir una secuencia de estilos CSS que crean una animación. Puedes especificar los estados inicial y final, así como cualquier punto intermedio.
+            </p>
+            <pre>
+                <code>
+                    @keyframes example {
+                        0% { background-color: red; }
+                        50% { background-color: yellow; }
+                        100% { background-color: green; }
+                    }
+
+                    .animated-element {
+                        animation: example 5s infinite;
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section id="css-pseudo-elements" class="main-section">
+            <h2 class="title-section">Pseudo-elementos</h2>
+            <p class="p-text">
+                Los pseudo-elementos se utilizan para aplicar estilos a partes específicas de un elemento. Los más comunes son <code>::before</code> y <code>::after</code>.
+            </p>
+            <pre>
+                <code>
+                    p::before {
+                        content: "Inicio: ";
+                        color: red;
+                    }
+
+                    p::after {
+                        content: " Fin.";
+                        color: blue;
+                    }
+                </code>
+            </pre>
+        </section>
+    </main>
+    <div class="fillScreen"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const sections = document.querySelectorAll('.main-section');
+        const body = document.body;
+        const backdrop = document.querySelector('.fillScreen');
+
+        sections.forEach((section) => {
+            section.addEventListener('click', () => {
+                
+                // Si la sección ya está expandida, la contraemos
+                if (section.classList.contains('expanded')) {
+                    document.addEventListener('keydown', function(event){
+                        if(event.altKey && event.key==='w'){
+                            section.classList.remove('expanded');
+                            body.classList.remove('section-expanded');
+                            backdrop.style.display="none";
+                        }
+                    })
+                } else {
+                    // Contraer todas las secciones expandidas
+                    sections.forEach((sec) => sec.classList.remove('expanded'));
+                    // Expandir la sección clickeada
+                    section.classList.add('expanded');
+                    body.classList.add('section-expanded');
+                    backdrop.style.display="inline"
+                }
+            });
+        });
+
+        // Cerrar la sección expandida si se hace clic fuera de ella
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.main-section')) {
+                sections.forEach((section) => section.classList.remove('expanded'));
+                body.classList.remove('section-expanded');
+                backdrop.style.display="none"
+            }
+        });
+    </script>
+</body>
+</html>
