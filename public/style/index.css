@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: monospace;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -294,6 +295,15 @@ footer{
     interpolate-size: allow-keywords;
     border: none;
     color: #fff;
+}
+.head-pre{
+  width: 98%;
+  display: flex;
+  contain: content;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  left: 0;
 }
 
 .btn-copy::before{

@@ -11,7 +11,6 @@ item_grupo.forEach((linea)=>{
 nav_items.forEach((item)=>{
     item.addEventListener('click',()=>{
         const seccion = document.getElementById(item.innerText);
-        seccion.classList.toggle('visible');
-        location.href="#"+item.innerText;
+        location.href="#js-"+item.innerText;
     })
 })

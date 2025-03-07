@@ -88,3 +88,57 @@ A partir de esta idea nace BlogTech qué sin percatarnos comenzamos a cubrir una
 - ![Static Badge](https://img.shields.io/badge/Jair_Hamburger-000?style=for-the-badge&logo=github&logoColor=white)
 - ![Static Badge](https://img.shields.io/badge/Jailer_Vasco-000?style=for-the-badge&logo=github&logoColor=white) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ImJay18/BlogTech)
 - ![Static Badge](https://img.shields.io/badge/Yerlis_Manjarrez-000?style=for-the-badge&logo=github&logoColor=white) 
+
+---
+## Descripción de Archivos
+
+### JavaScript
+
+#### `backend/index.js`
+Este archivo configura el servidor Express y la conexión a la base de datos MySQL. Define las rutas API para obtener datos y manejar las solicitudes del frontend.
+
+#### `backend/conexion.js`
+Este archivo contiene la configuración de la conexión a la base de datos MySQL y la función `selecionarDatos` para realizar consultas a la base de datos.
+
+### HTML
+
+#### `public/index.html`
+Este archivo es la página principal del proyecto. Contiene la estructura básica del sitio web y un script para hacer solicitudes a la API y mostrar los datos obtenidos.
+
+#### `public/component/formRegister.html`
+Este archivo contiene el formulario de registro de usuarios. Incluye estilos CSS y un script para manejar el envío del formulario, enviar los datos a la API y limpiar los campos después de un registro exitoso.
+
+---
+
+## Cómo ejecutar el proyecto
+
+1. **Instalar dependencias**:
+    ```sh
+    cd backend
+    npm install
+    ```
+
+2. **Iniciar el servidor**:
+    ```sh
+    node index.js
+    ```
+
+3. **Abrir `index.html` en un navegador** para ver la página principal y probar las funcionalidades.
+
+---
+
+## API Endpoints
+
+### `GET /api/data`
+Obtiene todos los usuarios de la base de datos.
+
+### `POST /api/user`
+Registra un nuevo usuario en la base de datos. Los datos del usuario deben ser enviados en el cuerpo de la solicitud en formato JSON.
+
+---
+
+## Contacto
+
+Si deseas colaborar en la construcción de este sitio, ponte en contacto con nosotros a través de [WhatsApp](https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:).
+
+---
