@@ -233,6 +233,107 @@
                 </ul>
             </section>
 
+            <section id="js-Bucles" class="main-section visible">
+                <h2 class="title-section">Bucles</h2>
+                <p class="p-text">
+                    Los bucles son estructuras de control que permiten repetir un bloque de código varias veces. Son útiles cuando necesitas ejecutar el mismo código múltiples veces con diferentes valores. Los bucles más comunes en JavaScript son <strong>for</strong>, <strong>while</strong> y <strong>do...while</strong>.
+                </p>
+                <h3 class="list-tittle">Tipos de Bucles</h3>
+                <ul>
+                    <li><strong>For</strong>
+                        <p>El bucle <strong>for</strong> se utiliza cuando conoces de antemano el número de iteraciones que deseas realizar. La estructura básica de un bucle <strong>for</strong> incluye una inicialización <strong>(<strong class="yellow">i = 0</strong> )</strong>, una condición <strong>(<strong class="yellow">i < 5</strong>)</strong> y una expresión <strong >(<strong class="yellow">i++</strong>)</strong> final. <br>
+                            El Bucle inicia con la variable de inicialización, posteriormente evalua la condición, sí esta se cumple entonces ejecuta el bloque y luego ejecuta la expresión para incrementar o decrementar la variable de inicialización y repetir el mismo ciclo.
+                        </p>
+                        <pre>
+                            <h3 class="head-pre">Ejemplo de <strong>for</strong><span><button class="btn-copy" onclick="copyCode('js-for')"><i class="bi bi-copy"></i></button></span></h3>
+                            <code id="js-for">
+                                <span><span class="js-primary">for</span> (<span class="js-primary">let</span> <span class="js-let">i</span> = <span class="js-number">0</span>; <span class="js-let">i</span> < <span class="js-number">5</span>; <span class="js-let">i</span>++) {</span>
+                                <span>    <span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-let">i</span>);</span>
+                                <span>}</span>
+                            </code>
+                        </pre>
+                        <pre>
+                            <h3 class="head-pre">Resultado<span></span></h3>
+                            <code id="js-for">
+                                <span class="token"> 0</span>
+                                <span class="token"> 1</span>
+                                <span class="token"> 2</span>
+                                <span class="token"> 3</span>
+                                <span class="token"> 4</span>
+                            </code>
+                        </pre>
+                    </li>
+                    <li><strong>While</strong>
+                        <p>El bucle <strong>while</strong> se utiliza cuando deseas repetir un bloque de código mientras una condición sea verdadera. La condición se evalúa antes de cada iteración del bucle. Mientras(while) la condición se cumpla, este se ejecutará</p>
+                        <pre>
+                            <h3 class="head-pre">Ejemplo de <strong>while</strong><span><button class="btn-copy" onclick="copyCode('js-while')"><i class="bi bi-copy"></i></button></span></h3>
+                            <code id="js-while">
+                                <span><span class="js-primary">let</span> <span class="js-let">i</span> = <span class="js-number">0</span>;</span>
+                                <span><span class="js-primary">while</span> (<span class="js-let">i</span> < <span class="js-number">5</span>) {</span>
+                                <span>    <span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-let">i</span>);</span>
+                                <span>    <span class="js-let">i</span>++;</span>
+                                <span>}</span>
+                            </code>
+                        </pre>
+                        <pre>
+                            <h3 class="head-pre">Resultado<span></span></h3>
+                            <code id="js-while">
+                                <span class="token "> 0</span>
+                                <span class="token "> 1</span>
+                                <span class="token "> 2</span>
+                                <span class="token "> 3</span>
+                                <span class="token "> 4</span>
+                            </code>
+                        </pre>
+                    </li>
+                    <li><strong>Do-While</strong>
+                        <p>El bucle <strong>do...while</strong> es similar al bucle <strong>while</strong>, pero garantiza que el bloque de código se ejecute al menos una vez antes de evaluar la condición, porque este primero ejecuta el do y luego evalua la condición para saber si puede iterar. Es decir, si la primera condición no se cumple, el do-while se habra ejecutado una vez antes de comprobar que esta condición no se cumple.</p>
+                        <pre>
+                            <h3 class="head-pre">Ejemplo de <strong>do-while</strong><button class="btn-copy" onclick="copyCode('js-do-while')"><i class="bi bi-copy"></i></button><span></span></h3>
+                            <code id="js-do-while">
+                                <span><span class="js-primary">let</span> <span class="js-let">i</span> = <span class="js-number">0</span>;</span>
+                                <span><span class="js-primary">do</span> <span class="js-primary">{</span></span>
+                                <span>    <span class="js-const">console</span>.<span class="js-secondary">log</span><span class="js-let">(</span><span class="js-let">i</span><span class="js-let">)</span>;</span>
+                                <span>    <span class="js-let">i</span>++;</span>
+                                <span><span class="js-primary">}</span><span class="js-primary">while</span> <span class="js-primary">(</span><span class="js-let">i</span> < <span class="js-number">5</span><span class="js-primary">)</span>;</span>
+                            </code>
+                        </pre>
+                        <pre>
+                            <h3 class="head-pre">Resultado<span></span></h3>
+                            <code id="js-while">
+                                <span class="token "> 0</span>
+                                <span class="token "> 1</span>
+                                <span class="token "> 2</span>
+                                <span class="token "> 3</span>
+                                <span class="token "> 4</span>
+                            </code>
+                        </pre>
+                    </li>
+                    <li><strong>ForEach</strong>
+                        <p>El método <strong>forEach</strong> ejecuta una función proporcionada una vez por cada elemento del array <strong>(es decir, hace una iteración por cada elemento existente en el <strong class="yellow">array</strong> )</strong>. Es útil para iterar sobre los elementos de un array sin necesidad de un contador explícito.</p>
+                        <pre>
+                            <h3 class="head-pre">Ejemplo de <strong>forEach</strong><span><button class="btn-copy" onclick="copyCode('js-foreach')"><i class="bi bi-copy"></i></button></span></h3>
+                            <code id="js-foreach">
+                                <span><span class="js-primary">const</span> <span class="js-const">array</span> = [<span class="js-number">1</span>, <span class="js-number">2</span>, <span class="js-number">3</span>, <span class="js-number">4</span>, <span class="js-number">5</span>];</span>
+                                <span><span class="js-const">array</span>.<span class="js-secondary">forEach</span><span class="js-primary">(</span><span class="js-const">(<span class="js-let">element</span>)</span> <span class="js-let">{</span></span>
+                                <span>    <span class="js-const">console</span>.<span class="js-secondary">log</span><span class="js-secondary">(</span><span class="js-let">element</span><span class="js-secondary">)</span>;</span>
+                                <span><span class="js-let">}</span><span class="js-primary">)</span>;</span>
+                            </code>
+                        </pre>
+                        <pre>
+                            <h3 class="head-pre">Resultado<span></span></h3>
+                            <code id="js-while">
+                                <span class="token "> 1</span>
+                                <span class="token "> 2</span>
+                                <span class="token "> 3</span>
+                                <span class="token "> 4</span>
+                                <span class="token "> 5</span>
+                            </code>
+                        </pre>
+                    </li>
+                </ul>
+            </section>
+
             <section class="working-section">
                 <i class="bi bi-gear-wide-connected bi-sub animation-rotate"></i>
                 <i data-index="2" class="bi bi-gear-wide-connected bi-sub animation-rotate"></i>
@@ -241,6 +342,7 @@
             </section>
         </div>
     </main>
+    <button class="up"><i class="bi bi-chevron-up"></i></button>
     <script src="../script/copy.js"></script>
     <script src="../script/nav-lat.js"></script>
     <script src="../script/modal.js"></script>

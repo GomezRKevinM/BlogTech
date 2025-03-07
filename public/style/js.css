@@ -179,6 +179,25 @@ strong{
 strong.yellow{
     text-shadow: var(--color-yellow) 1px 1px 15px;
 }
+.up{
+    padding: 4px 6px;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-color: #e2ef34;
+    transition: all 200ms ease-in-out;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    animation: upOpacity 1s linear;
+}
+.up:hover{
+    border: 3px solid #000;
+    box-shadow:inset #d2d2d2 1px 2px 4px;
+    text-shadow: #444 1px 1px 4px;
+    cursor: pointer;
+    animation: moveUp 1s linear;
+}
 .js-primary{
     color: #d353ca;
 }
@@ -199,4 +218,32 @@ strong.yellow{
 }
 .js-number{
     color: #ad8c4e;
+}
+@keyframes upOpacity {
+    0%{
+        bottom: 1rem;
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 1;
+        bottom: 2rem;
+        scale: 0.9;
+    }
+    75%{
+        scale: 1.25;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes moveUp {
+    0%{
+        bottom: 2rem;
+    }
+    50%{
+        bottom: 1rem;
+    }
+    100%{
+        bottom: 4rem;
+    }
 }
