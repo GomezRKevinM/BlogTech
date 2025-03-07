@@ -24,3 +24,11 @@ upBtn.addEventListener('click',()=>{
     });
     upBtn.style.display="none";
 })
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { 
+        upBtn.style.display = "inline";
+    } else {
+        upBtn.style.display = "none";
+    }
+});

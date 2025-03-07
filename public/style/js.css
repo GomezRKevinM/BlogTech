@@ -197,6 +197,7 @@ strong.yellow{
     text-shadow: #444 1px 1px 4px;
     cursor: pointer;
     animation: moveUp 1s linear;
+    display: none;
 }
 .js-primary{
     color: #d353ca;
@@ -218,6 +219,9 @@ strong.yellow{
 }
 .js-number{
     color: #ad8c4e;
+}
+.js-function{
+    color: #52a6d0;
 }
 @keyframes upOpacity {
     0%{
