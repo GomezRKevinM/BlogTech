@@ -1,4 +1,5 @@
 # BlogTech
+![logo de talento tech](https://talentotech.gov.co/849/articles-334606_foto_marquesina.jpg)
 [pagina web](https://gomezrkevinm.github.io/BlogTech/public/)
 
 ## Navegación
