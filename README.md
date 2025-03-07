@@ -4,11 +4,11 @@
 
 ## Navegación
 
-- [¿Qué es?](#qué-es)
-- [Áreas abarcadas en el proyecto](#áreas-abarcadas-en-el-proyecto)
+- [¿Qué es?](#que-es)
+- [Áreas abarcadas en el proyecto](#areas-abarcadas-en-el-proyecto)
 - [Frameworks o dependencias empleadas](#frameworks-o-dependencias-empleadas)
 - [Tabla de Contenido](#tabla-de-contenido)
-- [Participantes](#participantes)
+- [Participantes](#participantes-)
 - [Descripción de Archivos](#descripción-de-archivos)
   - [JavaScript](#javascript)
   - [HTML](#html)
