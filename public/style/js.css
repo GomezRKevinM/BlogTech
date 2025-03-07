@@ -179,3 +179,21 @@ strong{
 strong.yellow{
     text-shadow: var(--color-yellow) 1px 1px 15px;
 }
+.js-primary{
+    color: #d353ca;
+}
+.js-secondary{
+    color: #576fad;
+}
+.js-br{
+    color: #a548b4;
+}
+.js-let{
+    color: #e9bc6a;
+}
+.js-text{
+    color: #76c376;
+}
+.js-const{
+    color: yellow;
+}
