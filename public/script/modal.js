@@ -1,9 +1,16 @@
-const backdrop = document.getElementById("fillScreen")
+const backdrop = document.getElementById("fillScreen");
+let modalOpen;
 function showModal(id){
 
     const modal = document.getElementById(id);
     backdrop.style.display="inline";
     modal.style.display="inline";
+    modalOpen=id;
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal(modalOpen);
+        }
+    });
 
 }
 
@@ -25,3 +32,7 @@ function closeModal(id){
     backdrop.style.display="none";
     modal.style.display="none";
 }
+
+backdrop.addEventListener('click',()=>{
+    closeModal(modalOpen);
+})
