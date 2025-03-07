@@ -22,6 +22,9 @@
             <a href="./js.html" class="ancoresNav">JS</a>
             <a href="./css.html" class="ancoresNav a-select">CSS</a>
         </nav>
+        <button class="menu-toggle" aria-label="Menú">
+            ☰
+        </button>
     </header>
     <main class="main-css">
         <section id="css-intro" class="main-section">
@@ -151,23 +154,25 @@
         sections.forEach((section) => {
             section.addEventListener('click', () => {
                 
-                // Si la sección ya está expandida, la contraemos
-                if (section.classList.contains('expanded')) {
-                    document.addEventListener('keydown', function(event){
-                        if(event.altKey && event.key==='w' ||event.key === 'Escape'){
-                            section.classList.remove('expanded');
-                            body.classList.remove('section-expanded');
-                            backdrop.style.display="none";
-                        }
-                    })
-                } else {
-                    // Contraer todas las secciones expandidas
-                    sections.forEach((sec) => sec.classList.remove('expanded'));
-                    // Expandir la sección clickeada
-                    section.classList.add('expanded');
-                    body.classList.add('section-expanded');
-                    backdrop.style.display="inline"
+                if(window.visualViewport.width>768){
+                    if (section.classList.contains('expanded')) {
+                        document.addEventListener('keydown', function(event){
+                            if(event.altKey && event.key==='w' ||event.key === 'Escape'){
+                                section.classList.remove('expanded');
+                                body.classList.remove('section-expanded');
+                                backdrop.style.display="none";
+                            }
+                        })
+                    } else {
+                        // Contraer todas las secciones expandidas
+                        sections.forEach((sec) => sec.classList.remove('expanded'));
+                        // Expandir la sección clickeada
+                        section.classList.add('expanded');
+                        body.classList.add('section-expanded');
+                        backdrop.style.display="inline"
+                    }
                 }
+                
             });
         });
 
@@ -180,5 +185,6 @@
             }
         });
     </script>
+    <script src="../script/togglemenu.js"></script>
 </body>
 </html>
