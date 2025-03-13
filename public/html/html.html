@@ -792,7 +792,7 @@
                                 <p>la equiteta<span class="code">form</span> En HTML se usa para crear formularios que recopilan información del usuario y pueden enviarla a un servidor para su procesamiento.</p>
                                 <p>Sin embargo, el procesamiento de los datos que envía el formulario lo hace un lenguaje de backend como PHP, Node.js, Python, etc.</p>   
                                 <pre>
-                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                                     <code id="html-code">
                                         <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>procesar.php<span class="token punctuation">"</span></span><span class="token punctuation"> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POST<span class="token punctuation">"</span></span><span class="token punctuation"></span>&gt;</span></span>
                                         <span class="token comment4">&lt;!-- action="procesar.php" → Define a dónde se enviarán los datos.&gt;</span>
@@ -815,7 +815,7 @@
                                 <p>la equiteta<span class="code">input</span> en HTML se usa dentro de un <span class="code">form</span> para capturar datos del usuario.</p>   
                                 <p>Dependiendo del atributo <span class="code">input</span>, puede ser un campo de texto, un botón, una casilla de verificación, etc.</p>
                                 <pre>
-                                    <h3 class="head-pre">Ejemplo <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
                                     <code id="html-code">
                                         <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span></span> 
                                         <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
@@ -836,22 +836,88 @@
 
                         <section class="tag-info" data-color="blue" data-colortext="white">
                             <h2>LABEL</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">label</span> en HTML se usa para asociar un texto descriptivo con un elemento de entrada <span class="code">input</span>, mejorando la accesibilidad y usabilidad.</p>   
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span></span> 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation">&gt;Nombre:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"text"</span><span class="token attr-name"> id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token tag tag-head"><span class="token tag"><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"nombre"</span><span class="token punctuation"><span class="token attr-name"> required</span><span class="token attr-value"></span>&gt;</span></span></span></span>
+                                        <span class="token comment4">&lt;!-- for="nombre" → Conecta la etiqueta label con el campo input cuyo id es "nombre". --&gt;</span>
+                                        <span class="token comment4">&lt;!-- Esto permite que al hacer clic en el texto "Nombre:", el cursor se active en el campo de entrada. --&gt;</span>
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"submit"</span><span class="token punctuation">&gt;Enviar</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="blue" data-colortext="white">
                             <h2>BUTTON</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">button</span> en HTML se usa para crear botones interactivos en formularios y páginas web.</p>   
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;clic aquí</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment2">&lt;!-- Crea un botón simple con el texto "clic aquí". --&gt;</span>
+
+                                    </code>
+                                </pre>     
+                                <pre>
+                                    <h3 class="head-pre">Tipos de button: <span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">   
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"submit"</span><span class="token punctuation">&gt;Enviar</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment2">&lt;!-- Submit → Envia los datos del formulario. --&gt;</span>
+                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"reset"</span><span class="token punctuation">&gt;Restablecer</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment2">&lt;!-- Reset → Borra todos los campos del formulario.. --&gt;</span>
+                                        <br><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"button"</span><span class="token punctuation">&gt;Clic aqui</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment2">&lt;!-- Button → Solo funciona con JavaScript o eventos personalizados. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="blue" data-colortext="white">
                             <h2>SELECT</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">select</span>  se usa para crear listas desplegables, permitiendo a los usuarios elegir una opción.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"opciones"</span><span class="token punctuation">&gt;Elije una opción:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"opciones"</span><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"opcion"</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;Opción 1</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"2"</span><span class="token punctuation">&gt;Opción 2</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"3"</span><span class="token punctuation">&gt;Opción 3</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment4">&lt;!-- Option define cada opción de la lista. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- Value es el valor que se enviará al servidor cuando se seleccione esa opción. --&gt;</span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="blue" data-colortext="white">
                             <h2>OPTION</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">option</span> se usa dentro de <span class="code">select</span> para definir cada opción de una lista desplegable.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"colores"</span><span class="token punctuation">&gt;Elije un color:</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"colores"</span><span class="token attr-name"> name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"color"</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"amarillo"</span><span class="token punctuation">&gt;Amarillo</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"azul"</span><span class="token punctuation">&gt;Azul</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"rojo"</span><span class="token punctuation">&gt;Rojo</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token comment4">&lt;!-- Cada option define opción de la lista. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- El value se envía al servidor cuando el usuario elige una opción. --&gt;</span>
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                    </code>
+                                </pre>
+                                <p>se usa para Para listas desplegables dentro de formularios, para que el usuario elija entre varias opciones de forma sencilla y para mejorar la accesibilidad y organización de datos en un formulario.</p>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -864,39 +930,209 @@
                     <span class="tag-info-title"></span>
                     <a href="#" onclick="closeModal('Tabla')" class="anclamargin">
                         <img class="modal-close" src="../assets/cerrar.png" alt="closeModal">
-                    </a></h2>
-                <div class="moda-content">
+                    </a>
+                </h2>
+                <div class="modal-content">
+                    <h2>Principales etiquetas de Tabla en HTML</h2>
                     <div class="tag-container">
                         <div class="content-tag-info"></div>
                     <div class="nav-tag">
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>TABLE</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">table</span> en HTML se usa para crear tablas y organizar datos en filas y columnas.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- table → Crea la tabla. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- tr → Define una fila. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- th → Define encabezados (negrita y centrados por defecto). --&gt;</span>
+                                        <span class="token comment4">&lt;!-- td → Define las celdas de datos. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>THEAD</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">thead</span> en HTML se usa dentro de <span class="code">table</span> para agrupar los encabezados de una tabla, mejorando la organización y accesibilidad.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Pais</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Colombia</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Brasil</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- thead → Encierra los encabezados de la tabla. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- tbody → Agrupa los datos del cuerpo de la tabla --&gt;</span>
+                                        <span class="token comment4">&lt;!-- th → Define encabezados (negrita y centrados por defecto). --&gt;</span>
+                                        <span class="token comment4">&lt;!-- td → Define las celdas de datos. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>TBODY</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">tbody</span> en HTML se usa dentro de <span class="code">table</span> para agrupar el cuerpo de una tabla, separándolo de los encabezados y el pie de tabla.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Pais</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Colombia</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head3"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Brasil</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- thead → Encierra los encabezados de la tabla. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- tbody → Agrupa los datos del cuerpo de la tabla. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- th → Define os títulos de las columnas. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- td → Contiene los datos de cada celda. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>TH</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">th</span> en HTML se usa dentro de <span class="code">table</span>para definir los encabezados de una tabla.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Pais</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Colombia</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Brasil</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- th → Define cada encabezado de columna (por defecto en negrita y centrado). --&gt;</span>
+                                        <span class="token comment4">&lt;!-- td → Se usa para los datos de la tabla. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>TR</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">tr</span> en HTML se usa dentro de <span class="code">table</span>para definir  una fila en una tabla</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Pais</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Colombia</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Brasil</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- Cada tr → representa una fila de la tabla. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- th → (encabezado) va dentro de la primera fila. --&gt;</span>
+                                        <span class="token comment4">&lt;!-- (celda de datos) va en las filas siguientes. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
 
                         <section class="tag-info" data-color="green" data-colortext="white">
                             <h2>TD</h2>
-                            <div class="tag-info-content"></div>
+                            <div class="tag-info-content">
+                                <p>la equiteta<span class="code">td</span> en HTML se usa dentro de <span class="code">tr</span>para definir una celda de datos en una tabla.</p>
+                                <pre>
+                                    <h3 class="head-pre">Ejemplo:<span><button class="btn-copy" onclick="copyCode('html-code')"><i class="bi bi-copy"></i></button></span></h3>
+                                    <code id="html-code">
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>"1"</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Nombre</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Apellido</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;Pais</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Kevin</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Gomez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Colombia</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <br><span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Juan</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Perez</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head2"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;Brasil</span><span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span></span>
+                                        <span class="token tag tag-head"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token tag tag-html"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></span>                                 
+                                        <span class="token comment4">&lt;!-- Cada tr → tiene tres td, porque hay tres columnas.  --&gt;</span>
+                                        <span class="token comment4">&lt;!-- td → Define cada celda dentro de una fila tr. --&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
                         </section>
                     </div>
                 </div>
