@@ -76,8 +76,8 @@
 <div >
     <h2>Nuevo Comentario</h2>
     <form id="formulario-coment">
-        <input type="text" name="name" id="username" placeholder="Nombre">
-        <textarea name="text" id="comentario" placeholder="Mensaje..."></textarea>
+        <input type="text" name="name" id="username" placeholder="Nombre" required>
+        <textarea name="text" id="comentario" placeholder="Mensaje..." required></textarea>
         <input type="submit" value="Enviar Comentario">
     </form>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -85,11 +85,22 @@
        const formulario =document.getElementById('formulario-coment');
         formulario.addEventListener('submit', function(event) {
         event.preventDefault();
-    
+            
         const coment = document.getElementById('comentario').value;
         const username = document.getElementById('username').value;
         console.log(coment)
-  
+            if((coment == "" || coment == undefined || coment == null || coment == " ") || (username == "" || username == undefined || username == null || username == " ")){
+                console.log("No hay datos para enviar, por ende no se pudo completar el envio");
+                Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Error al enviar comentario",
+                text: "alguno de los campos se encuentra vacio, es necesario rellenarlos para poder llevar a cabo el envio del comentario",
+                showConfirmButton: false,
+                timer: 2500
+                });
+                return;
+            }
         const datos = {
             id:0,
             usuario: username,
