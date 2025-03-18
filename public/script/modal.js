@@ -3,6 +3,8 @@ let modalOpen;
 function showModal(id){
 
     const modal = document.getElementById(id);
+    const succes = modal.querySelector('.btn-success');
+
     backdrop.style.display="inline";
     modal.style.display="inline";
     modalOpen=id;
@@ -14,6 +16,10 @@ function showModal(id){
             clearContent(modalOpen);
         }
     });
+    succes.addEventListener('click',()=>{
+        closeModal(modalOpen)
+        window.location.reload();
+    })
 
 }
 

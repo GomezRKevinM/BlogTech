@@ -59,6 +59,7 @@
     height: 95%;
     overflow: auto;
     padding: 20px;
+    padding-bottom: 0;
 }
 .modal-content::-webkit-scrollbar{
     width: 4px;
@@ -68,7 +69,6 @@
     background-color: #888888;
     border-radius: 2px;
 }
-
 .modal-title{
     display: flex;
     align-items: center;

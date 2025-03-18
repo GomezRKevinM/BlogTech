@@ -83,9 +83,9 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
        const formulario =document.getElementById('formulario-coment');
+
         formulario.addEventListener('submit', function(event) {
         event.preventDefault();
-            
         const coment = document.getElementById('comentario').value;
         const username = document.getElementById('username').value;
         console.log(coment)
@@ -127,9 +127,6 @@
                 timer: 2500
                 });
                 formulario.reset();
-                setTimeout(()=>{
-                    window.location.href="https://gomezrkevinm.github.io/BlogTech/public/";
-                },2500)
             } else {
                 Swal.fire({
                 position: "top-end",
