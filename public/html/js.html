@@ -43,11 +43,11 @@
 
             <li class="item-group">
                 <div class="title-group">
-                    Arrays
+                    Vectores y matrices
                     <i class="bi bi-caret-up-fill icon-arrow"></i>
                 </div>
                 <ul class="sub-items">
-                    <li class="nav-item">¿Que es un array?</li>
+                    <li class="nav-item">Arrays</li>
                     <li class="nav-item">Navegar un array</li>
                 </ul>
             </li>
@@ -411,6 +411,134 @@
                     <h3 class="head-pre">Ejemplo de llamada a función que devuelve un valor<span><button class="btn-copy" onclick="copyCode('js-call-function-return')"><i class="bi bi-copy"></i></button></span></h3>
                     <code id="js-call-function-return">
                         <span class="token"><span class="js-primary">let</span> <span class="js-let">resultado</span> = <span class="js-function">sumar</span>(<span class="js-number">5</span>, <span class="js-number">3</span>); <span class="token comment">// resultado es 8</span></span>
+                    </code>
+                </pre>
+            </section>
+            <section id="js-Arrays" class="main-section visible">
+                <h2 class="title-section">Arrays</h2>
+                <p class="p-text">
+                    Un array es una estructura de datos que puede contener múltiples valores en una sola variable. Los arrays son útiles para almacenar listas de elementos, como números, cadenas de texto, objetos, etc.
+                </p>
+                <h3 class="list-tittle">¿Para qué sirven los arrays?</h3>
+                <p class="p-text">
+                    Los arrays son útiles porque permiten almacenar múltiples valores en una sola variable. Esto facilita la manipulación y el acceso a conjuntos de datos relacionados.
+                </p>
+                <h3 class="list-tittle">Estructura de un array</h3>
+                <p class="p-text">
+                    La estructura básica de un array en JavaScript incluye corchetes <code>[]</code> y los elementos del array separados por comas.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de array<span><button class="btn-copy" onclick="copyCode('js-array')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array">
+                        <span class="token"><span class="js-primary">const</span> <span class="js-const">miArray</span> = [<span class="js-text">"manzana"</span>, <span class="js-text">"banana"</span>, <span class="js-text">"naranja"</span>];</span>
+                    </code>
+                </pre>
+                <h3 id="js-Navegar%20un%20array" class="list-tittle">Acceder a los elementos de un array</h3>
+                <p class="p-text" >
+                    Puedes acceder a los elementos de un array utilizando su índice. Los índices de los arrays en JavaScript comienzan en 0.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de acceso a elementos de un array<span><button class="btn-copy" onclick="copyCode('js-array-access')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-access">
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>[<span class="js-number">0</span>]); <span class="token comment">// "manzana"</span></span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>[<span class="js-number">1</span>]); <span class="token comment">// "banana"</span></span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>[<span class="js-number">2</span>]); <span class="token comment">// "naranja"</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Métodos comunes de los arrays</h3>
+                <p class="p-text">
+                    Los arrays en JavaScript tienen varios métodos incorporados que facilitan la manipulación de los datos. Algunos de los métodos más comunes son:
+                    <ul>
+                        <li>push</li>
+                        <li>pop</li>
+                        <li>shift</li>
+                        <li>unshift</li>
+                        <li>map</li>
+                        <li>filter</li>
+                        <li>Reduce</li>
+                    </ul> 
+                </p>
+                <h3 class="list-tittle">Método push</h3>
+                <p class="p-text">
+                    El método <code>push</code> añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de push<span><button class="btn-copy" onclick="copyCode('js-array-push')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-push">
+                        <span class="token"><span class="js-const">miArray</span>.<span class="js-secondary">push</span>(<span class="js-text">"uva"</span>);</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>); <span class="token comment">// ["manzana", "banana", "naranja", "uva"]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método pop</h3>
+                <p class="p-text">
+                    El método <code>pop</code> elimina el último elemento de un array y devuelve ese elemento.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de pop<span><button class="btn-copy" onclick="copyCode('js-array-pop')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-pop">
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">ultimoElemento</span> = <span class="js-const">miArray</span>.<span class="js-secondary">pop</span>();</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">ultimoElemento</span>); <span class="token comment">// "uva"</span></span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>); <span class="token comment">// ["manzana", "banana", "naranja"]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método shift</h3>
+                <p class="p-text">
+                    El método <code>shift</code> elimina el primer elemento de un array y devuelve ese elemento.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de shift<span><button class="btn-copy" onclick="copyCode('js-array-shift')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-shift">
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">primerElemento</span> = <span class="js-const">miArray</span>.<span class="js-secondary">shift</span>();</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">primerElemento</span>); <span class="token comment">// "manzana"</span></span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>); <span class="token comment">// ["banana", "naranja"]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método unshift</h3>
+                <p class="p-text">
+                    El método <code>unshift</code> añade uno o más elementos al inicio de un array y devuelve la nueva longitud del array.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de unshift<span><button class="btn-copy" onclick="copyCode('js-array-unshift')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-unshift">
+                        <span class="token"><span class="js-const">miArray</span>.<span class="js-secondary">unshift</span>(<span class="js-text">"fresa"</span>);</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">miArray</span>); <span class="token comment">// ["fresa", "banana", "naranja"]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método map</h3>
+                <p class="p-text">
+                    El método <code>map</code> crea un nuevo array con los resultados de llamar a una función proporcionada en cada elemento del array.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de map<span><button class="btn-copy" onclick="copyCode('js-array-map')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-map">
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">numeros</span> = [<span class="js-number">1</span>, <span class="js-number">2</span>, <span class="js-number">3</span>, <span class="js-number">4</span>];</span>
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">dobles</span> = <span class="js-const">numeros</span>.<span class="js-secondary">map</span>(<span class="js-let">num</span> => <span class="js-let">num</span> * <span class="js-number">2</span>);</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">dobles</span>); <span class="token comment">// [2, 4, 6, 8]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método filter</h3>
+                <p class="p-text">
+                    El método <code>filter</code> crea un nuevo array con todos los elementos que pasen la prueba implementada por la función proporcionada.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de filter<span><button class="btn-copy" onclick="copyCode('js-array-filter')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-filter">
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">numeros</span> = [<span class="js-number">1</span>, <span class="js-number">2</span>, <span class="js-number">3</span>, <span class="js-number">4</span>];</span>
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">pares</span> = <span class="js-const">numeros</span>.<span class="js-secondary">filter</span>(<span class="js-let">num</span> => <span class="js-let">num</span> % <span class="js-number">2</span> === <span class="js-number">0</span>);</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">pares</span>); <span class="token comment">// [2, 4]</span></span>
+                    </code>
+                </pre>
+                <h3 class="list-tittle">Método reduce</h3>
+                <p class="p-text">
+                    El método <code>reduce</code> aplica una función a un acumulador y a cada valor de un array (de izquierda a derecha) para reducirlo a un solo valor. <br>
+                    El acumulador va acumular un valor y es el que será retornado <strong>0</strong> es el valor inicial del acumulador.
+                </p>
+                <pre>
+                    <h3 class="head-pre">Ejemplo de reduce<span><button class="btn-copy" onclick="copyCode('js-array-reduce')"><i class="bi bi-copy"></i></button></span></h3>
+                    <code id="js-array-reduce">
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">numeros</span> = [<span class="js-number">1</span>, <span class="js-number">2</span>, <span class="js-number">3</span>, <span class="js-number">4</span>];</span>
+                        <span class="token"><span class="js-const">const</span> <span class="js-let">suma</span> = <span class="js-const">numeros</span>.<span class="js-secondary">reduce</span>((<span class="js-let">acumulador</span>, <span class="js-let">num</span>) => <span class="js-let">acumulador</span> + <span class="js-let">num</span>, <span class="js-number">0</span>);</span>
+                        <span class="token"><span class="js-const">console</span>.<span class="js-secondary">log</span>(<span class="js-const">suma</span>); <span class="token comment">// 10</span></span>
                     </code>
                 </pre>
             </section>

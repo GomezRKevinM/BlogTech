@@ -14,6 +14,14 @@ nav_items.forEach((item)=>{
         const seccion = document.getElementById(item.innerText);
         location.href="#js-"+item.innerText;
         upBtn.style.display="inline";
+
+        
+        setTimeout(()=>{
+            window.scrollTo({
+                top: window.scrollY-180,
+                behavior: 'smooth'
+            })
+        },1000)
     })
 })
 
@@ -28,6 +36,7 @@ upBtn.addEventListener('click',()=>{
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) { 
         upBtn.style.display = "inline";
+        upBtn.style.opacity = "1";
     } else {
         upBtn.style.display = "none";
     }

@@ -190,6 +190,7 @@ strong.yellow{
     left: 2rem;
     bottom: 2rem;
     animation: upOpacity 1s linear;
+    display: none;
 }
 .up:hover{
     border: 3px solid #000;
@@ -199,6 +200,7 @@ strong.yellow{
     animation: moveUp 1s linear;
     display: none;
 }
+
 .js-primary{
     color: #d353ca;
 }
@@ -240,6 +242,7 @@ strong.yellow{
         scale: 1;
     }
 }
+
 @keyframes moveUp {
     0%{
         bottom: 2rem;
