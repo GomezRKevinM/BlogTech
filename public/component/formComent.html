@@ -117,12 +117,12 @@
         .then(response => response.json())
         .then(data => {
             console.log('Respuesta de la API:', data);
-            if (data.exito) {
+            if (data.ok) {
                 Swal.fire({
                 position: "top-end",
                 icon: "success",
                 title: "Enviado",
-                text: "Su comentario ha sido enviado exitosamente",
+                text: "Su comentario ha sido enviado exitosamente"|| data.mensaje,
                 showConfirmButton: false,
                 timer: 2500
                 });
