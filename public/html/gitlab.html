@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/html.css" />
-    <link rel="stylesheet" href="../style/animation-scroll.css">
+    <link rel="stylesheet" href="/style/index" />
+    <link rel="stylesheet" href="/style/html" />
+    <link rel="stylesheet" href="/style/animation-scroll">
     <link rel="icon" href="../assets/image/pngegg.png" type="image/png" />
     <title>BootCamp Talento Tech</title>
   </head>
   <body>
-    <header>
+    <header id="headerBody">
         <h1 class="h1">BlogTech</h1>
         <nav class="navbar">
-            <a href="../index.html" class="ancoresNav">Inicio</a>
-            <a href="../html/git.html" class="ancoresNav ">Git</a>
+            <a href="/" class="ancoresNav">Inicio</a>
+            <a href="/git" class="ancoresNav ">Git</a>
             <a href="#" class="ancoresNav a-select">GitLab</a>
-            <a href="./html.html" class="ancoresNav">HTML</a>
-            <a href="../html/js.html" class="ancoresNav">JS</a>
-            <a href="../html/css.html" class="ancoresNav">CSS</a>
+            <a href="/html" class="ancoresNav">HTML</a>
+            <a href="/js" class="ancoresNav">JS</a>
+            <a href="/css" class="ancoresNav">CSS</a>
+            <a href="/foro" class="ancoresNav">Foro</a>
+            <a id="aLogin" href="/login" class="ancoresNav">Iniciar Sesión</a>
+            <div id="user-letter">K</div>
         </nav>
     </header>
+    <div id="menUser">
+      <div class="user">KevinGr</div>
+      <div class="logout"><a href="/logout">Cerrar Sesion</a></div>
+  </div>
     <main>
         <div class="descriptionContainerGitLab">
             <h2 class="selector"><img src="../assets/SVG/gitlab.svg" class="img-sub" alt="logo gitlab">GitLab</h2>
@@ -55,5 +62,6 @@
         </p>
       </div>
     </main>
+    <script src="/script/index"></script>
   </body>
 </html>

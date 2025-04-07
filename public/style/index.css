@@ -29,6 +29,33 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
 }
+#headerBody{
+  z-index: 21;
+}
+#menUser{
+  padding: 10px 15px;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: -10%;
+  left: 89%;
+  background-color: #698ca4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 20;
+  transition: all 300ms ease-in-out;
+}
+#menUser a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px 5px;
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+#menUser a:hover{
+  background-color: #27353e;
+}
 
 .h1 {
   font-size: 24px;
@@ -291,6 +318,13 @@ footer{
   transform: rotate(38deg);
   animation: rotate 4s linear infinite reverse;
 
+}
+#user-letter{
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #459bf1;
+  border-radius: 50%;
+  padding: 10px 14px;
 }
 
 @keyframes rotate {

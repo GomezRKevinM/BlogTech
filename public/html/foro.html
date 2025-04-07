@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogTech | Foro</title>
+    <link rel="stylesheet" href="/style/index">
+    <link rel="stylesheet" href="/style/modal">
+    <link rel="stylesheet" href="/style/foro">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="headerBody">
+        <h1 class="h1">BlogTech</h1>
+        <nav class="navbar">
+            <a href="/" class="ancoresNav">Inicio</a>
+            <a href="/git" class="ancoresNav">Git</a>
+            <a href="/gitlab" class="ancoresNav">GitLab</a>
+            <a href="/html" class="ancoresNav">HTML</a>
+            <a href="/js" class="ancoresNav">JS</a>
+            <a href="/css" class="ancoresNav">CSS</a>
+            <a href="/foro" class="ancoresNav a-select">Foro</a>
+            <a id="aLogin" href="/login" class="ancoresNav">Iniciar Sesion</a>
+            <div id="user-letter">K</div>
+        </nav>
+    </header>
+    <div id="menUser">
+        <div class="user">KevinGr</div>
+        <div class="logout"><a href="/logout">Cerrar Sesion</a></div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <div id="header-foro">
+            <section id="foro-msg">
+                <h2 class="title-section">Bienvenido al Foro</h2>
+                <p class="p-text">
+                    Este es un espacio para compartir ideas, resolver dudas y colaborar con otros desarrolladores. ¡Participa en las discusiones y aprende junto a la comunidad!
+                </p>
+                <i class="bi bi-x-circle-fill"></i>
+            </section>
+        </div>
+        <div id="main">
+            <div id="navLat">
+                <button id="btn-publicar">Publicar </button>
+                <div class="item">
+                    <h3 class="title-item">Categorias</h3>
+                    <ul id="categoriaContainer" class="Categorias">
+                        <input type="hidden" name="categoria" id="categoria-Select">
+                        <li class="cat">Todas</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="title-item">Filtrar por</h3>
+                    <ul class="ul-item Filtrar">
+                        <li class="li-item selected">Recientes</li>
+                        <li class="li-item">Me gusta</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="title-item">Añadir</h3>
+                    <ul class="ul-item Ordenar">
+                        <li class="li-item">Categoria</li>
+                        <li class="li-item">Tema</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contenido">
+                <!-- Contenido de publicaciones -->
+            </div>
+        </div>
+    </main>
+    <dialog id="modalPost" closedBy="any">
+        <div id="modal-content">
+            <div id="modal-header">
+                <h2 class="h2-title">Crear Publicacion</h2>
+                <select name="categoria" id="categoria">
+                    <option value="" disabled selected required>Selecciona una categoria</option>
+                </select>
+            </div>
+            <form id="formulario-post" method="post">
+                <div id="text-input">
+                        <textarea name="contenido" id="contenidoNew" cols="30" rows="10" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <div class="btn-modal">
+                    <input type="submit" value="Publicar" class="btn-add">
+
+            </form>
+            <form method="dialog">
+                <button id="cerrar-modal" type="submit">Cancelar</button>
+            </form>
+        </div>
+        </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module">
+        import {getCategorias, getPosts} from '/script/get';
+        const categorias = await getCategorias();
+        const input = document.querySelector('#categoria-Select');
+
+        const posts = await getPosts(localStorage.getItem('categoria')||"Todas");
+        const todasCAt = document.querySelector('.cat');
+        if(todasCAt.textContent == localStorage.getItem('categoria')){ todasCAt.classList.add('selected')}
+        todasCAt.addEventListener('click', () => {
+            localStorage.setItem('categoria', "Todas");
+            location.reload();
+        })
+        const categoriasCat = document.querySelectorAll('.cat');
+        categoriasCat.forEach((categoria) => {
+            categoria.addEventListener('click', () => {
+                if(categoria.textContent == localStorage.getItem('categoria')){
+                    categoria.classList.add('selected');
+                }
+            })
+        })
+
+        const categoriaContainer = document.querySelector('#categoriaContainer');
+        categorias.forEach((categoria) => {
+            const li = document.createElement('li');
+            input.value = "Todas";
+            const option = document.createElement('option');
+            option.value = categoria.nombre;
+            option.textContent = categoria.nombre;
+            document.querySelector('#categoria').appendChild(option);
+            li.classList.add('cat');
+            li.textContent = categoria.nombre;
+            if(li.textContent == localStorage.getItem('categoria')) li.classList.add('selected');
+            categoriaContainer.appendChild(li);
+            li.addEventListener('click', () => {
+                localStorage.setItem('categoria', li.textContent);
+                location.reload();
+            })
+        })
+
+        const postContainer = document.querySelector('#contenido');
+        posts.forEach((post) => {
+            const article = document.createElement('article');
+            article.classList.add('articulo');
+            article.setAttribute('id', post.id);
+            article.setAttribute('datetime', post.fecha);
+
+            article.innerHTML = `
+                <header>
+                    <h3 class="title-articulo">${post.usuario}</h3>
+                    <p class="p-text">Fecha: ${post.fecha} ${post.hora}</p>
+                </header>
+                <div class="p-text" p-content>${post.contenido}</div>
+                <div class="actions">
+                    <div class="action">
+                        <i class="bi bi-heart-fill"></i>
+                        <p class="likes">${post.likes}</p>
+                    </div>
+                    <div class="action">
+                        <a href="/post/${post.id}"><i class="bi bi-chat-fill"></i></a>
+                        <p class="comments">${post.comentarios}</p>
+                    </div>
+                </div>
+            `;
+            postContainer.appendChild(article);
+            const like = article.querySelector('.bi-heart-fill')
+            likes(post.id);
+        })
+        const publicaciones = document.querySelectorAll('article')
+        publicaciones.forEach((publicacion) => {
+            const like = publicacion.querySelector('.bi-heart-fill');
+
+            like.addEventListener('click', () => {
+                if(localStorage.getItem('username') == null){
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Debes iniciar sesion para poder darle like',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+                    return;
+                }
+                if(like.classList.contains('liked')){
+                    fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/dislike`,{
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            usuario: localStorage.getItem('username'),
+                            post: publicacion.id
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: "top-end",
+                            showConfirmButton: false,
+                            timer: 1500,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.onmouseenter = Swal.stopTimer;
+                                toast.onmouseleave = Swal.resumeTimer;
+                            }
+                            });
+                            Toast.fire({
+                                icon: "success",
+                                title: "Has quitado el me gusta a la publicacion"
+                            });
+                            setTimeout(() => {
+                                window.location.reload();
+                            },1500)
+                    })
+                    .catch(error => console.error('Error:', error));
+                }else{
+                    like.style.color = "#4b6577";
+                fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/likes`,{
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        usuario: localStorage.getItem('username'),
+                        post: publicacion.id
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 1500,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                        });
+                        Toast.fire({
+                            icon: "success",
+                            title: "Le has dado me gusta a la publicacion"
+                        });
+                        setTimeout(() => {
+                            window.location.reload();
+                        },1500)
+                })
+                .catch(error => console.error('Error:', error));
+                }
+            });
+        });
+
+        function publicar(event){
+            event.preventDefault();
+            const contenido = document.querySelector('#contenidoNew').value;
+            function getDate(){
+                const date = new Date();
+                let fecha = date.toLocaleDateString('es-ES', {
+                    day: 'numeric',
+                    month: 'numeric',
+                    year: 'numeric'
+                    })
+                fecha = fecha.replace(/-/g, "/");
+                const time = date.toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                });
+            
+                return{ fecha, time };
+            }
+
+            fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/newPublicacion`,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    fecha: getDate().fecha,
+                    hora: getDate().time.replace(/[. ]/g,''),
+                    usuario: localStorage.getItem('username'),
+                    contenido: contenido,
+                    categoria: document.querySelector('#categoria').value
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 1000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                    });
+                    Toast.fire({
+                        icon: "success",
+                        title: "Has publicado tu post"
+                    });
+                    setTimeout(() => {
+                        window.location.reload();
+                    },1000)
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        document.querySelector('#formulario-post').addEventListener('submit', publicar)
+        function openModal(){
+            document.querySelector('#modalPost').showModal();
+        }
+
+        document.querySelector('#btn-publicar').addEventListener('click', openModal)
+        
+    </script>
+    <script>
+        const headerArticle = document.querySelector('#header-foro');
+        const closeHeader = document.querySelector('.bi-x-circle-fill');
+        closeHeader.addEventListener('click', () => {
+            headerArticle.classList.add('close')
+
+            setTimeout(()=>{
+                headerArticle.style.display = 'none';
+            },800)
+            document.querySelector('#contenido').style.height = "90vh";
+            document.querySelector('#navLat').style.height = "90vh";
+        });
+
+        async function likes(id){
+
+            if(localStorage.getItem('username') == null){
+                swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Debes iniciar sesion para poder darle like',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
+                return;
+            }
+            
+            fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/userLikes`,{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            usuario: localStorage.getItem('username'),
+        })
+    })
+        .then(response => response.json())
+        .then(data => {
+            const likesUSer = data;
+            likesUSer.forEach((like) => {
+                if(like.post == id){
+                    const post = document.getElementById(id);
+                    const likeIcon = post.querySelector('.bi-heart-fill');
+                    likeIcon.style.color = "#4b6577";
+                    likeIcon.classList.add('liked');
+                }
+            });
+        })
+        .catch(error => console.error('Error:', error));
+        }
+    </script>
+    <script src="/script/index"></script>
+</body>
+</html>

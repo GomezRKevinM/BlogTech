@@ -1,0 +1,25 @@
+{
+  "name": "blogtech",
+  "version": "1.0.0",
+  "description": "![logo de talento tech](./public/assets/image/talentoTechLogo.jpg)\r [pagina web](https://gomezrkevinm.github.io/BlogTech/public/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GomezRKevinM/BlogTech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/GomezRKevinM/BlogTech/issues"
+  },
+  "homepage": "https://github.com/GomezRKevinM/BlogTech#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

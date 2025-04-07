@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogTech | Foro</title>
+    <link rel="stylesheet" href="/style/index">
+    <link rel="stylesheet" href="/style/modal">
+    <link rel="stylesheet" href="/style/foro">
+    <link rel="stylesheet" href="/style/publicacion">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="h1">BlogTech</h1>
+        <nav class="navbar">
+            <a href="/" class="ancoresNav">Inicio</a>
+            <a href="/git" class="ancoresNav">Git</a>
+            <a href="/gitlab" class="ancoresNav">GitLab</a>
+            <a href="/html" class="ancoresNav">HTML</a>
+            <a href="/js" class="ancoresNav">JS</a>
+            <a href="/css" class="ancoresNav">CSS</a>
+            <a href="/foro" class="ancoresNav a-select">Foro</a>
+            <a id="aLogin" href="/login" class="ancoresNav">Iniciar Sesion</a>
+            <div id="user-letter">K</div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <div id="main">
+            <div id="navLat">
+                <button>Publicar</button>
+                <div class="item">
+                    <h3 class="title-item">Categorias</h3>
+                    <ul id="categoriaContainer" class="ul-item Categorias">
+                        <li class="cat selected">Todas</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="title-item">Filtrar por</h3>
+                    <ul class="ul-item Filtrar">
+                        <li class="li-item">Recientes</li>
+                        <li class="li-item">Me gusta</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="title-item">Añadir</h3>
+                    <ul class="ul-item Ordenar">
+                        <li class="li-item">Categoria</li>
+                        <li class="li-item">Tema</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contenido">
+                    <header id="h-post">
+                        <h3 class="title-articulo">KevinGr</h3>
+                        <p  class="p-text">Publicado: <span id="date">2025-04-03</span> <span id="hora">01:15pm</span></p>
+                        <i id="closeBtnPost" class="bi bi-x-circle-fill closeBtn"></i>
+                    </header>
+                    <div class="p-content">Contenido del artículo</div>
+                    <div class="actions">
+                        <div class="action">
+                            <i class="bi bi-heart-fill"></i>
+                            <p id="likes" class="p-text">1</p>
+                        </div>
+                        <div class="action">
+                            <i class="bi bi-chat-fill"></i>
+                            <p id="comments" class="p-text">1</p>
+                        </div>
+                    </div>
+                    <h3 class="c-title">Comentarios</h3>
+                    <div id="comentarios">
+                        <div id="new-comment">
+                            <form id="form-comment" method="post">
+                                <textarea name="text" id="comentario" placeholder="Escribe tu comentario..." required></textarea>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module">
+        import {getCategorias, getLikesPost} from '../script/get.js';
+        const categorias = await getCategorias();
+
+
+        const categoriaContainer = document.querySelector('#categoriaContainer');
+        categorias.forEach((categoria) => {
+            const li = document.createElement('li');
+            li.classList.add('cat');
+            li.textContent = categoria.nombre;
+            categoriaContainer.appendChild(li);
+        })
+
+    </script>
+    <script>
+    function getDate(){
+        const date = new Date();
+        let fecha = date.toISOString().split('T')[0];
+        fecha = fecha.replace(/-/g, "/");
+        const time = date.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true
+        });
+       
+        return{ fecha, time };
+    }
+        
+        const url = window.location.href;
+        const id = url.substring(url.lastIndexOf('/') + 1);
+        let likesUser;
+
+        
+        fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/publicaciones/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                const post = data[0];
+                document.querySelector('.title-articulo').textContent = post.usuario;
+                document.querySelector('.p-content').innerHTML = post.contenido;
+                document.querySelector('#date').textContent = post.fecha;
+                document.querySelector('#hora').textContent = post.hora;
+                document.querySelector('#likes').textContent = post.likes;
+                document.querySelector('#comments').textContent = post.comentarios;
+            })
+        
+        fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/comentarios/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                const comentarios = data;
+                comentarios.forEach(comentario => {
+                    const div = document.createElement('div');
+                    const h4 = document.createElement('h4');
+                    const p = document.createElement('p');
+
+                    div.classList.add("comentario");
+                    h4.classList.add("title-comentario");
+                    p.classList.add("p-text");
+
+                    h4.textContent = comentario.usuario;
+                    h4.innerHTML += `<span class="date">${comentario.fecha} ${comentario.hora}</span>`;
+                    p.textContent= comentario.comentario;
+
+                    div.appendChild(h4);
+                    div.appendChild(p);
+                    document.querySelector('#comentarios').appendChild(div);
+                })
+            })
+
+            document.querySelector('#comentario').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    enviarComentario(e);
+                }
+            });
+            function enviarComentario(e) {
+                e.preventDefault();
+                if(localStorage.getItem('username') == null){
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Debes iniciar sesion para poder darle like',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+                    return;
+                }
+                const comentario = document.querySelector('#comentario').value;
+                const idPost = url.substring(url.lastIndexOf('/') + 1);
+                fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/comentario`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        fecha: getDate().fecha.replace('-','/'),
+                        hora: getDate().time.replace(/[. ]/g,''),
+                        comentario: comentario,
+                        post: idPost,
+                        usuario: 'KevinGr',
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    
+                    if (data.ok) {
+                        Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Enviado",
+                        text: "Su comentario ha sido enviado exitosamente",
+                        showConfirmButton: false,
+                        timer: 2500
+                        });
+
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 2500);
+                    } else {
+                        Swal.fire({
+                        position: "top-end",
+                        icon: "error",
+                        title: "Error",
+                        text: "Ha ocurrido un error" || data.mensaje,
+                        showConfirmButton: false,
+                        timer: 1500
+                        });
+                    }
+                })
+            }
+
+            const username = localStorage.getItem('username');
+
+        async function likes(){
+            fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/userLikes`,{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            usuario: username
+        })
+    })
+        .then(response => response.json())
+        .then(data => {
+            const likesUSer = data;
+            console.log(likesUSer);
+            likesUSer.forEach((like) => {
+                if(like.post == id){
+                    document.querySelector('.bi-heart-fill').style.color = "#4b6577";
+                    document.querySelector('.bi-heart-fill').classList.add('liked');
+                }
+            });
+        })
+        .catch(error => console.error('Error:', error));
+        }
+
+        likes();
+        document.querySelector('#closeBtnPost').addEventListener('click', () => {
+            window.location.href = '/foro';
+        });
+    </script>
+    <script src="/script/index"></script>
+</body>
+</html>

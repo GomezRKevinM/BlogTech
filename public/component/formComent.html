@@ -82,6 +82,13 @@
     </form>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        window.addEventListener('load', () => {
+            if(localStorage.getItem('user') != "" || localStorage.getItem('user') != undefined){
+                document.getElementById('username').value = localStorage.getItem('username');
+            }else{
+                document.getElementById('username').value = "";
+            }
+        })
        const formulario =document.getElementById('formulario-coment');
 
         formulario.addEventListener('submit', function(event) {
@@ -103,8 +110,11 @@
             }
         const datos = {
             id:0,
-            usuario: username,
+            usuario: localStorage.getItem('username') || username,
             comentario: coment,
+            post:0,
+            fecha: new Date().toLocaleDateString(),
+            hora: new Date().toLocaleTimeString()
         };
     
         fetch('https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/api/coment', {

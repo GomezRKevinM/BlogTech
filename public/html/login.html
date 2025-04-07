@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/login">
+    <link rel="stylesheet" href="/style/index">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Blogtech | Login</title>
+</head>
+<body>
+    <main>
+        <div id="register" class="form-container">
+            <h2 id="h2-title">Registrarse</h2>
+            <form id="formulario-register" method="post">
+                <div>
+                    <label for="id">
+                        <div>
+                            <span>Identificacion</span>
+                            <i class="bi bi-vr"></i>
+                        </div>
+                        <input type="text" name="id" placeholder="Numero de identificacion (cc,nit,ti,etc)" id="id">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="">
+                        <div>
+                            <span>Nombre</span>
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <input type="text" name="nombre" placeholder="nombre completo" id="nombre">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="">
+                        <span>Nombre de usuario</span>
+                        <i class="bi bi-person-circle"></i>
+                        <input type="text" name="username" placeholder="nombre de usuario" id="username">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="">
+                        <span>Telefono</span>
+                        <i class="bi bi-telephone"></i>
+                        <input type="tel" name="telefono" placeholder="telefono" id="telefono">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="">
+                        <span>Correo</span>
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" name="correo" placeholder="correo" id="correo">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="password">
+                        <span>Contraseña</span>
+                        <i class="bi bi-key"></i>
+                        <input type="password" name="password" placeholder="contraseña" id="password">
+                    </label>
+                </div>
+
+                <div>
+                    <input type="submit" value="Registrar" class="btn-add">
+                </div>
+            </form>
+            <p id="p-login">¿Ya tienes cuenta? <button id="btn-login">Iniciar Sesión</button></p>
+        </div>
+
+        <div id="login" class="form-container">
+            <h2 id="h2-title">Iniciar Sesión</h2>
+            <form id="formulario-login" method="post">
+                <div>
+                    <label for="username">
+                        <div>
+                            <i class="bi bi-person-circle"></i>
+                            <span>Nombre de usuario</span>
+                        </div>
+                        <input type="text" name="username" placeholder="nombre de usuario" id="userName">
+                    </label>
+                </div>
+                <div>
+                    <label for="password">
+                        <div>
+                            <i class="bi bi-key"></i>
+                            <span>Contraseña</span>
+                        </div>
+                        <input type="password" name="password" placeholder="contraseña" id="userPass">
+                    </label>
+                </div>
+                <div>
+                    <input id="btn-login" type="submit" value="Iniciar Sesión" class="btn-add">
+                </div>
+            </form>
+            <p id="p-registrar">¿No tienes cuenta? <button id="btn-registrar">Registrarse</button></p>
+        </div>
+        <div class="form-container" style="display: none;">
+            <h2 class="h2-title">Ya Iniciaste Sessión...🍿🧏</h2>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/script/login"></script>
+    <script>
+        const user = localStorage.getItem('username');
+        if (user) {
+            const login = document.getElementById('login');
+            login.style.display = 'none';
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html>

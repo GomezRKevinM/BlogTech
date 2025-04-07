@@ -1,0 +1,124 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#h2-title{
+    text-align: center;
+    color: #465967;
+    font-size: 2.5rem;
+}
+.form-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #465967;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    font-size: 1.2rem;
+}
+label{
+    color: #fff;
+    font-size: 1.5rem;
+}
+input:focus{
+    border: 1px solid #42a0c5;
+}
+form{
+    display: grid;
+    place-items: left;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+#register{
+    display: none;
+}
+#login{
+    display: grid;
+}
+#login div{
+    margin: 5px;
+}
+#login label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#login form{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+#btn-login{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #465967;
+    color: #fff;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+#btn-login:hover{
+    background-color: #42a0c5;
+}
+#btn-registrar{
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    color: #42a0c5;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    outline: none;
+}
+#btn-registrar:hover{
+    color: #fff;
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color: #42a0c5;
+}
+#p-login{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+#p-login button{
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    color: #42a0c5;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    outline: none;
+}
+#p-login button:hover{
+    color: #fff;
+    text-decoration: underline;
+    border-radius: 5px;
+}

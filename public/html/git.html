@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/index.css">
-    <link rel="stylesheet" href="../style/table.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/table.css">
     <link rel="icon" href="../assets/image/pngegg.png" type="image/png">
     <title>Blogtech | GIT</title>
 </head>
 <body>
-    <header>
+    <header id="headerBody">
         <h1 class="h1">BlogTech</h1>
         <nav class="navbar">
-            <a href="../index.html" class="ancoresNav">Inicio</a>
+            <a href="/" class="ancoresNav">Inicio</a>
             <a href="#" class="ancoresNav a-select">Git</a>
-            <a href="../html/gitlab.html" class="ancoresNav">GitLab</a>
-            <a href="../html/html.html" class="ancoresNav">HTML</a>
-            <a href="../html/js.html" class="ancoresNav">JS</a>
-            <a href="../html/css.html" class="ancoresNav">CSS</a>
+            <a href="/gitlab" class="ancoresNav">GitLab</a>
+            <a href="/html" class="ancoresNav">HTML</a>
+            <a href="/js" class="ancoresNav">JS</a>
+            <a href="/css" class="ancoresNav">CSS</a>
+            <a href="/foro" class="ancoresNav">Foro</a>
+            <a id="aLogin" href="/login" class="ancoresNav">Iniciar Sesion</a>
+            <div id="user-letter">K</div>
         </nav>
     </header>
+    <div id="menUser">
+        <div class="user">KevinGr</div>
+        <div class="logout"><a href="/logout">Cerrar Sesion</a></div>
+    </div>
     <main>
         <div class="descriptionContainerGit">
             <div class="iconSelector">
@@ -97,5 +104,6 @@
             
         </div>
     </main>
+    <script src="/script/index"></script>
 </body>
 </html>
