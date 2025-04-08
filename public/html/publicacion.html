@@ -117,7 +117,7 @@
         let likesUser;
 
         
-        fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/publicaciones/${id}`)
+        fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/users/publicaciones/${id}`)
             .then(response => response.json())
             .then(data => {
                 const post = data[0];
@@ -228,7 +228,6 @@
         .then(response => response.json())
         .then(data => {
             const likesUSer = data;
-            console.log(likesUSer);
             likesUSer.forEach((like) => {
                 if(like.post == id){
                     document.querySelector('.bi-heart-fill').style.color = "#4b6577";
