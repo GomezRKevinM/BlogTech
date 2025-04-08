@@ -3,33 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="icon" href="/assets/image/pngegg.png" type="image/png">
-    <title>Blogtech | Inicio </title>
+    <title>Bogtech cambio de dirección</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+        text-align: center;
+        user-select: none;
+    }
+    body{
+        background-color: #020912;
+        color: white;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    img{
+        width: 60%;
+        height: auto;
+        border: 1px solid white;
+        z-index: 10;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        transition: all .5s ease-in-out;
+    }
+    img:hover{
+        cursor: pointer;
+        box-shadow: 0 0 15px #08cfd2;
+        border: 5px solid rgba(255, 255, 255, 0.1);
+        scale: 1.1;
+        background: rgb(255,255,255);
+        background: linear-gradient(22deg, rgba(255,255,255,0.4341386212688201) 8%, rgba(0,212,255,0.5181722347141982) 53%);
+        transform: translateX(-50%) translateY(-45%) rotate3d(1, 1, 1, 5deg);
+    }
+    #text{
+        font-size: 1.5rem;
+        position:absolute;
+        top: 70%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+        color: #08cfd270;
+        display: none;
+        text-shadow: 0 0 1px #fff;
+        transition: all 300ms ease-in-out;
+        transform:rotate3d(1, 1, 1, 5deg);
+    }
+    #main-content{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+</style>
 <body>
-    <header>
-        <h1 class="h1">Registro de lo Aprendido en Clases</h1>
-        <nav class="navbar">
-            <a href="./html/git.html" class="ancoresNav">Git</a>
-            <a href="./html/gitlab.html" class="ancoresNav">GitLab</a>
-            <a href="./html/html.html" class="ancoresNav">HTML</a>
-        </nav>
-    </header>
-    <main>
-        <div class="descriptionContainer">
-            <h2 class="sub">Acerca de esta pagina</h2>
-            <p class="p-description">Esta pagina esta hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.</p>
-            <p class="p-description violet">Si deseas colaborar en la construcción de este sitio ponte en contacto conmigo <a class="wlink" href="https://api.whatsapp.com/send?phone=573215970852&text=hola%20quiero%20participar%20en%20el%20blog%20de%20talento%20tech:">Añadir Whatsapp</a></p>
-        </div>
-    </main>
-    <footer>
-        <h2 class="sub">Autores</h2>
-        <p class="pFooter">
-            <span class="nameAuthors">Ivan Quintero</span>
-            <span class="nameAuthors">Manuel</span>
-            <span class="nameAuthors">Kevin Gómez</span>
-        </p>
-    </footer>
+    <div id="main-content">
+        <span id="text">click para ir a <strong>Blogtech</strong></span>
+        <img src="./assets/image/change.png" alt="">
+    </div>
+<script>
+    const img = document.querySelector("img");
+
+img.addEventListener("mouseover", () => {
+  img.style.opacity = 0; // desvanece la imagen
+  document.getElementById("text").style.opacity = 0;
+  document.getElementById("text").style.display = "block";
+
+  setTimeout(() => {
+    document.getElementById("text").style.opacity = 1;
+    img.src = "./assets/image/changeHover.png";
+    img.style.opacity = 1; // vuelve a mostrar la imagen
+  }, 300); // tiempo de transición
+});
+
+img.addEventListener("mouseout", () => {
+  img.style.opacity = 0; // desvanece la imagen
+  document.getElementById("text").style.display = "none";
+
+  setTimeout(() => {
+    document.getElementById("text").style.display = "none";
+    img.src = "./assets/image/change.png";
+    img.style.opacity = 1; // vuelve a mostrar la imagen
+  }, 300); // tiempo de transición
+});
+
+img.addEventListener("click", () => {
+  window.location.href = "https://app-1cd9058e-7afc-4016-ad62-d51334700c57.cleverapps.io/";
+});
+</script>
 </body>
 </html>
