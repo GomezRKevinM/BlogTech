@@ -1,5 +1,3 @@
-
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -8,20 +6,23 @@
   user-select: none;
   scroll-behavior: smooth;
 }
-
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1f23, #2a2e35);
+  color: #fff;
+  scroll-behavior: smooth;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #131313;
-  color: white;
-  scroll-behavior: smooth;
-}
+  height: 100vh;
+}  
 
 /* Header */
 header {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #2a2e35;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -110,16 +111,14 @@ header {
   width: 60vw;
   height: fit-content;
   margin-top: 60px;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 60px;
 }
 
 .descriptionContainerGit {
   width: 60vw;
   margin-top: 25px;
-}
-
-.descriptionContainerGitLab {
-  width: 60vw;
-  margin-top: 45px;
 }
 
 .sub {
@@ -128,14 +127,15 @@ header {
 }
 
 .p-description {
-  text-align: justify;
+  text-align: start;
   background: #ccccccaa;
   padding: 10px 12px;
   border-radius: 4px;
-  color: green;
+  color: #e3e3e3;
   position: relative;
   margin: 20px;
   font-size: 20px;
+  max-width: 612px;
 }
 
 .imgdescription {
@@ -152,11 +152,9 @@ header {
 }
 
 .gtext{
-  font-size: 20px;
-  margin-top: 64px;
   padding: 10px 4px;
   font-size: 20px;
-  margin-top: 64px;
+  margin-top: 26px;
 }
 
 .p-description::before {
@@ -164,7 +162,7 @@ header {
   position: absolute;
   height: 100%;
   width: 5px;
-  background-color: green;
+  background-color: lightblue;
   top: 0;
   left: 0;
   border-radius: 4px;
@@ -186,11 +184,11 @@ header {
 }
 
 .img-sub{
-    height: 30px;
-    width: auto;
-    position: relative;
-    top: 10px;
-    margin: 5px;
+  height: 30px;
+  width: auto;
+  position: relative;
+  top: 10px;
+  margin: 5px;
 }
 
 /*Footer*/
@@ -216,9 +214,8 @@ footer{
     ======================================= */
   .btn-add{
     background-color: #5ed06f;
-    border-radius: 25px;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     padding: 5px 10px;
@@ -244,23 +241,23 @@ footer{
 .title-btn{
   display: flex;
   width: 100%;
-  justify-content: space-around;
   padding: 5px 25px;
+  align-items: center;
+  justify-content: center;
 }
 .oculto{
     display: none;
 }
 .embedded-object{
   width: 100%;
-  height: 90%;
+  height: 86%;
   margin-bottom: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
 .btn-group{
   width: 100%;
-  height: 40px;
-  padding: 7px;
+  height: 120px;
   display: flex;
   justify-content: flex-end;
 }
@@ -269,13 +266,14 @@ footer{
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  padding: 7px;
   border: none;
   border-radius: 5px;
-  height: fit-content;
+  width: 100px;
+  height: 34px;
 }
 .btn-success:hover{
   cursor: pointer;
+  background-color: #71fc86
 }
 .container-object{
   width: 100%;
@@ -382,64 +380,6 @@ footer{
 /*  =======================================
         Media Query width viewport <= 750px
     ======================================= */
-
-@media only screen and (min-width:751px) and (max-width:1024px) {
-    .img-gitlab-container{
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        margin: 5px;
-    }
-    .img-gitlab{
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width:750px) and (min-width:551px) {
-    footer{
-        position:initial;
-        padding: 15px 7px;
-    }
-    .p-description{
-        width: 90%;
-    }
-  
-    /*  ====================
-            git lab
-        ==================== */
-    .img-gitlab{
-        width: 90%;
-    }
-
-    .img-gitlab-container{
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        margin: 5px;
-    }
-}
-
-@media only screen and (max-width:550px){
-    .p-description{
-        width: 80%;
-    }
-        /*  ====================
-            git lab
-        ==================== */
-    
-    .img-gitlab{
-        width: 80%;
-    }
-
-    .img-sub {
-      height: 30px;
-      width: auto;
-      position: relative;
-      top: 10px;
-      margin: 5px;
-    }
-}
-
 
 @media (max-width: 768px) {
   .navbar {

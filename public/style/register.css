@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1f23, #2a2e35);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    width: 512px;
+    height: 750px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+}
+
+#h2-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #42a0c5;
+}
+
+/* Formulario */
+#formulario-register {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo de campos */
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 1rem;
+    padding: 0 40px;
+}
+
+label span {
+    font-weight: 500;
+}
+
+label i {
+    color: #42a0c5;
+    margin-right: 8px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #465967;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #42a0c5;
+    outline: none;
+}
+
+.input-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-add {
+    background-color: #5eb5d0;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 12px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.5rem;
+    gap: 5px;
+}
+
+.btn-add {
+    background-color: #5eb5d0;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 12px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.5rem;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #3093b3;
+}
+
+/* Redirección a login */
+#p-login {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#p-login a {
+    color: #42a0c5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#p-login a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

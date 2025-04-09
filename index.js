@@ -4,8 +4,14 @@ const app = express();
 const puerto = 8080;
 app.use(express.static('public'));
 // Paginas
+app.get("/home", (req, res) => {
+    res.sendFile(process.cwd() + "/public/index.html");    
+});
 app.get("/login", (req, res) => {
     res.sendFile(process.cwd() + "/public/html/login.html");    
+});
+app.get("/register", (req, res) => {
+    res.sendFile(process.cwd() + "/public/html/register.html");    
 });
 app.get("/", (req, res) => {
     res.sendFile(process.cwd() + "/public/index.html");
@@ -39,6 +45,9 @@ app.get("/logout", (req, res) => {
 app.get("/style/login", (req, res) => {
     res.sendFile(process.cwd() + "/public/style/login.css");
 })
+app.get("/style/register", (req, res) => {
+    res.sendFile(process.cwd() + "/public/style/register.css");
+})
 app.get("/style/index", (req, res) => {
     res.sendFile(process.cwd() + "/public/style/index.css");
 })
@@ -53,6 +62,12 @@ app.get("/style/foro", (req, res) => {
 })
 app.get("/style/publicacion", (req, res) => {
     res.sendFile(process.cwd() + "/public/style/publicacion.css");
+})
+app.get("/style/gitlab", (req, res) => {
+    res.sendFile(process.cwd() + "/public/style/gitlab.css");
+})
+app.get("/style/html", (req, res) => {
+    res.sendFile(process.cwd() + "/public/style/html.css");
 })
 
 app.listen(puerto, () => {

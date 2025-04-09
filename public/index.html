@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id="headerBody">
-        <h1 class="h1">BlogTech </h1>
+        <a class="h1" href="/index">BlogTech</a>
         <nav class="navbar">
             <a href="/git" class="ancoresNav">Git</a>
             <a href="/gitlab" class="ancoresNav">GitLab</a>
@@ -31,10 +31,12 @@
         <div class="logout"><a href="/logout">Cerrar Sesion</a></div>
     </div>
     <main>
-        <div class="descriptionContainer">
-            <h2 class="sub">Acerca de esta pagina</h2>
-            <p class="p-description">Esta pagina está hecha con el fin de registrar toda la información obtenida en las clases impartidas por el bootcamp, de manera que le sirva a los compañeros a la hora de estudiar o echar un vistazo a lo que ha visto.<br>Esperamos puedas aprender mucho con este contenido!! &#129299&#128218</p>
-        </div>
+        <section class="descriptionContainer">
+            <h2 class="sub">Bienvenido a BlogTech</h2>
+            <p class="p-description">
+              BlogTech es una plataforma pensada para estudiantes del bootcamp que buscan repasar, documentar y compartir lo aprendido en clase. Aquí podrás acceder a recursos útiles, publicar tus aportes y dejar comentarios para ayudar a otros. ¡Aprendamos juntos!
+            </p>
+          </section>
         <div id="fillScreen"></div>
     </main>
     <div class="title-btn">
@@ -43,21 +45,7 @@
     </div>
     <div id="contenedor-coment" class="container-coment"></div>
     <div id="data-container"></div>
-
-    <!-- <div class="modal" id="login">
-        <h2 class="modal-title">
-            Registro de usuario 
-            <span class="tag-info-title"></span> 
-            <a href="#" onclick="closeModal('login')" class="anclamargin">
-                <img class="modal-close"src="./assets/cerrar.png" alt="closeModal">
-            </a>
-        </h2>
-        <div class="modal-content">
-            <div class="container-object">
-                <object data="./component/formRegister.html" type="text/html" class="embedded-object"></object>
-            </div>
-        </div>
-    </div> -->
+    
     <div class="modal" id="coment">
         <h2 class="modal-title">
             Agregar Comentario 

@@ -12,10 +12,9 @@
 .modal{
     z-index: 11;
     position: fixed;
-    top: 8vh;
-    left: 17vw;
-    width: 70vw;
-    height: 80%;
+    top: 17vh;
+    width: 50%;
+    height: 65%;
     background: #363636;
     border-radius: 15px;
     box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245,inset -1px -1px 8px #12121245;

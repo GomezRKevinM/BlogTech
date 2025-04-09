@@ -3,6 +3,20 @@
     --color-bg-black:rgba(0,0,0,0.2);
     --shadow-white-transparent:rgba(200,200,200,0.2);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1f23, #2a2e35);
+    color: #fff;
+    scroll-behavior: smooth;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 #main{
     display: flex;
     width: 98%;
@@ -10,7 +24,7 @@
     padding-bottom: 20px;
 }
 body::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
     background-color: #88888850;
 }
 body::-webkit-scrollbar-thumb{
@@ -58,8 +72,9 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 4px;
+    padding: 2px;
     background-color: var(--color-yellow);
+    border-radius: 4px;
 }
 .sub-items{
     list-style-type:none;
@@ -97,6 +112,7 @@ body::-webkit-scrollbar-thumb{
     color: white;
     list-style-type:none;
     background-color: rgba(240, 240, 240, 0.09);
+    border-radius: 4px;
 }
 .nav-item:hover{
     background-color: var(--shadow-white-transparent);
