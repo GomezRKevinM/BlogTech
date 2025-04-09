@@ -18,7 +18,7 @@
               <span>Identificacion</span>
               <i class="bi bi-vr"></i>
             </div>
-            <input type="text" name="id" placeholder="Numero de identificacion (cc,nit,ti,etc)" id="id" />
+            <input type="text" name="id" placeholder="Numero de identificacion (cc,nit,ti,etc)" id="id" required/>
           </label>
         </div>
 
@@ -28,7 +28,7 @@
               <span>Nombre</span>
               <i class="bi bi-person"></i>
             </div>
-            <input type="text" name="nombre" placeholder="nombre completo" id="nombre" />
+            <input type="text" name="nombre" placeholder="nombre completo" id="nombre" required/>
           </label>
         </div>
 
@@ -38,7 +38,7 @@
               <span>Nombre de usuario</span>
               <i class="bi bi-person-circle"></i>
             </div>
-            <input type="text" name="username" placeholder="nombre de usuario" id="username" />
+            <input type="text" name="username" placeholder="nombre de usuario" id="username" required/>
           </label>
         </div>
 
@@ -48,7 +48,7 @@
               <span>Telefono</span>
               <i class="bi bi-telephone"></i>
             </div>
-            <input type="tel" name="telefono" placeholder="telefono" id="telefono" />
+            <input type="tel" name="telefono" placeholder="telefono" id="telefono" required/>
           </label>
         </div>
 
@@ -58,7 +58,7 @@
               <span>Correo</span>
               <i class="bi bi-envelope"></i>
             </div>
-            <input type="email" name="correo" placeholder="correo" id="correo" />
+            <input type="email" name="correo" placeholder="correo" id="correo" required/>
           </label>
         </div>
 
@@ -68,7 +68,11 @@
               <span>Contraseña</span>
               <i class="bi bi-key"></i>
             </div>
-            <input type="password" name="password" placeholder="contraseña" id="password" />
+            <div id="passwordDiv">
+              <input type="password" name="password" placeholder="contraseña" id="password" required/>
+              <i class="bi bi-eye-slash-fill" id="hiddenPass"></i>
+              <i class="bi bi-eye-fill" id="showPass"></i>
+            </div>
           </label>
         </div>
 

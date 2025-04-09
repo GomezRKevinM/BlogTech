@@ -143,6 +143,22 @@ input:focus {
     text-decoration: underline;
 }
 
+#passwordDiv{
+    position: relative;
+}
+
+#passwordDiv i{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#hiddenPass{
+    display: none;
+}
+
 
 /* ==== Media Queries ==== */
 

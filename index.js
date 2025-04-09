@@ -40,6 +40,10 @@ app.get("/post/:id", (req, res) => {
 app.get("/logout", (req, res) => {
     res.sendFile(process.cwd() + "/public/html/logout.html");
 });
+app.get("/admin", (req, res) => {
+    const { username } = req.query;
+    res.sendFile(process.cwd() + "/public/html/admin.html");
+});
 
 // Estilos
 app.get("/style/login", (req, res) => {

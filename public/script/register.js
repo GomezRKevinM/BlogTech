@@ -74,3 +74,18 @@ function registrarUser(event){
 }
 
 document.getElementById('formulario-register').addEventListener('submit', registrarUser);
+
+const verPass = document.getElementById('showPass');
+const ocultarPass = document.getElementById('hiddenPass');
+
+verPass.addEventListener('click', () => {
+    document.getElementById('password').type = 'text';
+    verPass.style.display = 'none';
+    ocultarPass.style.display = 'inline-block';
+})
+
+ocultarPass.addEventListener('click', () => {
+    document.getElementById('password').type = 'password';
+    verPass.style.display = 'inline-block';
+    ocultarPass.style.display = 'none';
+})
