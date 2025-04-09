@@ -1,7 +1,6 @@
-const {categorias} = require('./get.js');
-
-const tags = categorias.map((categoria)=>{
-    return categoria;
-})
-
-alert("hola")
+const state = Boolean(localStorage.getItem('loged'));
+console.log(state);
+if(state){
+    localStorage.setItem('history','/foro');
+    window.location.href = '/login';
+}

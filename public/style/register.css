@@ -10,7 +10,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .form-container {
@@ -19,8 +19,8 @@ main {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     padding: 30px;
-    width: 512px;
-    height: 750px;
+    width: 35vw;
+    height: 80vh;
     padding: 20px;
     backdrop-filter: blur(8px);
 }
@@ -34,9 +34,15 @@ main {
 
 /* Formulario */
 #formulario-register {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     gap: 20px;
+    grid-auto-rows: min-content;
+}
+#formulario-register .input-submit {
+    grid-column: 1 / 3;
+    margin-top: 15%;
 }
 
 /* Grupo de campos */
@@ -45,7 +51,7 @@ label {
     flex-direction: column;
     gap: 6px;
     font-size: 1rem;
-    padding: 0 40px;
+    width: 200px;
 }
 
 label span {
@@ -135,4 +141,80 @@ input:focus {
 #p-login a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+
+/* ==== Media Queries ==== */
+
+/* Para pantallas medianas (tablets en modo horizontal) */
+@media (max-width: 1200px) {
+    .form-container {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .form-container{
+        width: 70%;
+    }
+}
+
+/* Para pantallas pequeñas (tablets en modo vertical y móviles grandes) */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #h2-title {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .btn-add {
+        font-size: 1.2rem;
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #h2-title {
+        font-size: 1.8rem;
+    }
+
+    label {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .btn-add {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    #p-login {
+        font-size: 0.9rem;
+    }
 }
