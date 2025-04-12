@@ -1,5 +1,3 @@
-
-
 export async function getCategorias(){
     const request = await fetch('https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/categorias')
     .then(response => response.json())
@@ -9,6 +7,7 @@ export async function getCategorias(){
     .catch(error => console.error(error));
     return request;
 }
+
 
 export async function getPosts(categoria){
     let request;
@@ -55,4 +54,3 @@ export async function getLikesUSer(username){
     return request;
 }
 
-console.log(getLikesUSer("KevinGr"))

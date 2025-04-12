@@ -12,13 +12,15 @@
 .modal{
     z-index: 11;
     position: fixed;
-    top: 17vh;
-    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
     height: 65%;
     background: #363636;
     border-radius: 15px;
     box-shadow: 1px 1px 12px #ffffff50,inset 1px 1px 8px #12121245,inset -1px -1px 8px #12121245;
-    padding: 0 0;
+    padding: 20px 10px;
     display: none;
     contain: content;
     scroll-behavior: smooth;

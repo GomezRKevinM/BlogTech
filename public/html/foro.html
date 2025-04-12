@@ -63,13 +63,13 @@
                 <div class="item">
                     <h3 class="title-item">Añadir</h3>
                     <ul class="ul-item Ordenar">
-                        <li class="li-item">Categoria</li>
-                        <li class="li-item">Tema</li>
+                        <li class="li-item new_cat">Categoria</li>
+                        <li id="new-tema" class="li-item">Tema</li>
                     </ul>
                 </div>
                 <div class="item">
                     <h3 class="title-item">Temas</h3>
-                    <ul class="ul-item Temas">
+                    <ul id="listaTemas" class="ul-item Temas">
                         <li class="li-item" data-id="Novedades">Novedades 🎉🎊</li>
                     </ul>
                 </div>
@@ -79,18 +79,35 @@
             <div id="contenido">
                 <!-- Contenido de publicaciones -->
             </div>
+            <section class="tema">
+                <h2>Titulo del tema</h2>
+                <div class="tema-text">
+                    <p>Contenido del tema</p>
+                </div>
+                <div class="tema-comentarios">
+                    <h3>Comentarios</h3>
+                    <form id="formulario-comentario" method="post">
+                        <div class="text-input">
+                            <textarea class="comentario" name="contenido" id="contenidoComentario" cols="30" rows="10" placeholder="Escribe tu Comentario..." required></textarea>
+                        </div>
+                    </form>
+                    <article class="comentario">
+
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
     <dialog id="modalPost" closedBy="any">
-        <div id="modal-content">
-            <div id="modal-header">
+        <div class="modal-content">
+            <div class="modal-header">
                 <h2 class="h2-title">Crear Publicacion</h2>
                 <select name="categoria" id="categoria">
                     <option value="" disabled selected required>Selecciona una categoria</option>
                 </select>
             </div>
             <form id="formulario-post" method="post">
-                <div id="text-input">
+                <div class="text-input">
                         <textarea name="contenido" id="contenidoNew" cols="30" rows="10" placeholder="Escribe tu mensaje..." required></textarea>
                 </div>
                 <div class="btn-modal">
@@ -98,17 +115,34 @@
 
             </form>
             <form method="dialog">
-                <button id="cerrar-modal" type="submit">Cancelar</button>
+                <button class="cerrar-modal" type="submit">Cancelar</button>
             </form>
         </div>
 
         </div>
     </dialog>
+    <dialog id="modalCategoria" class="modalCategoria" closedBy="any">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="h2-title">Añadir nueva categoria</h2>
+            </div>
+            <form id="formulario-categoria" method="post">
+                <div class="text-input">
+                    <label for="contenidoCategoria">Nombre de la categoria:</label>
+                    <input type="text" name="nombre" id="contenidoCategoria" placeholder="Categoria" required>
+                </div>
+                <div class="btn-modal">
+                    <input type="submit" value="Agregar Categoria" class="btn-add">
+                </div>
+            </form>
+    </dialog>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../script/foro.js"></script>
     <script type="module">
-        import {getCategorias, getPosts} from '/script/get';
+        import {getCategorias, getPosts } from '/script/get';
         const categorias = await getCategorias();
         const input = document.querySelector('#categoria-Select');
 
@@ -321,9 +355,73 @@
         function openModal(){
             document.querySelector('#modalPost').showModal();
         }
+        function openModalCategoria(){
+            document.querySelector('#modalCategoria').showModal();
+        }
+        document.querySelector('li.new_cat')
+        .addEventListener('click', openModalCategoria)
+
+        function agregarCategoria(event){
+            event.preventDefault();
+            const categoria = document.querySelector('#contenidoCategoria').value;
+            const exist = categorias.find(cat => cat.nombre.toLowerCase() == categoria.toLowerCase());
+            if(exist){
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "center",
+                    showConfirmButton: false,
+                    timer: 1000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                    });
+                    Toast.fire({
+                        icon: "error",
+                        title: "La categoria ya existe"
+                    });
+                return
+            }
+            fetch(`https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/newCategoria`,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    nombre: categoria,
+                    creado: localStorage.getItem('username')
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('#modalCategoria').close();
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "center",
+                    showConfirmButton: false,
+                    timer: 2500,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                    });
+                    Toast.fire({
+                        icon: "success",
+                        title: `Felicidades, Has agregado una nueva categoria ${categoria}`
+                    });
+                    setTimeout(() => {
+                        window.location.reload();
+                    },2500)
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        document.querySelector('#formulario-categoria').addEventListener('submit', agregarCategoria)
+        
 
         document.querySelector('#btn-publicar').addEventListener('click', openModal)
-        
     </script>
     <script>
         const headerArticle = document.querySelector('#header-foro');
@@ -376,7 +474,21 @@
         }
     </script>
     <script src="/script/index"></script>
-    <script type="module">
+    <script>
+        fetch('https://app-07f9025b-6a13-4685-a1e7-d30222c7d740.cleverapps.io/foro/temas')
+        .then(response => response.json())
+        .then(data => {
+            const temas = data;
+            temas.forEach(tema => {
+
+                temainnerHTML=`
+                <li class="li-item" data-id="${tema.id}">${tema.tema}</li>
+                `
+                console.log(temainnerHTML);
+                document.querySelector('#listaTemas').insertAdjacentHTML('beforeend', temainnerHTML);
+            });
+        })
+        .catch(error => console.error('Error:', error));
     </script>
 </body>
 </html>
