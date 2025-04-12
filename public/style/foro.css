@@ -439,3 +439,15 @@ dialog form{
     border: none;
     transition: all 300ms ease-in-out;
 }
+
+#closeBtnTema{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.title-tema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
