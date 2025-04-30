@@ -45,7 +45,7 @@
         </div>
         <div id="main">
             <div id="navLat">
-                <button id="btn-publicar" onclick="openModal()">Publicar </button>
+                <button id="btn-publicar" class="btn-open-modal" data-modal="modalPost" onclick="openModal()">Publicar </button>
                 <div class="item">
                     <h3 class="title-item">Categorias</h3>
                     <ul id="categoriaContainer" class="Categorias">
@@ -122,7 +122,7 @@
                 <div class="item-tool">Herramientas <i class="bi bi-caret-down-fill"></i>
                     <div class="tool-group">
                         <i class="bi bi-fonts item-tool-icon"></i>
-                        <i class="bi bi-image item-tool-icon"></i>
+                        <button class="btn-open-modal" data-modal="select-img-modal" ><i class="bi bi-image item-tool-icon"></i></button>
                         <i class="bi bi-link item-tool-icon"></i>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
             </form>
     </dialog>
 
-    <dialog id="select-img-modal" closedBy="any" open="">
+    <dialog id="select-img-modal" closedBy="any">
         <h2>Insertar imagen</h2>
         <div class="inputsImagens">
             <select name="img" id="img-post">
@@ -168,7 +168,7 @@
                 <option value="url">Imagen de la web (URL)</option>
             </select>
             <label for="widthImage">Ancho: </label>
-            <input type="number" min="100" max="950" name="widthImage" id="widthImage" >
+            <input type="number" min="100" max="950" value="500" name="widthImage" id="widthImage" >
     
             <label for="heightImage">Alto: </label>
             <input type="number" min="100" max="500" name="heightImage" id="heightImage" >
@@ -176,17 +176,24 @@
         </div>
         
         <div class="showImage">
-            <img id="previewImage" src="" alt="">
+            <div>
+                <img id="previewImage" src="" alt="">
+            </div>
         </div>
         <div class="inser-img">
             <input type="file" name="imagen" id="">
-            <input type="url" name="imagen" id="urlImage">
+            <input type="url" name="imagen" id="urlImage" placeholder="URL de la imagen">
         </div>
         <script>
+
             const imagen = document.querySelector('#previewImage');
             const url = document.querySelector('#urlImage');
             const width = document.querySelector('#widthImage');
             const height = document.querySelector('#heightImage');
+            const insert = document.querySelector('#btnInsertarImage');
+
+            imagen.style.width = '500px';
+            imagen.style.height = 'auto';
 
             width.addEventListener('input', () => {
                 if(width.value !=0){
@@ -217,22 +224,41 @@
             })
 
             document.addEventListener('DOMContentLoaded', () => {
-    const fileInput = document.querySelector('input[type="file"][name="imagen"]');
-    const previewImage = document.getElementById('previewImage');
+            const fileInput = document.querySelector('input[type="file"][name="imagen"]');
+            const previewImage = document.getElementById('previewImage');
 
-    fileInput.addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    previewImage.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            } else {
-                previewImage.src = '';
-            }
-        });
-    });
+            fileInput.addEventListener('change', function(event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            previewImage.src = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        previewImage.src = '';
+                    }
+                });
+            });
+
+            insert.addEventListener('click', (e) => {
+                e.preventDefault();
+                const contenido = document.querySelector('#contenidoNew');
+                
+                if(imagen.src == ""){
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Debes seleccionar una imagen',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+                    return;
+                }else{
+                    contenido.innerHTML += `<img src="${imagen.src}" alt="Imagen" style="width:${width.value}px; height:${height.value}px;">`;
+                    
+                }
+            })
         </script>
     </dialog>
 
@@ -241,6 +267,14 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../script/foro.js"></script>
     <script type="module">
+        const btnOpens = document.querySelectorAll('.btn-open-modal');
+
+        btnOpens.forEach((boton)=>{
+            boton.addEventListener('click', () => {
+                const modal = document.querySelector(`#${boton.dataset.modal}`);
+                modal.showModal();
+            })
+        })
         import {getCategorias, getPosts } from '/script/get';
         const categorias = await getCategorias();
         const input = document.querySelector('#categoria-Select');
@@ -455,14 +489,7 @@
         }
 
         document.querySelector('#formulario-post').addEventListener('submit', publicar)
-        function openModal(){
-            document.querySelector('#modalPost').showModal();
-        }
-        function openModalCategoria(){
-            document.querySelector('#modalCategoria').showModal();
-        }
-        document.querySelector('li.new_cat')
-        .addEventListener('click', openModalCategoria)
+
 
         function agregarCategoria(event){
             event.preventDefault();

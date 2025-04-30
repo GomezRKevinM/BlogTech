@@ -429,7 +429,7 @@ dialog form{
 }
 .comentario{
     width: 100%;
-    height: 50px;
+    height: fit-content;
     padding: 15px 15px;
     contain: content;
     resize: none;
@@ -467,7 +467,7 @@ dialog form{
 }
 #select-img-modal{
     width: fit-content;
-    height: auto;
+    height: fit-content;
     background-color: #d1d1d1;
     padding: 5px 25px;
 }
